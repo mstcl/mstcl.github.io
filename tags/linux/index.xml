@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Sat, 21 Aug 2021 19:01:00 +0000</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 17:26:05 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Startup time</title>
+      <link>https://hhn-pham.github.io/posts/startup-time/</link>
+      <pubDate>Wed, 25 Aug 2021 17:26:05 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/posts/startup-time/</guid>
+      <description>Neovim I tried to configure Neovim&amp;rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71ms to load the screen, pretty good considering I have 38 plugins.</description>
+    </item>
+    
     <item>
       <title>Dotfiles</title>
       <link>https://hhn-pham.github.io/posts/dotfiles/</link>
@@ -39,6 +48,15 @@ alias pu=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias pusu=&amp;#39
     </item>
     
     <item>
+      <title>Bash scripting</title>
+      <link>https://hhn-pham.github.io/posts/bash-scripting/</link>
+      <pubDate>Fri, 30 Jul 2021 00:53:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/posts/bash-scripting/</guid>
+      <description>Motivation I wanted a simple and creative way to manage my dotfiles, one which would allow more automation than my previous method. I stumbled upon many existing tools that can be utilised to manage dotfiles, such as GNU Stow and chezmoi. But they all seem to be too overkill for me, and their management method do not float my boat quite that well. Here&amp;rsquo;s what these tools might envision a ~/dotfiles or ~/.</description>
+    </item>
+    
+    <item>
       <title>/etc/hosts</title>
       <link>https://hhn-pham.github.io/posts/hostfile/</link>
       <pubDate>Fri, 30 Jul 2021 00:32:00 +0000</pubDate>
@@ -53,7 +71,7 @@ alias pu=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias pusu=&amp;#39
       <pubDate>Sat, 03 Jul 2021 01:26:00 +0000</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/luksonlvm/</guid>
-      <description>A table demonstrating my setup +---------+-------------+-------------+-------------+ |...EFI...|...lv root...|...lv swap...|...lv home...| |../boot..|....../......|.............|..../home....| |..fat32..|.....ext.....|.............|.....ext.....| |../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..| |.........|....LUKS2....|...dmcrypt...|....LUKS2....| |.........|-------------+-------------+-------------+ |.........|..................vg.....................| |.........|-----------------------------------------| |.........|................pv./d/n2.................| +---------------------------------------------------+  </description>
+      <description>LUKS setup I wanted to protect my desktop PC with LUKS2, I decided to use LVM after reading not so good things about BTRFS. I settled on LUKS on LVM instead of LVM on LUKS because I wanted to have partition separation for easier control if I do end up with a corrupted root partition. While chain unlocking is not as secure as entering two passwords to decrypt two partitions, the guide I used worked and it is a very good guide which explains everything.</description>
     </item>
     
   </channel>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Moving from yay to paru - Organisation x Knowledge Base</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Moving from yay to paru - Organisation x Knowledge Base</title><link rel="icon" type="image/png" href=https://img.icons8.com/doodle/48/000000/video-card.png /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Migration Moving from yay to paru, I discovered a few useful commands that existed in yay that I never bothered checking out.
 Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tldr:
 alias pu=&#39;paru -Syu&#39; #sync &amp; upgrade alias pusu=&#39;paru -Syu --noconfirm&#39; #sync &amp; upgrade w/o confirmation alias pfetch=&#39;paru -Ps&#39; #display stats alias pcom=&#39;paru -Gc&#39; #display comments alias pnews=&#39;paru -Pw&#39; #display news alias pid=&#39;paru -U&#39; #install from local file(s) alias pir=&#39;paru -S&#39; #install from repositories alias pnd=&#39;paru -Qi&#39; #display info from database alias pnr=&#39;paru -Si&#39; #display info from repositories alias pfd=&#39;paru -Qs&#39; #search in database alias pfr=&#39;paru -Ss&#39; #search in repositories alias pls=&#39;paru -Q&#39; #list packages installed alias plsa=&#39;paru -Qea&#39; #list packages explicitly installed alias porf=&#39;paru -Qdt&#39; #list orphaned packages alias pcc=&#39;paru -Scd&#39; #interactive cache removal FZF integration I also found that defining an installing and removing function which uses FZF to crawl through the local database is great." />
@@ -28,11 +28,13 @@ alias pu=&#39;paru -Syu&#39; #sync &amp; upgrade alias pusu=&#39;paru -Syu --noc
 
 	
 	<link rel="stylesheet" type="text/css" media="screen" href="https://hhn-pham.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)" />
+	
 	
 	
 		
 		
-		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.4e6de6505630e3371bb6cd7026a1cdf0c5508a847fbb14dd3824fc46b4d3eaf4.css">
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.98736ef2d3e03248fe9aff0d8bf898ce1f590e2f8c929ba3bfbd35bc6e5765c2.css">
 		
     
 </head>
@@ -43,17 +45,13 @@ alias pu=&#39;paru -Syu&#39; #sync &amp; upgrade alias pusu=&#39;paru -Syu --noc
 	</div>
 	<nav>
 		
-		<a href="/posts">Posts</a>
-		
 		<a href="/tags">Tags</a>
 		
-		<a href="/bookmarks">Links</a>
+		<a href="/posts">Posts</a>
 		
-		<a href="/agenda">Agenda</a>
+		<a href="/org">Org</a>
 		
-		<a href="/digital-tasks">Tasks</a>
-		
-		<a href="/personal-tasks">Todos</a>
+		<a href="/notes">Notes</a>
 		
 	</nav>
 </header>
@@ -71,32 +69,32 @@ alias pu=&#39;paru -Syu&#39; #sync &amp; upgrade alias pusu=&#39;paru -Syu --noc
 <p>Moving from <code>yay</code> to <code>paru</code>, I discovered a few useful commands that existed in <code>yay</code> that I never bothered checking out.</p>
 <h2 id="cheatsheet">Cheatsheet</h2>
 <p>Below is a snippet from my <code>zshrc</code> showing my paru aliases and their tldr:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#0086b3">alias</span> <span style="color:#008080">pu</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Syu&#39;</span> <span style="color:#998;font-style:italic">#sync &amp; upgrade</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pusu</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Syu --noconfirm&#39;</span> <span style="color:#998;font-style:italic">#sync &amp; upgrade w/o confirmation</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pfetch</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Ps&#39;</span> <span style="color:#998;font-style:italic">#display stats</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pcom</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Gc&#39;</span> <span style="color:#998;font-style:italic">#display comments</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pnews</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Pw&#39;</span> <span style="color:#998;font-style:italic">#display news</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pid</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -U&#39;</span> <span style="color:#998;font-style:italic">#install from local file(s)</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pir</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -S&#39;</span> <span style="color:#998;font-style:italic">#install from repositories</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pnd</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Qi&#39;</span> <span style="color:#998;font-style:italic">#display info from database</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pnr</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Si&#39;</span> <span style="color:#998;font-style:italic">#display info from repositories</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pfd</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Qs&#39;</span> <span style="color:#998;font-style:italic">#search in database</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pfr</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Ss&#39;</span> <span style="color:#998;font-style:italic">#search in repositories</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pls</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Q&#39;</span> <span style="color:#998;font-style:italic">#list packages installed</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">plsa</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Qea&#39;</span> <span style="color:#998;font-style:italic">#list packages explicitly installed</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">porf</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Qdt&#39;</span> <span style="color:#998;font-style:italic">#list orphaned packages</span>
-<span style="color:#0086b3">alias</span> <span style="color:#008080">pcc</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;paru -Scd&#39;</span> <span style="color:#998;font-style:italic">#interactive cache removal</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#81a1c1">alias</span> pu<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Syu&#39;</span> <span style="color:#616e87;font-style:italic">#sync &amp; upgrade</span>
+<span style="color:#81a1c1">alias</span> pusu<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Syu --noconfirm&#39;</span> <span style="color:#616e87;font-style:italic">#sync &amp; upgrade w/o confirmation</span>
+<span style="color:#81a1c1">alias</span> pfetch<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Ps&#39;</span> <span style="color:#616e87;font-style:italic">#display stats</span>
+<span style="color:#81a1c1">alias</span> pcom<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Gc&#39;</span> <span style="color:#616e87;font-style:italic">#display comments</span>
+<span style="color:#81a1c1">alias</span> pnews<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Pw&#39;</span> <span style="color:#616e87;font-style:italic">#display news</span>
+<span style="color:#81a1c1">alias</span> pid<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -U&#39;</span> <span style="color:#616e87;font-style:italic">#install from local file(s)</span>
+<span style="color:#81a1c1">alias</span> pir<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -S&#39;</span> <span style="color:#616e87;font-style:italic">#install from repositories</span>
+<span style="color:#81a1c1">alias</span> pnd<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Qi&#39;</span> <span style="color:#616e87;font-style:italic">#display info from database</span>
+<span style="color:#81a1c1">alias</span> pnr<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Si&#39;</span> <span style="color:#616e87;font-style:italic">#display info from repositories</span>
+<span style="color:#81a1c1">alias</span> pfd<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Qs&#39;</span> <span style="color:#616e87;font-style:italic">#search in database</span>
+<span style="color:#81a1c1">alias</span> pfr<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Ss&#39;</span> <span style="color:#616e87;font-style:italic">#search in repositories</span>
+<span style="color:#81a1c1">alias</span> pls<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Q&#39;</span> <span style="color:#616e87;font-style:italic">#list packages installed</span>
+<span style="color:#81a1c1">alias</span> plsa<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Qea&#39;</span> <span style="color:#616e87;font-style:italic">#list packages explicitly installed</span>
+<span style="color:#81a1c1">alias</span> porf<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Qdt&#39;</span> <span style="color:#616e87;font-style:italic">#list orphaned packages</span>
+<span style="color:#81a1c1">alias</span> pcc<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Scd&#39;</span> <span style="color:#616e87;font-style:italic">#interactive cache removal</span>
 </code></pre></div><h2 id="fzf-integration">FZF integration</h2>
 <p>I also found that defining an installing and removing function which uses FZF to crawl through the local database is great. Here are the function</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#998;font-style:italic"># Paru fuzzy install</span>
-<span style="color:#000;font-weight:bold">function</span> ins <span style="color:#000;font-weight:bold">{</span>
-    paru -Slq | fzf --height<span style="color:#000;font-weight:bold">=</span>80% --prompt<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34; &#34;</span> --preview-window<span style="color:#000;font-weight:bold">=</span>hidden --preview <span style="color:#d14">&#39;paru -Si {1}&#39;</span> | xargs -ro paru -S --removemake --cleanafter
-<span style="color:#000;font-weight:bold">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#616e87;font-style:italic"># Paru fuzzy install</span>
+<span style="color:#81a1c1;font-weight:bold">function</span> ins <span style="color:#81a1c1">{</span>
+    paru -Slq <span style="color:#eceff4">|</span> fzf --height<span style="color:#81a1c1">=</span>80% --prompt<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34; &#34;</span> --preview-window<span style="color:#81a1c1">=</span>hidden --preview <span style="color:#a3be8c">&#39;paru -Si {1}&#39;</span> <span style="color:#eceff4">|</span> xargs -ro paru -S --removemake --cleanafter
+<span style="color:#81a1c1">}</span>
 
-<span style="color:#998;font-style:italic"># Paru fuzzy remove</span>
-<span style="color:#000;font-weight:bold">function</span> rem<span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-    paru -Qq | fzf -q <span style="color:#d14">&#34;</span><span style="color:#008080">$1</span><span style="color:#d14">&#34;</span> --height<span style="color:#000;font-weight:bold">=</span>80% --prompt<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34; &#34;</span> --preview-window<span style="color:#000;font-weight:bold">=</span>hidden --preview <span style="color:#d14">&#39;paru -Qi {1}&#39;</span> | xargs -ro paru -Rns
-<span style="color:#000;font-weight:bold">}</span>
+<span style="color:#616e87;font-style:italic"># Paru fuzzy remove</span>
+<span style="color:#81a1c1;font-weight:bold">function</span> rem<span style="color:#81a1c1">()</span> <span style="color:#81a1c1">{</span>
+    paru -Qq <span style="color:#eceff4">|</span> fzf -q <span style="color:#a3be8c">&#34;</span>$1<span style="color:#a3be8c">&#34;</span> --height<span style="color:#81a1c1">=</span>80% --prompt<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34; &#34;</span> --preview-window<span style="color:#81a1c1">=</span>hidden --preview <span style="color:#a3be8c">&#39;paru -Qi {1}&#39;</span> <span style="color:#eceff4">|</span> xargs -ro paru -Rns
+<span style="color:#81a1c1">}</span>
 </code></pre></div>
 		</section>
 

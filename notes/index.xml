@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Organisation x Knowledge Base</title>
+    <link>https://hhn-pham.github.io/notes/</link>
+    <description>Recent content in Notes on Organisation x Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© me</copyright>
+    <lastBuildDate>Fri, 13 Aug 2021 16:06:00 +0000</lastBuildDate><atom:link href="https://hhn-pham.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L-values and R-values</title>
+      <link>https://hhn-pham.github.io/notes/l-r-values/</link>
+      <pubDate>Fri, 13 Aug 2021 16:06:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/l-r-values/</guid>
+      <description>Assignment operators  an operand that legally can be on the left side of an assignment operator is an l-value. one that can be on the right side is an r-value not all l-values are r-values, but not all r-values are l-values.  </description>
+    </item>
+    
+    <item>
+      <title>Pointers</title>
+      <link>https://hhn-pham.github.io/notes/pointers/</link>
+      <pubDate>Wed, 11 Aug 2021 14:04:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/pointers/</guid>
+      <description>Definition  define an integer and reserves a location in memory for this specific variable  take an integer pointer:    int *pointer  this defines an integer pointer such that its content is the address of another place in memory  int var var = 10 pointer = &amp;amp;var  this defines an integer var, and &amp;amp;var is the address of a specific place in memory where the integer is stored  it also points the variable pointer to var   so that when checking out the value *pointer*, we get the content of var, which is 10  With arrays  pointers can also be appointed to arrays so that using (pointer + 1) points to certain array element matr[1].</description>
+    </item>
+    
+    <item>
+      <title>Casing and spacing</title>
+      <link>https://hhn-pham.github.io/notes/casing-and-spacing/</link>
+      <pubDate>Tue, 10 Aug 2021 17:42:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/casing-and-spacing/</guid>
+      <description> best practice: writing folder and file names lower-case, with no spaces, and words separated by hyphens (not underscores).  </description>
+    </item>
+    
+    <item>
+      <title>Python sets</title>
+      <link>https://hhn-pham.github.io/notes/python-set/</link>
+      <pubDate>Sat, 24 Jul 2021 14:40:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/python-set/</guid>
+      <description> a python set is unordered and unindexed, they cannot be accessed through an index they also do not allow duplicated values  myset = {&amp;#34;ten&amp;#34;,&amp;#34;one&amp;#34;,&amp;#34;three&amp;#34;,&amp;#34;four&amp;#34;, &amp;#34;three&amp;#34;} print(mysetpython # Output: {&amp;#39;four&amp;#39;, &amp;#39;one&amp;#39;, &amp;#39;three&amp;#39;, &amp;#39;ten&amp;#39;} </description>
+    </item>
+    
+    <item>
+      <title>Python tuples</title>
+      <link>https://hhn-pham.github.io/notes/python-tuple/</link>
+      <pubDate>Sat, 24 Jul 2021 14:35:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/python-tuple/</guid>
+      <description> a python tuple is an immutable, ordered collection once it is created it cannot be updated  mytuple = (&amp;#34;string&amp;#34;,pi) </description>
+    </item>
+    
+    <item>
+      <title>Round-off errors</title>
+      <link>https://hhn-pham.github.io/notes/round-off-errors/</link>
+      <pubDate>Sun, 18 Jul 2021 19:31:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/round-off-errors/</guid>
+      <description>Page 27, paragraph 2, line 8-17  Since e^-20^ is a very small number and each term in the series can be rather large (of the order of 10^8^,it is clear that other terms as large as 10^8^, but negative, must cancel the figures in front of the decimal point and some behind as well. Since a computer can only hold a fixed number of significant figures, all those in front of the decimal point are not only useless, they are crowding out needed figures at the right end of the number.</description>
+    </item>
+    
+    <item>
+      <title>The loss-of-precision theorem</title>
+      <link>https://hhn-pham.github.io/notes/the-loss-of-precision-theorem/</link>
+      <pubDate>Sun, 18 Jul 2021 12:43:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/the-loss-of-precision-theorem/</guid>
+      <description>Subtraction If b and c are positive normalized floating-point binary machine numbers with $b &amp;lt; c$ and
+$$ 2^{-r} \leq 1 - \frac{c}{b} \leq 2^{-s}, $$
+Then at most $r$ and at least $s$ significant binary bits are lost in the subtraction $b-c$.</description>
+    </item>
+    
+    <item>
+      <title>Dimensional analysis</title>
+      <link>https://hhn-pham.github.io/notes/dimensional-analysis/</link>
+      <pubDate>Thu, 15 Jul 2021 14:37:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/dimensional-analysis/</guid>
+      <description>Notations To denote that something is a unit of $Y$, we use $ \left[ Y \right]$ = unit of Y
+I always get this the other way around. Facepalm.</description>
+    </item>
+    
+    <item>
+      <title>Non-conservative forces</title>
+      <link>https://hhn-pham.github.io/notes/non-conservative-forces/</link>
+      <pubDate>Thu, 15 Jul 2021 13:43:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/non-conservative-forces/</guid>
+      <description>Question What on earth is a non-conservative force if all underlying forces of friction and other contact forces operate as conservative force on a microsopic level?
+This one partially answers my question here
+Hint: Mechanical energy is the keyword.
+Another answer from stackexchange: Q: &amp;ldquo;How do many conservative forces come together to make a non-conservative one?&amp;rdquo; So my question how do several different Electromagnetic forces come together to make a new frictional force which is non-conservative in nature</description>
+    </item>
+    
+    <item>
+      <title>Unit vectors</title>
+      <link>https://hhn-pham.github.io/notes/unit-vectors/</link>
+      <pubDate>Sat, 10 Jul 2021 01:37:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/unit-vectors/</guid>
+      <description>dot product  perpendicular/orthogonal components are 0  $\hat{i} \cdot \hat{j} = \hat{j} \cdot \hat{k} = \hat{k} \cdot \hat{i}$ and so on and so forth    vector product  I generally find the right hand rule to be very straight forward  index $\times$ middle = thumb    </description>
+    </item>
+    
+    <item>
+      <title>Polar coordinates</title>
+      <link>https://hhn-pham.github.io/notes/polar-coordinates/</link>
+      <pubDate>Tue, 06 Jul 2021 00:01:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/polar-coordinates/</guid>
+      <description>Conventions  $ x = r\cos{\theta} $ $ y = r\sin{\theta} $ $ r = \sqrt{x^2 + y^2} $ $ \phi = \arctan{\frac{y}{x}} $  </description>
+    </item>
+    
+    <item>
+      <title>Absolute space</title>
+      <link>https://hhn-pham.github.io/notes/absolute-space/</link>
+      <pubDate>Thu, 01 Jul 2021 13:52:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/absolute-space/</guid>
+      <description>The Cartesian body  motion of a body is a change of relation to the bodies that surround it. concept of inertia  a body&amp;rsquo;s motion will be preserved unless caused to deviate from its path so not a function of its spatial relations to other bodies but of its causal relation    The Newtonian body  a body&amp;rsquo;s motion is not a function of its spatial relations to other objects but rather of whether forces are impressed on it.</description>
+    </item>
+    
+    <item>
+      <title>Solid angles</title>
+      <link>https://hhn-pham.github.io/notes/angle/</link>
+      <pubDate>Thu, 01 Jul 2021 01:26:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/angle/</guid>
+      <description> unit: steradian (sr) analogous to plane angle, which is defined by arc length and radius, but unlike the plane angle, it is defined by the surface area of a sphere subtended by the lines and by the radius of that sphere (squared, for a correct dimensional analysis.  $\theta = \frac{l}{dr}$ $\Omega = \frac{a}{r^2}$ unlike the plane angle, it cannot be conceived of without reference to an arbitrary sphere.  this was a pretty intuitive and sympathetic explanation      </description>
+    </item>
+    
+    <item>
+      <title>Mechanics (Core 1)</title>
+      <link>https://hhn-pham.github.io/notes/mechanics-core-1/</link>
+      <pubDate>Wed, 30 Jun 2021 12:39:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/mechanics-core-1/</guid>
+      <description>Vectors Notations  the basis is the set of unit vectors from which all others are built perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$  helpful to remember: i = 8 o&amp;rsquo;clock, j = 4 o&amp;rsquo;clock, k = 12 o&amp;rsquo;clock (standard) this is right-handed axes (anti-clockwise)   $\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$  Components  $\theta$ taken from x-axis  $a_x = a\cos{\theta}$ $a_y = a\sin{\theta}$ $\tan{\theta} = \frac{a_y}{a_x}$ $\left|a\right| = \sqrt{a_x^2+a_y^2}$   3D components  pretty much compliant with 2D and 1D examples, but the concept of an angle might be harder to visualise, we rely on the unit vectors as it&amp;rsquo;s a much easier system.</description>
+    </item>
+    
+  </channel>
+</rss>

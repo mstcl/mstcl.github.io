@@ -1,0 +1,34 @@
+:root{
+--maincolor: black;
+--bordercl:black;
+--callouctcolor:black;
+--hovercolor:black;
+--darkMaincolor:#aaaaaa;
+}
+
+p {
+  font-family: monospace;
+}
+
+html {
+  font-family: monospace;
+  font-size: 17px;
+}
+
+.callout p {
+  font-family: monospace;
+}
+
+.content {
+  max-width: 900px;
+}
+
+hr {
+    border-color: var(--bordercl);
+}
+
+@media (prefers-color-scheme: dark) {
+    hr {
+        border-color: var(--darkMaincolor);
+    }
+}

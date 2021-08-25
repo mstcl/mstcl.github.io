@@ -10,10 +10,10 @@
     <lastBuildDate>Tue, 10 Aug 2021 17:42:00 +0000</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/web-dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Casing and spacing</title>
-      <link>https://hhn-pham.github.io/posts/casing-and-spacing/</link>
+      <link>https://hhn-pham.github.io/notes/casing-and-spacing/</link>
       <pubDate>Tue, 10 Aug 2021 17:42:00 +0000</pubDate>
       
-      <guid>https://hhn-pham.github.io/posts/casing-and-spacing/</guid>
+      <guid>https://hhn-pham.github.io/notes/casing-and-spacing/</guid>
       <description> best practice: writing folder and file names lower-case, with no spaces, and words separated by hyphens (not underscores).  </description>
     </item>
     

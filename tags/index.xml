@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Tue, 24 Aug 2021 21:47:30 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 17:43:50 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tech</title>
       <link>https://hhn-pham.github.io/tags/tech/</link>
-      <pubDate>Tue, 24 Aug 2021 21:47:30 +0100</pubDate>
+      <pubDate>Wed, 25 Aug 2021 17:43:50 +0100</pubDate>
       
       <guid>https://hhn-pham.github.io/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://hhn-pham.github.io/tags/linux/</link>
+      <pubDate>Wed, 25 Aug 2021 17:26:05 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -23,15 +32,6 @@
       <pubDate>Tue, 24 Aug 2021 21:47:30 +0100</pubDate>
       
       <guid>https://hhn-pham.github.io/tags/writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://hhn-pham.github.io/tags/linux/</link>
-      <pubDate>Sat, 21 Aug 2021 19:01:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/tags/linux/</guid>
       <description></description>
     </item>
     

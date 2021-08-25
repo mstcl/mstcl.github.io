@@ -10,20 +10,20 @@
     <lastBuildDate>Fri, 13 Aug 2021 16:06:00 +0000</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>L-values and R-values</title>
-      <link>https://hhn-pham.github.io/posts/l-r-values/</link>
+      <link>https://hhn-pham.github.io/notes/l-r-values/</link>
       <pubDate>Fri, 13 Aug 2021 16:06:00 +0000</pubDate>
       
-      <guid>https://hhn-pham.github.io/posts/l-r-values/</guid>
+      <guid>https://hhn-pham.github.io/notes/l-r-values/</guid>
       <description>Assignment operators  an operand that legally can be on the left side of an assignment operator is an l-value. one that can be on the right side is an r-value not all l-values are r-values, but not all r-values are l-values.  </description>
     </item>
     
     <item>
       <title>Pointers</title>
-      <link>https://hhn-pham.github.io/posts/pointers/</link>
+      <link>https://hhn-pham.github.io/notes/pointers/</link>
       <pubDate>Wed, 11 Aug 2021 14:04:00 +0000</pubDate>
       
-      <guid>https://hhn-pham.github.io/posts/pointers/</guid>
-      <description>Definition  define an integer and reserves a location in memory for this specific variable  take an integer #!cpp pointer:    int *pointer  this defines an integer #!cpp pointer such that its content is the address of another place in memory  int var var = 10 pointer = &amp;amp;var  this defines an integer #!cpp var, and #!cpp &amp;amp;var is the address of a specific place in memory where the integer is stored  it also points the variable #!</description>
+      <guid>https://hhn-pham.github.io/notes/pointers/</guid>
+      <description>Definition  define an integer and reserves a location in memory for this specific variable  take an integer pointer:    int *pointer  this defines an integer pointer such that its content is the address of another place in memory  int var var = 10 pointer = &amp;amp;var  this defines an integer var, and &amp;amp;var is the address of a specific place in memory where the integer is stored  it also points the variable pointer to var   so that when checking out the value *pointer*, we get the content of var, which is 10  With arrays  pointers can also be appointed to arrays so that using (pointer + 1) points to certain array element matr[1].</description>
     </item>
     
   </channel>

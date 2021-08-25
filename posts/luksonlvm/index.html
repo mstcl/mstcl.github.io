@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html><head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Luks on LVM - Organisation x Knowledge Base</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A table demonstrating my setup &#43;---------&#43;-------------&#43;-------------&#43;-------------&#43; |...EFI...|...lv root...|...lv swap...|...lv home...| |../boot..|....../......|.............|..../home....| |..fat32..|.....ext.....|.............|.....ext.....| |../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..| |.........|....LUKS2....|...dmcrypt...|....LUKS2....| |.........|-------------&#43;-------------&#43;-------------&#43; |.........|..................vg.....................| |.........|-----------------------------------------| |.........|................pv./d/n2.................| &#43;---------------------------------------------------&#43;  " />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Luks on LVM - Organisation x Knowledge Base</title><link rel="icon" type="image/png" href=https://img.icons8.com/doodle/48/000000/video-card.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="LUKS setup I wanted to protect my desktop PC with LUKS2, I decided to use LVM after reading not so good things about BTRFS. I settled on LUKS on LVM instead of LVM on LUKS because I wanted to have partition separation for easier control if I do end up with a corrupted root partition. While chain unlocking is not as secure as entering two passwords to decrypt two partitions, the guide I used worked and it is a very good guide which explains everything." />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="Luks on LVM" />
-<meta property="og:description" content="A table demonstrating my setup &#43;---------&#43;-------------&#43;-------------&#43;-------------&#43; |...EFI...|...lv root...|...lv swap...|...lv home...| |../boot..|....../......|.............|..../home....| |..fat32..|.....ext.....|.............|.....ext.....| |../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..| |.........|....LUKS2....|...dmcrypt...|....LUKS2....| |.........|-------------&#43;-------------&#43;-------------&#43; |.........|..................vg.....................| |.........|-----------------------------------------| |.........|................pv./d/n2.................| &#43;---------------------------------------------------&#43;  " />
+<meta property="og:description" content="LUKS setup I wanted to protect my desktop PC with LUKS2, I decided to use LVM after reading not so good things about BTRFS. I settled on LUKS on LVM instead of LVM on LUKS because I wanted to have partition separation for easier control if I do end up with a corrupted root partition. While chain unlocking is not as secure as entering two passwords to decrypt two partitions, the guide I used worked and it is a very good guide which explains everything." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hhn-pham.github.io/posts/luksonlvm/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-03T01:26:00+00:00" />
@@ -13,7 +13,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Luks on LVM"/>
-<meta name="twitter:description" content="A table demonstrating my setup &#43;---------&#43;-------------&#43;-------------&#43;-------------&#43; |...EFI...|...lv root...|...lv swap...|...lv home...| |../boot..|....../......|.............|..../home....| |..fat32..|.....ext.....|.............|.....ext.....| |../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..| |.........|....LUKS2....|...dmcrypt...|....LUKS2....| |.........|-------------&#43;-------------&#43;-------------&#43; |.........|..................vg.....................| |.........|-----------------------------------------| |.........|................pv./d/n2.................| &#43;---------------------------------------------------&#43;  "/>
+<meta name="twitter:description" content="LUKS setup I wanted to protect my desktop PC with LUKS2, I decided to use LVM after reading not so good things about BTRFS. I settled on LUKS on LVM instead of LVM on LUKS because I wanted to have partition separation for easier control if I do end up with a corrupted root partition. While chain unlocking is not as secure as entering two passwords to decrypt two partitions, the guide I used worked and it is a very good guide which explains everything."/>
 <script src="https://hhn-pham.github.io/js/feather.min.js"></script>
 	
 	
@@ -22,11 +22,13 @@
 
 	
 	<link rel="stylesheet" type="text/css" media="screen" href="https://hhn-pham.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)" />
+	
 	
 	
 		
 		
-		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.4e6de6505630e3371bb6cd7026a1cdf0c5508a847fbb14dd3824fc46b4d3eaf4.css">
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.98736ef2d3e03248fe9aff0d8bf898ce1f590e2f8c929ba3bfbd35bc6e5765c2.css">
 		
     
 </head>
@@ -37,17 +39,13 @@
 	</div>
 	<nav>
 		
-		<a href="/posts">Posts</a>
-		
 		<a href="/tags">Tags</a>
 		
-		<a href="/bookmarks">Links</a>
+		<a href="/posts">Posts</a>
 		
-		<a href="/agenda">Agenda</a>
+		<a href="/org">Org</a>
 		
-		<a href="/digital-tasks">Tasks</a>
-		
-		<a href="/personal-tasks">Todos</a>
+		<a href="/notes">Notes</a>
 		
 	</nav>
 </header>
@@ -61,19 +59,23 @@
 		
 
 		<section class="body">
-			<h2 id="a-table-demonstrating-my-setup">A table demonstrating my setup</h2>
-<pre><code>+---------+-------------+-------------+-------------+
-|...EFI...|...lv root...|...lv swap...|...lv home...|
-|../boot..|....../......|.............|..../home....|
-|..fat32..|.....ext.....|.............|.....ext.....|
-|../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..|
-|.........|....LUKS2....|...dmcrypt...|....LUKS2....|
-|.........|-------------+-------------+-------------+
-|.........|..................vg.....................|
-|.........|-----------------------------------------|
-|.........|................pv./d/n2.................|
+			<h2 id="luks-setup">LUKS setup</h2>
+<p>I wanted to protect my desktop PC with LUKS2, I decided to use LVM after reading not so good things about BTRFS. I settled on LUKS on LVM instead of LVM on LUKS because I wanted to have partition separation for easier control if I do end up with a corrupted root partition. While chain unlocking is not as secure as entering two passwords to decrypt two partitions, the <a href="https://gist.github.com/ddnomad/57c2ed9cc8372d0079fc280e7459bbeb">guide</a> I used worked and it is a very good guide which explains everything. Mind that I have used the official Arch installation guide wiki page a few times when I was still clueless and reinstalled Arch every time something minor failed.</p>
+<p>Of course, being a great wiki, it also contains the information from the gist I used, <a href="https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_LVM">this</a> is the page with basically the same information, however the gist did a great job explaining nevertheless.</p>
+<h3 id="a-visualisation-of-my-partitioning-scheme">A visualisation of my partitioning scheme</h3>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">+---------+-------------+-------------+-------------+
+|   EFI   |   lv root   |   lv swap   |   lv home   |
+|  /boot  |      /      |             |    /home    |
+|  fat32  |     ext     |             |     ext     |
+|  /d/n1  |  /d/m/root  |  /d/m/swap  |  /d/m/home  |
+|         |    LUKS2    |   dmcrypt   |    LUKS2    |
+|         |-------------+-------------+-------------+
+|         |                  vg                     |
+|         |-----------------------------------------|
+|         |                pv /d/n2                 |
 +---------------------------------------------------+
-</code></pre>
+</code></pre></div><h2 id="future-note">Future note</h2>
+<p>This is an easy <a href="https://wiki.hackzine.org/sysadmin/linux-lvm-luks-resize.html">guide</a> to resize a logical volume, if I need to do so in the future.</p>
 
 		</section>
 

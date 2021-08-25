@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Hugo - Organisation x Knowledge Base</title><link rel="icon" type="image/png" href=https://img.icons8.com/doodle/48/000000/video-card.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Difficulties using themes So far, my experience with Hu(go) has been alright. I found a nice theme called &ldquo;cactus&rdquo;, and while it worked when served locally for testing, it did not work when deployed (even just testing it locally by opening index.html), the css files were getting sourced and everything, but the website would not render any css. I found opened issues on Github saying that neither the css nor the html templates are valid." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Hugo" />
+<meta property="og:description" content="Difficulties using themes So far, my experience with Hu(go) has been alright. I found a nice theme called &ldquo;cactus&rdquo;, and while it worked when served locally for testing, it did not work when deployed (even just testing it locally by opening index.html), the css files were getting sourced and everything, but the website would not render any css. I found opened issues on Github saying that neither the css nor the html templates are valid." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hhn-pham.github.io/posts/hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-25T17:43:50+01:00" />
+<meta property="article:modified_time" content="2021-08-25T17:43:50+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo"/>
+<meta name="twitter:description" content="Difficulties using themes So far, my experience with Hu(go) has been alright. I found a nice theme called &ldquo;cactus&rdquo;, and while it worked when served locally for testing, it did not work when deployed (even just testing it locally by opening index.html), the css files were getting sourced and everything, but the website would not render any css. I found opened issues on Github saying that neither the css nor the html templates are valid."/>
+<script src="https://hhn-pham.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://hhn-pham.github.io/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://hhn-pham.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)" />
+	
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.98736ef2d3e03248fe9aff0d8bf898ce1f590e2f8c929ba3bfbd35bc6e5765c2.css">
+		
+    
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://hhn-pham.github.io/">Organisation x Knowledge Base</a>
+	</div>
+	<nav>
+		
+		<a href="/tags">Tags</a>
+		
+		<a href="/posts">Posts</a>
+		
+		<a href="/org">Org</a>
+		
+		<a href="/notes">Notes</a>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Hugo</h1>
+			<div class="meta">Posted on Aug 25, 2021</div>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="difficulties-using-themes">Difficulties using themes</h2>
+<p>So far, my experience with Hu(go) has been alright. I found a nice theme called &ldquo;cactus&rdquo;, and while it worked when served locally for testing, it did not work when deployed (even just testing it locally by opening index.html), the css files were getting sourced and everything, but the website would not render any css. I found opened issues on Github saying that neither the css nor the html templates are valid. It&rsquo;s strange that it worked for their demo and also the localhost server.</p>
+<p>However, what I liked most about cactus was that it natively supported MathJax, while other themes mostly relied on Katex. Now, Katex has a painfully annoying syntax that my current markdown <a href="https://github.com/plasticboy/vim-markdown#options">plugin</a> would not recognise or conceal. So I needed MathJax.</p>
+<h2 id="difficulties-adding-mathjax-support">Difficulties adding MathJax support</h2>
+<p>After reading several articles and implementing their solutions, which were all to make a copy of the themes' partial templates and placing the <code>&lt;script&gt;</code> block containing support for MathJax. However, since it relies on CDN, somehow a lot of the solutions just outright did not work. I finally found one that did, and this opened a lot of doors for me; I can choose any theme I want!</p>
+<p>I finally ended using Archie, an extremely minimal but functional theme that utilises monospace fonts. I edited the css to override any sans-serif to keep the look consistent, and edited the colours, and now the site is looking great.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/tech">tech</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr><a class="soc" href="https://github.com/hhn-pham" title="GitHub"><i data-feather="github"></i></a>|⚡️
+	2021  © me |  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+<script>
+      feather.replace()
+</script></div>
+    </body>
+</html>

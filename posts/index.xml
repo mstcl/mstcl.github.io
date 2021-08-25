@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Tue, 24 Aug 2021 21:47:30 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 17:43:50 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://hhn-pham.github.io/posts/hugo/</link>
+      <pubDate>Wed, 25 Aug 2021 17:43:50 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/posts/hugo/</guid>
+      <description>Difficulties using themes So far, my experience with Hu(go) has been alright. I found a nice theme called &amp;ldquo;cactus&amp;rdquo;, and while it worked when served locally for testing, it did not work when deployed (even just testing it locally by opening index.html), the css files were getting sourced and everything, but the website would not render any css. I found opened issues on Github saying that neither the css nor the html templates are valid.</description>
+    </item>
+    
+    <item>
+      <title>Startup time</title>
+      <link>https://hhn-pham.github.io/posts/startup-time/</link>
+      <pubDate>Wed, 25 Aug 2021 17:26:05 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/posts/startup-time/</guid>
+      <description>Neovim I tried to configure Neovim&amp;rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71ms to load the screen, pretty good considering I have 38 plugins.</description>
+    </item>
+    
     <item>
       <title>From Vimwiki to plain Markdown</title>
       <link>https://hhn-pham.github.io/posts/from-vimwiki-to-plain-markdown/</link>
@@ -25,33 +43,6 @@
       <guid>https://hhn-pham.github.io/posts/dotfiles/</guid>
       <description>Dotfiles This a write-up for the README.md file for my dotfiles repository so the links will not work.
 Programs and tools    Program Name     Shell ZSH   Editor Neovim   Window manager i3-gaps   Compositor Picom   Bar Polybar   Launcher rofi   Browser Brave   Audio Pipewire   Spotify ncspot   PDF viewer Zathura   Media player MPV   GTK &amp;amp; colors wpgtk   Colorscheme Custom   Fetch neofetch   Prompt Spaceship   Terminal Kitty   Icons Fluent dark   Cursor Bibata   Lock i3-lock   Display manager LightDM   LightDM theme Aether   Notifications i3-notifier   Downloads Aria2   Image viewer feh    </description>
-    </item>
-    
-    <item>
-      <title>L-values and R-values</title>
-      <link>https://hhn-pham.github.io/posts/l-r-values/</link>
-      <pubDate>Fri, 13 Aug 2021 16:06:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/l-r-values/</guid>
-      <description>Assignment operators  an operand that legally can be on the left side of an assignment operator is an l-value. one that can be on the right side is an r-value not all l-values are r-values, but not all r-values are l-values.  </description>
-    </item>
-    
-    <item>
-      <title>Pointers</title>
-      <link>https://hhn-pham.github.io/posts/pointers/</link>
-      <pubDate>Wed, 11 Aug 2021 14:04:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/pointers/</guid>
-      <description>Definition  define an integer and reserves a location in memory for this specific variable  take an integer #!cpp pointer:    int *pointer  this defines an integer #!cpp pointer such that its content is the address of another place in memory  int var var = 10 pointer = &amp;amp;var  this defines an integer #!cpp var, and #!cpp &amp;amp;var is the address of a specific place in memory where the integer is stored  it also points the variable #!</description>
-    </item>
-    
-    <item>
-      <title>Casing and spacing</title>
-      <link>https://hhn-pham.github.io/posts/casing-and-spacing/</link>
-      <pubDate>Tue, 10 Aug 2021 17:42:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/casing-and-spacing/</guid>
-      <description> best practice: writing folder and file names lower-case, with no spaces, and words separated by hyphens (not underscores).  </description>
     </item>
     
     <item>
@@ -98,25 +89,8 @@ alias pu=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias pusu=&amp;#39
       <pubDate>Sat, 24 Jul 2021 16:14:00 +0000</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/vim/</guid>
-      <description>Experience  I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&amp;rsquo;m a much better vim user now) I assigned ; to : a while ago, but I moved to &amp;lt;space&amp;gt;. While it&amp;rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence ++comma+semicolon++ executing &amp;lt;esc&amp;gt;  this removes the need for my small pinky to travel far to reach the actual escape key    Recently learned bindings  f(x) jumps to next x on the line  there is also ++t++ which does the same but jumps to the place preceding the x lower-case variants go forward and upper-case variants go backwards ; repeats the latest jump command, can be extended $n$ times    Plugins  which key zen  autosession symbols kommentary suda neoscroll replaces smoothie maximizer spaceless  </description>
-    </item>
-    
-    <item>
-      <title>Python sets</title>
-      <link>https://hhn-pham.github.io/posts/python-set/</link>
-      <pubDate>Sat, 24 Jul 2021 14:40:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/python-set/</guid>
-      <description> a python set is unordered and unindexed, they cannot be accessed through an index they also do not allow duplicated values  myset = {&amp;#34;ten&amp;#34;,&amp;#34;one&amp;#34;,&amp;#34;three&amp;#34;,&amp;#34;four&amp;#34;} print(myset) </description>
-    </item>
-    
-    <item>
-      <title>Python tuples</title>
-      <link>https://hhn-pham.github.io/posts/python-tuple/</link>
-      <pubDate>Sat, 24 Jul 2021 14:35:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/python-tuple/</guid>
-      <description> a python tuple is an immutable, ordered collection once it is created it cannot be updated  mytuple = (&amp;#34;string&amp;#34;,pi) </description>
+      <description>Experience I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&amp;rsquo;m a much better vim user now)
+I assigned ; to : a while ago, but I moved to &amp;lt;space&amp;gt;. While it&amp;rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence comma+semicolon executing &amp;lt;esc&amp;gt;.</description>
     </item>
     
     <item>
@@ -150,47 +124,6 @@ To get it running on my box: cd $HOME/docker/rss docker-compose up -d </descript
     </item>
     
     <item>
-      <title>Round-off errors</title>
-      <link>https://hhn-pham.github.io/posts/round-off-errors/</link>
-      <pubDate>Sun, 18 Jul 2021 19:31:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/round-off-errors/</guid>
-      <description>Page 27, paragraph 2, line 8-17  Since e^-20^ is a very small number and each term in the series can be rather large (of the order of 10^8^,it is clear that other terms as large as 10^8^, but negative, must cancel the figures in front of the decimal point and some behind as well. Since a computer can only hold a fixed number of significant figures, all those in front of the decimal point are not only useless, they are crowding out needed figures at the right end of the number.</description>
-    </item>
-    
-    <item>
-      <title>The loss-of-precision theorem</title>
-      <link>https://hhn-pham.github.io/posts/the-loss-of-precision-theorem/</link>
-      <pubDate>Sun, 18 Jul 2021 12:43:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/the-loss-of-precision-theorem/</guid>
-      <description>Subtraction If b and c are positive normalized floating-point binary machine numbers with $b &amp;lt; c$ and
-$$ 2^{-r} \leq 1 - \frac{c}{b} \leq 2^{-s}, $$
-Then at most $r$ and at least $s$ significant binary bits are lost in the subtraction $b-c$.</description>
-    </item>
-    
-    <item>
-      <title>Dimensional analysis</title>
-      <link>https://hhn-pham.github.io/posts/dimensional-analysis/</link>
-      <pubDate>Thu, 15 Jul 2021 14:37:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/dimensional-analysis/</guid>
-      <description>Notations  [Y] = unit of Y  I always get this the other way around. Facepalm    </description>
-    </item>
-    
-    <item>
-      <title>Non-conservative forces</title>
-      <link>https://hhn-pham.github.io/posts/non-conservative-forces/</link>
-      <pubDate>Thu, 15 Jul 2021 13:43:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/non-conservative-forces/</guid>
-      <description>Question What on earth is a non-conservative force if all underlying forces of friction and other contact forces operate as conservative force on a microsopic level?
-This one partially answers my question here
-Hint: Mechanical energy is the keyword.
-Another answer from stackexchange: Q: &amp;ldquo;How do many conservative forces come together to make a non-conservative one?&amp;rdquo; So my question how do several different Electromagnetic forces come together to make a new frictional force which is non-conservative in nature</description>
-    </item>
-    
-    <item>
       <title>Declutter</title>
       <link>https://hhn-pham.github.io/posts/declutter/</link>
       <pubDate>Sat, 10 Jul 2021 12:30:00 +0000</pubDate>
@@ -210,66 +143,12 @@ Another answer from stackexchange: Q: &amp;ldquo;How do many conservative forces
     </item>
     
     <item>
-      <title>Unit vectors</title>
-      <link>https://hhn-pham.github.io/posts/unit-vectors/</link>
-      <pubDate>Sat, 10 Jul 2021 01:37:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/unit-vectors/</guid>
-      <description>dot product  perpendicular/orthogonal components are 0  $\hat{i} \cdot \hat{j} = \hat{j} \cdot \hat{k} = \hat{k} \cdot \hat{i}$ and so on and so forth    vector product  I generally find the right hand rule to be very straight forward  index $\times$ middle = thumb    </description>
-    </item>
-    
-    <item>
-      <title>Polar coordinates</title>
-      <link>https://hhn-pham.github.io/posts/polar-coordinates/</link>
-      <pubDate>Tue, 06 Jul 2021 00:01:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/polar-coordinates/</guid>
-      <description>Conventions  $ x = r\cos{\theta} $ $ y = r\sin{\theta} $ $ r = \sqrt{x^2 + y^2} $ $ \phi = \arctan{\frac{y}{x}} $  </description>
-    </item>
-    
-    <item>
       <title>Luks on LVM</title>
       <link>https://hhn-pham.github.io/posts/luksonlvm/</link>
       <pubDate>Sat, 03 Jul 2021 01:26:00 +0000</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/luksonlvm/</guid>
-      <description>A table demonstrating my setup +---------+-------------+-------------+-------------+ |...EFI...|...lv root...|...lv swap...|...lv home...| |../boot..|....../......|.............|..../home....| |..fat32..|.....ext.....|.............|.....ext.....| |../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..| |.........|....LUKS2....|...dmcrypt...|....LUKS2....| |.........|-------------+-------------+-------------+ |.........|..................vg.....................| |.........|-----------------------------------------| |.........|................pv./d/n2.................| +---------------------------------------------------+  </description>
-    </item>
-    
-    <item>
-      <title>Absolute space</title>
-      <link>https://hhn-pham.github.io/posts/absolute-space/</link>
-      <pubDate>Thu, 01 Jul 2021 13:52:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/absolute-space/</guid>
-      <description>The Cartesian body  motion of a body is a change of relation to the bodies that surround it. concept of inertia  a body&amp;rsquo;s motion wil be preserved unless caused to deviate from its path so not a function of its spatial relations to other bodies but of its causal relation    The Newtonian body  a body&amp;rsquo;s motion is not a function of its spatial relations to other objects but rather of whether forces are impressed on it.</description>
-    </item>
-    
-    <item>
-      <title>Solid angles</title>
-      <link>https://hhn-pham.github.io/posts/angle/</link>
-      <pubDate>Thu, 01 Jul 2021 01:26:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/angle/</guid>
-      <description> unit: steradian (sr) analogous to plane angle, which is defined by arc length and radius, but unlike the plane angle, it is defined by the surface area of a sphere subtended by the lines and by the radius of that sphere (squared, for a correct dimensional analysis.  $\theta = \frac{l}{dr}$ $\Omega = \frac{a}{r^2}$ unlike the plane angle, it cannot be conceived of without reference to an arbitrary sphere.  this was a pretty intuitive and sympathetic explanation      </description>
-    </item>
-    
-    <item>
-      <title>Mechanics (Core 1)</title>
-      <link>https://hhn-pham.github.io/posts/mechanics-core-1/</link>
-      <pubDate>Wed, 30 Jun 2021 12:39:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/mechanics-core-1/</guid>
-      <description>Vectors Notations  the basis is the set of unit vectors from which all others are built perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$  helpful to remember: i = 8 o&amp;rsquo;clock, j = 4 o&amp;rsquo;clock, k = 12 o&amp;rsquo;clock (standard) this is right-handed axes (anti-clockwise)   $\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$  Components  $\theta$ taken from x-axis  $a_x = a\cos{\theta}$ $a_y = a\sin{\theta}$ $\tan{\theta} = \frac{a_y}{a_x}$ $\left|a\right| = \sqrt{a_x^2+a_y^2}$   3D components  pretty much compliant with 2D and 1D examples, but the concept of an e might be harder to visualise, we rely on the unit vectors as it&amp;rsquo;s a much easier system.</description>
-    </item>
-    
-    <item>
-      <title>Scratchpad</title>
-      <link>https://hhn-pham.github.io/posts/scratchpad/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/posts/scratchpad/</guid>
-      <description>Wayland shenanigans  migrating from X to wayland with the new nvidia-beta drivers  a few useful links  awesome wayland wayland migration guide   trying Gnome/KDE in place of sway because sway doesn&amp;rsquo;t like EGLS  further update&amp;hellip;I&amp;rsquo;m too lazy so fuck it. I like X, X works, most things + games work. why is steam @ linux so awful? capped at 60hz (just like chromium à la vanilla, because brave and vivaldi are buttery smooth, but any fork and flavour of chromium does.</description>
+      <description>LUKS setup I wanted to protect my desktop PC with LUKS2, I decided to use LVM after reading not so good things about BTRFS. I settled on LUKS on LVM instead of LVM on LUKS because I wanted to have partition separation for easier control if I do end up with a corrupted root partition. While chain unlocking is not as secure as entering two passwords to decrypt two partitions, the guide I used worked and it is a very good guide which explains everything.</description>
     </item>
     
   </channel>

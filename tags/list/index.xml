@@ -14,7 +14,8 @@
       <pubDate>Sat, 24 Jul 2021 16:14:00 +0000</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/vim/</guid>
-      <description>Experience  I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&amp;rsquo;m a much better vim user now) I assigned ; to : a while ago, but I moved to &amp;lt;space&amp;gt;. While it&amp;rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence ++comma+semicolon++ executing &amp;lt;esc&amp;gt;  this removes the need for my small pinky to travel far to reach the actual escape key    Recently learned bindings  f(x) jumps to next x on the line  there is also ++t++ which does the same but jumps to the place preceding the x lower-case variants go forward and upper-case variants go backwards ; repeats the latest jump command, can be extended $n$ times    Plugins  which key zen  autosession symbols kommentary suda neoscroll replaces smoothie maximizer spaceless  </description>
+      <description>Experience I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&amp;rsquo;m a much better vim user now)
+I assigned ; to : a while ago, but I moved to &amp;lt;space&amp;gt;. While it&amp;rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence comma+semicolon executing &amp;lt;esc&amp;gt;.</description>
     </item>
     
   </channel>

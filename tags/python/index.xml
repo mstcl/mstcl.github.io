@@ -10,11 +10,11 @@
     <lastBuildDate>Sat, 24 Jul 2021 14:40:00 +0000</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python sets</title>
-      <link>https://hhn-pham.github.io/posts/python-set/</link>
+      <link>https://hhn-pham.github.io/notes/python-set/</link>
       <pubDate>Sat, 24 Jul 2021 14:40:00 +0000</pubDate>
       
-      <guid>https://hhn-pham.github.io/posts/python-set/</guid>
-      <description> a python set is unordered and unindexed, they cannot be accessed through an index they also do not allow duplicated values  myset = {&amp;#34;ten&amp;#34;,&amp;#34;one&amp;#34;,&amp;#34;three&amp;#34;,&amp;#34;four&amp;#34;} print(myset) </description>
+      <guid>https://hhn-pham.github.io/notes/python-set/</guid>
+      <description> a python set is unordered and unindexed, they cannot be accessed through an index they also do not allow duplicated values  myset = {&amp;#34;ten&amp;#34;,&amp;#34;one&amp;#34;,&amp;#34;three&amp;#34;,&amp;#34;four&amp;#34;, &amp;#34;three&amp;#34;} print(mysetpython # Output: {&amp;#39;four&amp;#39;, &amp;#39;one&amp;#39;, &amp;#39;three&amp;#39;, &amp;#39;ten&amp;#39;} </description>
     </item>
     
   </channel>

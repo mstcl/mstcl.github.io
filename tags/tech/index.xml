@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Tue, 24 Aug 2021 21:47:30 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 17:43:50 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://hhn-pham.github.io/posts/hugo/</link>
+      <pubDate>Wed, 25 Aug 2021 17:43:50 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/posts/hugo/</guid>
+      <description>Difficulties using themes So far, my experience with Hu(go) has been alright. I found a nice theme called &amp;ldquo;cactus&amp;rdquo;, and while it worked when served locally for testing, it did not work when deployed (even just testing it locally by opening index.html), the css files were getting sourced and everything, but the website would not render any css. I found opened issues on Github saying that neither the css nor the html templates are valid.</description>
+    </item>
+    
     <item>
       <title>From Vimwiki to plain Markdown</title>
       <link>https://hhn-pham.github.io/posts/from-vimwiki-to-plain-markdown/</link>
@@ -62,7 +71,8 @@ alias pu=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias pusu=&amp;#39
       <pubDate>Sat, 24 Jul 2021 16:14:00 +0000</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/vim/</guid>
-      <description>Experience  I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&amp;rsquo;m a much better vim user now) I assigned ; to : a while ago, but I moved to &amp;lt;space&amp;gt;. While it&amp;rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence ++comma+semicolon++ executing &amp;lt;esc&amp;gt;  this removes the need for my small pinky to travel far to reach the actual escape key    Recently learned bindings  f(x) jumps to next x on the line  there is also ++t++ which does the same but jumps to the place preceding the x lower-case variants go forward and upper-case variants go backwards ; repeats the latest jump command, can be extended $n$ times    Plugins  which key zen  autosession symbols kommentary suda neoscroll replaces smoothie maximizer spaceless  </description>
+      <description>Experience I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&amp;rsquo;m a much better vim user now)
+I assigned ; to : a while ago, but I moved to &amp;lt;space&amp;gt;. While it&amp;rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence comma+semicolon executing &amp;lt;esc&amp;gt;.</description>
     </item>
     
     <item>
@@ -97,10 +107,10 @@ To get it running on my box: cd $HOME/docker/rss docker-compose up -d </descript
     
     <item>
       <title>Bookmarks</title>
-      <link>https://hhn-pham.github.io/bookmarks/</link>
+      <link>https://hhn-pham.github.io/org/bookmarks/</link>
       <pubDate>Fri, 23 Jul 2021 02:37:00 +0000</pubDate>
       
-      <guid>https://hhn-pham.github.io/bookmarks/</guid>
+      <guid>https://hhn-pham.github.io/org/bookmarks/</guid>
       <description>Content  reddit mastodon lemmy hacker news rss  Cloud  mega nextcloud github  Utilities  syncthing nextdns anonaddy custom rom  Messaging  whatsapp telegram discord matrix  Media  predb snahp last.fm  youtube  Inboxes  protonmail disroot outlook uni gmail  Read later  consciousness &amp;amp; qp intro to dl bell&amp;rsquo;s theorem homunculus  </description>
     </item>
     
@@ -110,15 +120,15 @@ To get it running on my box: cd $HOME/docker/rss docker-compose up -d </descript
       <pubDate>Sat, 03 Jul 2021 01:26:00 +0000</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/luksonlvm/</guid>
-      <description>A table demonstrating my setup +---------+-------------+-------------+-------------+ |...EFI...|...lv root...|...lv swap...|...lv home...| |../boot..|....../......|.............|..../home....| |..fat32..|.....ext.....|.............|.....ext.....| |../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..| |.........|....LUKS2....|...dmcrypt...|....LUKS2....| |.........|-------------+-------------+-------------+ |.........|..................vg.....................| |.........|-----------------------------------------| |.........|................pv./d/n2.................| +---------------------------------------------------+  </description>
+      <description>LUKS setup I wanted to protect my desktop PC with LUKS2, I decided to use LVM after reading not so good things about BTRFS. I settled on LUKS on LVM instead of LVM on LUKS because I wanted to have partition separation for easier control if I do end up with a corrupted root partition. While chain unlocking is not as secure as entering two passwords to decrypt two partitions, the guide I used worked and it is a very good guide which explains everything.</description>
     </item>
     
     <item>
       <title>Digital tasks</title>
-      <link>https://hhn-pham.github.io/digital-tasks/</link>
+      <link>https://hhn-pham.github.io/org/digital-tasks/</link>
       <pubDate>Thu, 24 Jun 2021 06:02:00 +0000</pubDate>
       
-      <guid>https://hhn-pham.github.io/digital-tasks/</guid>
+      <guid>https://hhn-pham.github.io/org/digital-tasks/</guid>
       <description>Arch fix it before you reinstall
  get a Windows VM going (bonus if I can achieve GPU passthrough) rofi emoji switcher is it possible to rice systemd-boot? the answer is no 😥 neovim needs more of your attention background manga setup with hakuneko + zathura or mangodl with ranger backup files on the hard disk and make it btrfs! updated: no, going with ext4 vimwiki as git home zathura rice discord rice spotify rice migrate from wal to wpgtk i3 stuff:  i3-notifier i3-resurrect i3-bar as a hidden status line make a theme randomizer/chooser with rofi make a rofi cheatsheet (I&amp;rsquo;m too alpha for this) floating vim everywhere 😵 thread   configure broot transfer dotfiles to one folder and symlink everything git dotfiles + reddit post?</description>
     </item>

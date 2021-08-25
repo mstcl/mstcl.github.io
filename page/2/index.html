@@ -3,7 +3,7 @@
 	<head>
 	<meta name="generator" content="Hugo 0.87.0" />
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Organisation x Knowledge Base | Home </title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Organisation x Knowledge Base | Home </title><link rel="icon" type="image/png" href=https://img.icons8.com/doodle/48/000000/video-card.png /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta property="og:image" content=""/>
 	<link rel="alternate" type="application/rss+xml" href="https://hhn-pham.github.io/index.xml" title="Organisation x Knowledge Base" />
@@ -23,11 +23,13 @@
 
 	
 	<link rel="stylesheet" type="text/css" media="screen" href="https://hhn-pham.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)" />
+	
 	
 	
 		
 		
-		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.4e6de6505630e3371bb6cd7026a1cdf0c5508a847fbb14dd3824fc46b4d3eaf4.css">
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.98736ef2d3e03248fe9aff0d8bf898ce1f590e2f8c929ba3bfbd35bc6e5765c2.css">
 		
     
 </head>
@@ -40,17 +42,13 @@
 	</div>
 	<nav>
 		
-		<a href="/posts">Posts</a>
-		
 		<a href="/tags">Tags</a>
 		
-		<a href="/bookmarks">Links</a>
+		<a href="/posts">Posts</a>
 		
-		<a href="/agenda">Agenda</a>
+		<a href="/org">Org</a>
 		
-		<a href="/digital-tasks">Tasks</a>
-		
-		<a href="/personal-tasks">Todos</a>
+		<a href="/notes">Notes</a>
 		
 	</nav>
 </header>
@@ -62,25 +60,15 @@
 				
 				
 				<section class="list-item">
-					<h1 class="title"><a href="/posts/pointers/">Pointers</a></h1>
-					<time>Aug 11, 2021</time>
+					<h1 class="title"><a href="/posts/dotfiles/">Dotfiles</a></h1>
+					<time>Aug 21, 2021</time>
 					<br><div class="description">
 						
-						Definition  define an integer and reserves a location in memory for this specific variable  take an integer #!cpp pointer:    int *pointer  this defines an integer #!cpp pointer such that its content is the address of another place in memory  int var var = 10 pointer = &amp;var  this defines an integer #!cpp var, and #!cpp &amp;var is the address of a specific place in memory where the integer is stored  it also points the variable #!&hellip;
+						Dotfiles This a write-up for the README.md file for my dotfiles repository so the links will not work.
+Programs and tools    Program Name     Shell ZSH   Editor Neovim   Window manager i3-gaps   Compositor Picom   Bar Polybar   Launcher rofi   Browser Brave   Audio Pipewire   Spotify ncspot   PDF viewer Zathura   Media player MPV   GTK &amp; colors wpgtk   Colorscheme Custom   Fetch neofetch   Prompt Spaceship   Terminal Kitty   Icons Fluent dark   Cursor Bibata   Lock i3-lock   Display manager LightDM   LightDM theme Aether   Notifications i3-notifier   Downloads Aria2   Image viewer feh    &hellip;
 						
 					</div>
-					<a href="/posts/pointers/">Read more ⟶</a>
-				</section>
-				
-				<section class="list-item">
-					<h1 class="title"><a href="/posts/casing-and-spacing/">Casing and spacing</a></h1>
-					<time>Aug 10, 2021</time>
-					<br><div class="description">
-						
-						 best practice: writing folder and file names lower-case, with no spaces, and words separated by hyphens (not underscores).  &hellip;
-						
-					</div>
-					<a href="/posts/casing-and-spacing/">Read more ⟶</a>
+					<a href="/posts/dotfiles/">Read more ⟶</a>
 				</section>
 				
 				<section class="list-item">
@@ -94,6 +82,17 @@ alias pu=&#39;paru -Syu&#39; #sync &amp; upgrade alias pusu=&#39;paru -Syu --noc
 						
 					</div>
 					<a href="/posts/paru/">Read more ⟶</a>
+				</section>
+				
+				<section class="list-item">
+					<h1 class="title"><a href="/posts/cleaning-home/">Cleaning $HOME</a></h1>
+					<time>Jul 31, 2021</time>
+					<br><div class="description">
+						
+						XDG_Base_Directory crisis I ls -a my home directory one morning and found that it is littered with .dir and .file from compilers and packages that do not comply with the XDG standards. I did realise that I did not export the variables in my zshrc, so I did that and emptied my home directory pretty well. However, there are quite a few that needed their separate variable, like PACKAGE_XYZ_CONFIG_DIR=$HOME/.config/xyz/, some even needed alias that points the config directory to the right place.&hellip;
+						
+					</div>
+					<a href="/posts/cleaning-home/">Read more ⟶</a>
 				</section>
 				
 				

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Organisation x Knowledge Base</title>
-    <link>https://github.com/hhn-pham/hhn-pham.github.io/categories/</link>
+    <link>https://hhn-pham.github.io/categories/</link>
     <description>Recent content in Categories on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>Copyleft!</copyright><atom:link href="https://github.com/hhn-pham/hhn-pham.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© me</copyright><atom:link href="https://hhn-pham.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

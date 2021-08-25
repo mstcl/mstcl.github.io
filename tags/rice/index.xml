@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rice on Organisation x Knowledge Base</title>
-    <link>https://github.com/hhn-pham/hhn-pham.github.io/tags/rice/</link>
+    <link>https://hhn-pham.github.io/tags/rice/</link>
     <description>Recent content in rice on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>Copyleft!</copyright>
-    <lastBuildDate>Sat, 21 Aug 2021 19:01:00 +0000</lastBuildDate><atom:link href="https://github.com/hhn-pham/hhn-pham.github.io/tags/rice/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© me</copyright>
+    <lastBuildDate>Sat, 21 Aug 2021 19:01:00 +0000</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/rice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dotfiles</title>
-      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/dotfiles/</link>
+      <link>https://hhn-pham.github.io/posts/dotfiles/</link>
       <pubDate>Sat, 21 Aug 2021 19:01:00 +0000</pubDate>
       
-      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/dotfiles/</guid>
+      <guid>https://hhn-pham.github.io/posts/dotfiles/</guid>
       <description>Dotfiles This a write-up for the README.md file for my dotfiles repository so the links will not work.
 Programs and tools    Program Name     Shell ZSH   Editor Neovim   Window manager i3-gaps   Compositor Picom   Bar Polybar   Launcher rofi   Browser Brave   Audio Pipewire   Spotify ncspot   PDF viewer Zathura   Media player MPV   GTK &amp;amp; colors wpgtk   Colorscheme Custom   Fetch neofetch   Prompt Spaceship   Terminal Kitty   Icons Fluent dark   Cursor Bibata   Lock i3-lock   Display manager LightDM   LightDM theme Aether   Notifications i3-notifier   Downloads Aria2   Image viewer feh    </description>
     </item>

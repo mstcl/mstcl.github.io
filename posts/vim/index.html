@@ -1,220 +1,67 @@
 <!DOCTYPE html>
-<html lang="en-gb">
-<head>
-  <link rel="preload" href="/hhn-pham/hhn-pham.github.io/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/hhn-pham/hhn-pham.github.io/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/hhn-pham/hhn-pham.github.io/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/hhn-pham/hhn-pham.github.io/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> (Neo)vim | Organisation x Knowledge Base</title>
-  <link rel = 'canonical' href = 'https://github.com/hhn-pham/hhn-pham.github.io/posts/vim/'>
-  <meta name="description" content="This is a personal blog, a digital agenda, a &#39;I-don&#39;t want to use emacs but I like orgmode&#39;, journal, and whatnot. It is owned by me, a university student studying Physics and Philosophy. I like tech, linux, privacy, anime and listening to obscure albums recommended by /mu/.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="(Neo)vim" />
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>(Neo)vim - Organisation x Knowledge Base</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Experience  I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&rsquo;m a much better vim user now) I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence &#43;&#43;comma&#43;semicolon&#43;&#43; executing &lt;esc&gt;  this removes the need for my small pinky to travel far to reach the actual escape key    Recently learned bindings  f(x) jumps to next x on the line  there is also &#43;&#43;t&#43;&#43; which does the same but jumps to the place preceding the x lower-case variants go forward and upper-case variants go backwards ; repeats the latest jump command, can be extended $n$ times    Plugins  which key zen  autosession symbols kommentary suda neoscroll replaces smoothie maximizer spaceless  " />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="(Neo)vim" />
 <meta property="og:description" content="Experience  I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&rsquo;m a much better vim user now) I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence &#43;&#43;comma&#43;semicolon&#43;&#43; executing &lt;esc&gt;  this removes the need for my small pinky to travel far to reach the actual escape key    Recently learned bindings  f(x) jumps to next x on the line  there is also &#43;&#43;t&#43;&#43; which does the same but jumps to the place preceding the x lower-case variants go forward and upper-case variants go backwards ; repeats the latest jump command, can be extended $n$ times    Plugins  which key zen  autosession symbols kommentary suda neoscroll replaces smoothie maximizer spaceless  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://github.com/hhn-pham/hhn-pham.github.io/posts/vim/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://hhn-pham.github.io/posts/vim/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-24T16:14:00+00:00" />
 <meta property="article:modified_time" content="2021-07-24T16:14:00+00:00" />
 
-
-  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="(Neo)vim"/>
 <meta name="twitter:description" content="Experience  I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&rsquo;m a much better vim user now) I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence &#43;&#43;comma&#43;semicolon&#43;&#43; executing &lt;esc&gt;  this removes the need for my small pinky to travel far to reach the actual escape key    Recently learned bindings  f(x) jumps to next x on the line  there is also &#43;&#43;t&#43;&#43; which does the same but jumps to the place preceding the x lower-case variants go forward and upper-case variants go backwards ; repeats the latest jump command, can be extended $n$ times    Plugins  which key zen  autosession symbols kommentary suda neoscroll replaces smoothie maximizer spaceless  "/>
+<script src="https://hhn-pham.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://hhn-pham.github.io/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
 
-  
-  
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://hhn-pham.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.4e6de6505630e3371bb6cd7026a1cdf0c5508a847fbb14dd3824fc46b4d3eaf4.css">
+		
     
-  
-  
-  <link rel="stylesheet" href="https://github.com/hhn-pham/hhn-pham.github.io/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="> 
-
-  
-  
-  
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  
-
-  
-<link rel="icon" type="image/png" href="https://github.com/hhn-pham/hhn-pham.github.io/images/favicon.ico" />
-
-  
-  
 </head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://hhn-pham.github.io/">Organisation x Knowledge Base</a>
+	</div>
+	<nav>
+		
+		<a href="/posts">Posts</a>
+		
+		<a href="/tags">Tags</a>
+		
+		<a href="/bookmarks">Links</a>
+		
+		<a href="/agenda">Agenda</a>
+		
+		<a href="/digital-tasks">Tasks</a>
+		
+		<a href="/personal-tasks">Todos</a>
+		
+	</nav>
+</header>
 
-<body class="max-width mx-auto px3 ltr">
-  <div class="content index py4">
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">(Neo)vim</h1>
+			<div class="meta">Posted on Jul 24, 2021</div>
+		</div>
+		
 
-  <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/">Home</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/posts/digital-tasks">Tasks</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/posts/personal-tasks">Todos</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/posts/agenda">Agenda</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/tags">Tags</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/posts/bookmarks">Bookmarks</a></li>
-        
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        <li>
-          <a class="icon" href=" https://github.com/hhn-pham/hhn-pham.github.io/posts/python-set/" aria-label="Previous">
-            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="icon" href="https://github.com/hhn-pham/hhn-pham.github.io/posts/hostfile/" aria-label="Next">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
-        
-        <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
-            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
-          </a>
-        </li>
-        <li>
-          <a class="icon" href="#" aria-label="Share">
-            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
-          </a>
-        </li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br/>
-    <div id="share" style="display: none">
-      
-      <ul>
-  
-  
-    
-  
-  
-  <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f" aria-label="Facebook">
-      <i class="fab fa-facebook " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&text=%28Neo%29vim" aria-label="Twitter">
-      <i class="fab fa-twitter " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&title=%28Neo%29vim" aria-label="Linkedin">
-      <i class="fab fa-linkedin " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&is_video=false&description=%28Neo%29vim" aria-label="Pinterest">
-      <i class="fab fa-pinterest " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="mailto:?subject=%28Neo%29vim&body=Check out this article: https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f" aria-label="Email">
-      <i class="fas fa-envelope " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&title=%28Neo%29vim" aria-label="Pocket">
-      <i class="fab fa-get-pocket " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&title=%28Neo%29vim" aria-label="reddit">
-      <i class="fab fa-reddit " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&name=%28Neo%29vim&description=Experience%20%20I%20wanted%20to%20make%20a%20custom%20cheatsheet%20with%20all%20my%20custom%20bindings%2c%20%28update%2024%2f08%3a%20after%20constantly%20forcing%20myself%20to%20look%20up%20ways%20to%20do%20things%20without%20just%20going%20jjj%20or%20kkkk%20or%20whatever%20repetitive%20motions%20you%20would%20normally%20do%2c%20I%26rsquo%3bm%20a%20much%20better%20vim%20user%20now%29%20I%20assigned%20%3b%20to%20%3a%20a%20while%20ago%2c%20but%20I%20moved%20to%20%26lt%3bspace%26gt%3b.%20While%20it%26rsquo%3bs%20been%20hard%20to%20change%20my%20muscle%20memory%2c%20it%20means%20since%20my%20leader%20key%20is%20%2c%2c%20I%20can%20have%20the%20sequence%20%2b%2bcomma%2bsemicolon%2b%2b%20executing%20%26lt%3besc%26gt%3b%20%20this%20removes%20the%20need%20for%20my%20small%20pinky%20to%20travel%20far%20to%20reach%20the%20actual%20escape%20key%20%20%20%20Recently%20learned%20bindings%20%20f%28x%29%20jumps%20to%20next%20x%20on%20the%20line%20%20there%20is%20also%20%2b%2bt%2b%2b%20which%20does%20the%20same%20but%20jumps%20to%20the%20place%20preceding%20the%20x%20lower-case%20variants%20go%20forward%20and%20upper-case%20variants%20go%20backwards%20%3b%20repeats%20the%20latest%20jump%20command%2c%20can%20be%20extended%20%24n%24%20times%20%20%20%20Plugins%20%20which%20key%20zen%20%20autosession%20symbols%20kommentary%20suda%20neoscroll%20replaces%20smoothie%20maximizer%20spaceless%20%20" aria-label="Tumblr">
-      <i class="fab fa-tumblr " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&t=%28Neo%29vim" aria-label="Hacker News">
-      <i class="fab fa-hacker-news " aria-hidden="true"></i>
-    </a>
-  </li>
-</ul>
-
-    </div>
-    
-    <div id="toc">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#recently-learned-bindings">Recently learned bindings</a></li>
-    <li><a href="#plugins">Plugins</a></li>
-  </ul>
-</nav>
-    </div>
-    
-  </span>
-</div>
-
-
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <h1 class="posttitle" itemprop="name headline">
-        (Neo)vim
-      </h1>
-      <div class="meta">
-        
-        <div class="postdate">
-          
-          <time datetime="2021-07-24 16:14:00 &#43;0000 UTC" itemprop="datePublished">2021-07-24</time>
-          
-        </div>
-        
-        
-        
-        
-        <div class="article-tag">
-            <i class="fas fa-tag"></i>
-            
-            
-            <a class="tag-link" href="/hhn-pham/hhn-pham.github.io/tags/tech" rel="tag">tech</a>
-            
-             ,  
-            <a class="tag-link" href="/hhn-pham/hhn-pham.github.io/tags/list" rel="tag">list</a>
-            
-             ,  
-            <a class="tag-link" href="/hhn-pham/hhn-pham.github.io/tags/writing" rel="tag">writing</a>
-            
-        </div>
-        
-      </div>
-    </header>
-
-  
-    
-    <div class="content" itemprop="articleBody">
-      <h2 id="experience">Experience</h2>
+		<section class="body">
+			<h2 id="experience">Experience</h2>
 <ul>
 <li>I wanted to make a custom cheatsheet with all my <strong>custom</strong> bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&rsquo;m a much better vim user now)</li>
 <li>I assigned <code>;</code> to <code>:</code> a while ago, but I moved to <code>&lt;space&gt;</code>. While it&rsquo;s been hard to change my muscle memory, it means since my <strong>leader</strong> key is <code>,</code>, I can have the sequence ++comma+semicolon++ executing <code>&lt;esc&gt;</code>
@@ -246,174 +93,35 @@
 <li><input disabled="" type="checkbox"> <del><a href="https://github.com/lewis6991/spaceless.nvim">spaceless</a></del></li>
 </ul>
 
-    </div>
-  </article>
+		</section>
 
-  
-  
-
-
-
-
-
-  <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/hhn-pham/hhn-pham.github.io/">Home</a></li>
-         
-          <li><a href="/hhn-pham/hhn-pham.github.io/posts/digital-tasks">Tasks</a></li>
-         
-          <li><a href="/hhn-pham/hhn-pham.github.io/posts/personal-tasks">Todos</a></li>
-         
-          <li><a href="/hhn-pham/hhn-pham.github.io/posts/agenda">Agenda</a></li>
-         
-          <li><a href="/hhn-pham/hhn-pham.github.io/tags">Tags</a></li>
-         
-          <li><a href="/hhn-pham/hhn-pham.github.io/posts/bookmarks">Bookmarks</a></li>
-        
-      </ul>
-    </div>
-
-    
-    <div id="toc-footer" style="display: none">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#recently-learned-bindings">Recently learned bindings</a></li>
-    <li><a href="#plugins">Plugins</a></li>
-  </ul>
-</nav>
-    </div>
-    
-
-    <div id="share-footer" style="display: none">
-      
-      <ul>
-  
-  
-    
-  
-  
-  <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f" aria-label="Facebook">
-      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&text=%28Neo%29vim" aria-label="Twitter">
-      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&title=%28Neo%29vim" aria-label="Linkedin">
-      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&is_video=false&description=%28Neo%29vim" aria-label="Pinterest">
-      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="mailto:?subject=%28Neo%29vim&body=Check out this article: https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f" aria-label="Email">
-      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&title=%28Neo%29vim" aria-label="Pocket">
-      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&title=%28Neo%29vim" aria-label="reddit">
-      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&name=%28Neo%29vim&description=Experience%20%20I%20wanted%20to%20make%20a%20custom%20cheatsheet%20with%20all%20my%20custom%20bindings%2c%20%28update%2024%2f08%3a%20after%20constantly%20forcing%20myself%20to%20look%20up%20ways%20to%20do%20things%20without%20just%20going%20jjj%20or%20kkkk%20or%20whatever%20repetitive%20motions%20you%20would%20normally%20do%2c%20I%26rsquo%3bm%20a%20much%20better%20vim%20user%20now%29%20I%20assigned%20%3b%20to%20%3a%20a%20while%20ago%2c%20but%20I%20moved%20to%20%26lt%3bspace%26gt%3b.%20While%20it%26rsquo%3bs%20been%20hard%20to%20change%20my%20muscle%20memory%2c%20it%20means%20since%20my%20leader%20key%20is%20%2c%2c%20I%20can%20have%20the%20sequence%20%2b%2bcomma%2bsemicolon%2b%2b%20executing%20%26lt%3besc%26gt%3b%20%20this%20removes%20the%20need%20for%20my%20small%20pinky%20to%20travel%20far%20to%20reach%20the%20actual%20escape%20key%20%20%20%20Recently%20learned%20bindings%20%20f%28x%29%20jumps%20to%20next%20x%20on%20the%20line%20%20there%20is%20also%20%2b%2bt%2b%2b%20which%20does%20the%20same%20but%20jumps%20to%20the%20place%20preceding%20the%20x%20lower-case%20variants%20go%20forward%20and%20upper-case%20variants%20go%20backwards%20%3b%20repeats%20the%20latest%20jump%20command%2c%20can%20be%20extended%20%24n%24%20times%20%20%20%20Plugins%20%20which%20key%20zen%20%20autosession%20symbols%20kommentary%20suda%20neoscroll%20replaces%20smoothie%20maximizer%20spaceless%20%20" aria-label="Tumblr">
-      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fgithub.com%2fhhn-pham%2fhhn-pham.github.io%2fposts%2fvim%2f&t=%28Neo%29vim" aria-label="Hacker News">
-      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-</ul>
-
-    </div>
-
-    <div id="actions-footer">
-      
-        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
-          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        
-        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
-          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        
-        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
-          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
-          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
-</div>
-
-
-  <footer id="footer">
-  <div class="footer-left">
-    Copyright  &copy; 2021  Copyleft! 
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/">Home</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/posts/digital-tasks">Tasks</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/posts/personal-tasks">Todos</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/posts/agenda">Agenda</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/tags">Tags</a></li>
-         
-        <li><a href="/hhn-pham/hhn-pham.github.io/posts/bookmarks">Bookmarks</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/tech">tech</a></li>
+					
+					<li><a href="/tags/list">list</a></li>
+					
+					<li><a href="/tags/writing">writing</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr><a class="soc" href="https://github.com/hhn-pham" title="GitHub"><i data-feather="github"></i></a>|⚡️
+	2021  © me |  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
 </footer>
 
 
-  </div>
-</body>
-
-<link rel="stylesheet" href=/hhn-pham/hhn-pham.github.io/lib/font-awesome/css/all.min.css>
-<script src=/hhn-pham/hhn-pham.github.io/lib/jquery/jquery.min.js></script>
-<script src=/hhn-pham/hhn-pham.github.io/js/main.js></script>
-<script src=/hhn-pham/hhn-pham.github.io/js/code-copy.js></script>
-
-
-  
-
-
 <script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
+      feather.replace()
+</script></div>
+    </body>
 </html>

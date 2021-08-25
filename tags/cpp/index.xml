@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cpp on Organisation x Knowledge Base</title>
-    <link>http://example.org/tags/cpp/</link>
+    <link>http://hhn-pham.github.io/tags/cpp/</link>
     <description>Recent content in cpp on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Fri, 13 Aug 2021 16:06:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Aug 2021 16:06:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>L-values and R-values</title>
-      <link>http://example.org/posts/l-r-values/</link>
+      <link>http://hhn-pham.github.io/posts/l-r-values/</link>
       <pubDate>Fri, 13 Aug 2021 16:06:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/l-r-values/</guid>
+      <guid>http://hhn-pham.github.io/posts/l-r-values/</guid>
       <description>Assignment operators  an operand that legally can be on the left side of an assignment operator is an l-value. one that can be on the right side is an r-value not all l-values are r-values, but not all r-values are l-values.  </description>
     </item>
     
     <item>
       <title>Pointers</title>
-      <link>http://example.org/posts/pointers/</link>
+      <link>http://hhn-pham.github.io/posts/pointers/</link>
       <pubDate>Wed, 11 Aug 2021 14:04:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/pointers/</guid>
+      <guid>http://hhn-pham.github.io/posts/pointers/</guid>
       <description>Definition  define an integer and reserves a location in memory for this specific variable  take an integer #!cpp pointer:    1  int *pointer    this defines an integer #!cpp pointer such that its content is the address of another place in memory  1 2 3  int var var = 10 pointer = &amp;amp;var    this defines an integer #!cpp var, and #!</description>
     </item>
     

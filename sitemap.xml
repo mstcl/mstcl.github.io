@@ -2,170 +2,170 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/from-vimwiki-to-plain-markdown/</loc>
+    <loc>http://hhn-pham.github.io/posts/from-vimwiki-to-plain-markdown/</loc>
     <lastmod>2021-08-24T21:47:30+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>http://hhn-pham.github.io/</loc>
     <lastmod>2021-08-24T21:47:30+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
+    <loc>http://hhn-pham.github.io/posts/</loc>
     <lastmod>2021-08-24T21:47:30+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://hhn-pham.github.io/tags/</loc>
     <lastmod>2021-08-24T21:47:30+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/tech/</loc>
+    <loc>http://hhn-pham.github.io/tags/tech/</loc>
     <lastmod>2021-08-24T21:47:30+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/writing/</loc>
+    <loc>http://hhn-pham.github.io/tags/writing/</loc>
     <lastmod>2021-08-24T21:47:30+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/dotfiles/</loc>
+    <loc>http://hhn-pham.github.io/posts/dotfiles/</loc>
     <lastmod>2021-08-21T19:01:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/linux/</loc>
+    <loc>http://hhn-pham.github.io/tags/linux/</loc>
     <lastmod>2021-08-21T19:01:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/rice/</loc>
+    <loc>http://hhn-pham.github.io/tags/rice/</loc>
     <lastmod>2021-08-21T19:01:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/cpp/</loc>
+    <loc>http://hhn-pham.github.io/tags/cpp/</loc>
     <lastmod>2021-08-13T16:06:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/l-r-values/</loc>
+    <loc>http://hhn-pham.github.io/posts/l-r-values/</loc>
     <lastmod>2021-08-13T16:06:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/compphys/</loc>
+    <loc>http://hhn-pham.github.io/tags/compphys/</loc>
     <lastmod>2021-08-11T14:04:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/pointers/</loc>
+    <loc>http://hhn-pham.github.io/posts/pointers/</loc>
     <lastmod>2021-08-11T14:04:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/casing-and-spacing/</loc>
+    <loc>http://hhn-pham.github.io/posts/casing-and-spacing/</loc>
     <lastmod>2021-08-10T17:42:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/web-dev/</loc>
+    <loc>http://hhn-pham.github.io/tags/web-dev/</loc>
     <lastmod>2021-08-10T17:42:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/paru/</loc>
+    <loc>http://hhn-pham.github.io/posts/paru/</loc>
     <lastmod>2021-08-01T21:46:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/cleaning-home/</loc>
+    <loc>http://hhn-pham.github.io/posts/cleaning-home/</loc>
     <lastmod>2021-07-31T20:33:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/bash-scripting/</loc>
+    <loc>http://hhn-pham.github.io/posts/bash-scripting/</loc>
     <lastmod>2021-07-30T00:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/hostfile/</loc>
+    <loc>http://hhn-pham.github.io/posts/hostfile/</loc>
     <lastmod>2021-07-30T00:32:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/vim/</loc>
+    <loc>http://hhn-pham.github.io/posts/vim/</loc>
     <lastmod>2021-07-24T16:14:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/list/</loc>
+    <loc>http://hhn-pham.github.io/tags/list/</loc>
     <lastmod>2021-07-24T16:14:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/compsci/</loc>
+    <loc>http://hhn-pham.github.io/tags/compsci/</loc>
     <lastmod>2021-07-24T14:40:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/python/</loc>
+    <loc>http://hhn-pham.github.io/tags/python/</loc>
     <lastmod>2021-07-24T14:40:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/python-set/</loc>
+    <loc>http://hhn-pham.github.io/posts/python-set/</loc>
     <lastmod>2021-07-24T14:40:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/python-tuple/</loc>
+    <loc>http://hhn-pham.github.io/posts/python-tuple/</loc>
     <lastmod>2021-07-24T14:35:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/chat-services/</loc>
+    <loc>http://hhn-pham.github.io/posts/chat-services/</loc>
     <lastmod>2021-07-23T17:46:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/ttrss/</loc>
+    <loc>http://hhn-pham.github.io/posts/ttrss/</loc>
     <lastmod>2021-07-23T17:28:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/bitwarden/</loc>
+    <loc>http://hhn-pham.github.io/posts/bitwarden/</loc>
     <lastmod>2021-07-23T03:56:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/bookmarks/</loc>
+    <loc>http://hhn-pham.github.io/posts/bookmarks/</loc>
     <lastmod>2021-07-23T02:37:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/bookmarks/</loc>
+    <loc>http://hhn-pham.github.io/tags/bookmarks/</loc>
     <lastmod>2021-07-23T02:37:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/links/</loc>
+    <loc>http://hhn-pham.github.io/tags/links/</loc>
     <lastmod>2021-07-23T02:37:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/round-off-errors/</loc>
+    <loc>http://hhn-pham.github.io/posts/round-off-errors/</loc>
     <lastmod>2021-07-18T19:31:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/the-loss-of-precision-theorem/</loc>
+    <loc>http://hhn-pham.github.io/posts/the-loss-of-precision-theorem/</loc>
     <lastmod>2021-07-18T12:43:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/dimensional-analysis/</loc>
+    <loc>http://hhn-pham.github.io/posts/dimensional-analysis/</loc>
     <lastmod>2021-07-15T14:37:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/physics/</loc>
+    <loc>http://hhn-pham.github.io/tags/physics/</loc>
     <lastmod>2021-07-15T14:37:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/non-conservative-forces/</loc>
+    <loc>http://hhn-pham.github.io/posts/non-conservative-forces/</loc>
     <lastmod>2021-07-15T13:43:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/declutter/</loc>
+    <loc>http://hhn-pham.github.io/posts/declutter/</loc>
     <lastmod>2021-07-10T12:30:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/lists/</loc>
+    <loc>http://hhn-pham.github.io/tags/lists/</loc>
     <lastmod>2021-07-10T12:30:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/personal/</loc>
+    <loc>http://hhn-pham.github.io/tags/personal/</loc>
     <lastmod>2021-07-10T12:30:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/moving-out/</loc>
+    <loc>http://hhn-pham.github.io/posts/moving-out/</loc>
     <lastmod>2021-07-10T03:15:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/todo/</loc>
+    <loc>http://hhn-pham.github.io/tags/todo/</loc>
     <lastmod>2021-07-10T03:15:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/maths/</loc>
+    <loc>http://hhn-pham.github.io/tags/maths/</loc>
     <lastmod>2021-07-10T01:37:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/unit-vectors/</loc>
+    <loc>http://hhn-pham.github.io/posts/unit-vectors/</loc>
     <lastmod>2021-07-10T01:37:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/polar-coordinates/</loc>
+    <loc>http://hhn-pham.github.io/posts/polar-coordinates/</loc>
     <lastmod>2021-07-06T00:01:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/groceries/</loc>
+    <loc>http://hhn-pham.github.io/posts/groceries/</loc>
     <lastmod>2021-07-03T01:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/luksonlvm/</loc>
+    <loc>http://hhn-pham.github.io/posts/luksonlvm/</loc>
     <lastmod>2021-07-03T01:26:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/absolute-space/</loc>
+    <loc>http://hhn-pham.github.io/posts/absolute-space/</loc>
     <lastmod>2021-07-01T13:52:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/philosophy/</loc>
+    <loc>http://hhn-pham.github.io/tags/philosophy/</loc>
     <lastmod>2021-07-01T13:52:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/agenda/</loc>
+    <loc>http://hhn-pham.github.io/posts/agenda/</loc>
     <lastmod>2021-07-01T01:37:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/angle/</loc>
+    <loc>http://hhn-pham.github.io/posts/angle/</loc>
     <lastmod>2021-07-01T01:26:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/mechanics-core-1/</loc>
+    <loc>http://hhn-pham.github.io/posts/mechanics-core-1/</loc>
     <lastmod>2021-06-30T12:39:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/uni/</loc>
+    <loc>http://hhn-pham.github.io/tags/uni/</loc>
     <lastmod>2021-06-30T12:39:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/personal-tasks/</loc>
+    <loc>http://hhn-pham.github.io/posts/personal-tasks/</loc>
     <lastmod>2021-06-24T16:10:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/digital-tasks/</loc>
+    <loc>http://hhn-pham.github.io/posts/digital-tasks/</loc>
     <lastmod>2021-06-24T06:02:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://hhn-pham.github.io/categories/</loc>
   </url><url>
-    <loc>http://example.org/posts/scratchpad/</loc>
+    <loc>http://hhn-pham.github.io/posts/scratchpad/</loc>
   </url>
 </urlset>

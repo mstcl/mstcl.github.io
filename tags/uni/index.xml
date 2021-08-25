@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>uni on Organisation x Knowledge Base</title>
-    <link>http://example.org/tags/uni/</link>
+    <link>http://hhn-pham.github.io/tags/uni/</link>
     <description>Recent content in uni on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Wed, 30 Jun 2021 12:39:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/uni/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Jun 2021 12:39:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/uni/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mechanics (Core 1)</title>
-      <link>http://example.org/posts/mechanics-core-1/</link>
+      <link>http://hhn-pham.github.io/posts/mechanics-core-1/</link>
       <pubDate>Wed, 30 Jun 2021 12:39:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/mechanics-core-1/</guid>
+      <guid>http://hhn-pham.github.io/posts/mechanics-core-1/</guid>
       <description>Vectors Notations  the basis is the set of unit vectors from which all others are built perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$  helpful to remember: i = 8 o&amp;rsquo;clock, j = 4 o&amp;rsquo;clock, k = 12 o&amp;rsquo;clock (standard) this is right-handed axes (anti-clockwise)   $\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$  Components  $\theta$ taken from x-axis  $a_x = a\cos{\theta}$ $a_y = a\sin{\theta}$ $\tan{\theta} = \frac{a_y}{a_x}$ $\left|a\right| = \sqrt{a_x^2+a_y^2}$   3D components  pretty much compliant with 2D and 1D examples, but the concept of an e might be harder to visualise, we rely on the unit vectors as it&amp;rsquo;s a much easier system.</description>
     </item>
     

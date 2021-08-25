@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on Organisation x Knowledge Base</title>
-    <link>http://example.org/tags/linux/</link>
+    <link>http://hhn-pham.github.io/tags/linux/</link>
     <description>Recent content in linux on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Sat, 21 Aug 2021 19:01:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Aug 2021 19:01:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dotfiles</title>
-      <link>http://example.org/posts/dotfiles/</link>
+      <link>http://hhn-pham.github.io/posts/dotfiles/</link>
       <pubDate>Sat, 21 Aug 2021 19:01:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/dotfiles/</guid>
+      <guid>http://hhn-pham.github.io/posts/dotfiles/</guid>
       <description>Dotfiles This a write-up for the README.md file for my dotfiles repository so the links will not work.
 Programs and tools    Program Name     Shell ZSH   Editor Neovim   Window manager i3-gaps   Compositor Picom   Bar Polybar   Launcher rofi   Browser Brave   Audio Pipewire   Spotify ncspot   PDF viewer Zathura   Media player MPV   GTK &amp;amp; colors wpgtk   Colorscheme Custom   Fetch neofetch   Prompt Spaceship   Terminal Kitty   Icons Fluent dark   Cursor Bibata   Lock i3-lock   Display manager LightDM   LightDM theme Aether   Notifications i3-notifier   Downloads Aria2   Image viewer feh    </description>
     </item>
     
     <item>
       <title>Moving from yay to paru</title>
-      <link>http://example.org/posts/paru/</link>
+      <link>http://hhn-pham.github.io/posts/paru/</link>
       <pubDate>Sun, 01 Aug 2021 21:46:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/paru/</guid>
+      <guid>http://hhn-pham.github.io/posts/paru/</guid>
       <description>Migration Moving from yay to paru, I discovered a few useful commands that existed in yay that I never bothered checking out.
 Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tldr:
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  alias pu=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias pusu=&amp;#39;paru -Syu --noconfirm&amp;#39; #sync &amp;amp; upgrade w/o confirmation alias pfetch=&amp;#39;paru -Ps&amp;#39; #display stats alias pcom=&amp;#39;paru -Gc&amp;#39; #display comments alias pnews=&amp;#39;paru -Pw&amp;#39; #display news alias pid=&amp;#39;paru -U&amp;#39; #install from local file(s) alias pir=&amp;#39;paru -S&amp;#39; #install from repositories alias pnd=&amp;#39;paru -Qi&amp;#39; #display info from database alias pnr=&amp;#39;paru -Si&amp;#39; #display info from repositories alias pfd=&amp;#39;paru -Qs&amp;#39; #search in database alias pfr=&amp;#39;paru -Ss&amp;#39; #search in repositories alias pls=&amp;#39;paru -Q&amp;#39; #list packages installed alias plsa=&amp;#39;paru -Qea&amp;#39; #list packages explicitly installed alias porf=&amp;#39;paru -Qdt&amp;#39; #list orphaned packages alias pcc=&amp;#39;paru -Scd&amp;#39; #interactive cache removal   FZF integration I also found that defining an installing and removing function which uses FZF to crawl through the local database is great.</description>
@@ -31,28 +31,28 @@ Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tl
     
     <item>
       <title>Cleaning $HOME</title>
-      <link>http://example.org/posts/cleaning-home/</link>
+      <link>http://hhn-pham.github.io/posts/cleaning-home/</link>
       <pubDate>Sat, 31 Jul 2021 20:33:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/cleaning-home/</guid>
+      <guid>http://hhn-pham.github.io/posts/cleaning-home/</guid>
       <description>XDG_Base_Directory crisis I ls -a my home directory one morning and found that it is littered with .dir and .file from compilers and packages that do not comply with the XDG standards. I did realise that I did not export the variables in my zshrc, so I did that and emptied my home directory pretty well. However, there are quite a few that needed their separate variable, like PACKAGE_XYZ_CONFIG_DIR=$HOME/.config/xyz/, some even needed alias that points the config directory to the right place.</description>
     </item>
     
     <item>
       <title>/etc/hosts</title>
-      <link>http://example.org/posts/hostfile/</link>
+      <link>http://hhn-pham.github.io/posts/hostfile/</link>
       <pubDate>Fri, 30 Jul 2021 00:32:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/hostfile/</guid>
+      <guid>http://hhn-pham.github.io/posts/hostfile/</guid>
       <description>Utility I am now using hblock and it seems to be really great at managing /etc/hosts. To put simply, I have a template with my hostname and localhost, and then a sources.list file with StevenBlack master hostfile. Hblock essentially appends the StevenBlack&amp;rsquo;s hostfile to the template and then move it to /etc/hosts.</description>
     </item>
     
     <item>
       <title>Luks on LVM</title>
-      <link>http://example.org/posts/luksonlvm/</link>
+      <link>http://hhn-pham.github.io/posts/luksonlvm/</link>
       <pubDate>Sat, 03 Jul 2021 01:26:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/luksonlvm/</guid>
+      <guid>http://hhn-pham.github.io/posts/luksonlvm/</guid>
       <description>A table demonstrating my setup +---------+-------------+-------------+-------------+ |...EFI...|...lv root...|...lv swap...|...lv home...| |../boot..|....../......|.............|..../home....| |..fat32..|.....ext.....|.............|.....ext.....| |../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..| |.........|....LUKS2....|...dmcrypt...|....LUKS2....| |.........|-------------+-------------+-------------+ |.........|..................vg.....................| |.........|-----------------------------------------| |.........|................pv./d/n2.................| +---------------------------------------------------+  </description>
     </item>
     

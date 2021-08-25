@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>physics on Organisation x Knowledge Base</title>
-    <link>http://example.org/tags/physics/</link>
+    <link>http://hhn-pham.github.io/tags/physics/</link>
     <description>Recent content in physics on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Thu, 15 Jul 2021 14:37:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 14:37:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dimensional analysis</title>
-      <link>http://example.org/posts/dimensional-analysis/</link>
+      <link>http://hhn-pham.github.io/posts/dimensional-analysis/</link>
       <pubDate>Thu, 15 Jul 2021 14:37:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/dimensional-analysis/</guid>
+      <guid>http://hhn-pham.github.io/posts/dimensional-analysis/</guid>
       <description>Notations  [Y] = unit of Y  I always get this the other way around. Facepalm    </description>
     </item>
     
     <item>
       <title>Non-conservative forces</title>
-      <link>http://example.org/posts/non-conservative-forces/</link>
+      <link>http://hhn-pham.github.io/posts/non-conservative-forces/</link>
       <pubDate>Thu, 15 Jul 2021 13:43:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/non-conservative-forces/</guid>
+      <guid>http://hhn-pham.github.io/posts/non-conservative-forces/</guid>
       <description>Question What on earth is a non-conservative force if all underlying forces of friction and other contact forces operate as conservative force on a microsopic level?
 This one partially answers my question here
 Hint: Mechanical energy is the keyword.
@@ -31,28 +31,28 @@ Another answer from stackexchange: Q: &amp;ldquo;How do many conservative forces
     
     <item>
       <title>Unit vectors</title>
-      <link>http://example.org/posts/unit-vectors/</link>
+      <link>http://hhn-pham.github.io/posts/unit-vectors/</link>
       <pubDate>Sat, 10 Jul 2021 01:37:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/unit-vectors/</guid>
+      <guid>http://hhn-pham.github.io/posts/unit-vectors/</guid>
       <description>dot product  perpendicular/orthogonal components are 0  $\hat{i} \cdot \hat{j} = \hat{j} \cdot \hat{k} = \hat{k} \cdot \hat{i}$ and so on and so forth    vector product  I generally find the right hand rule to be very straight forward  index $\times$ middle = thumb    </description>
     </item>
     
     <item>
       <title>Absolute space</title>
-      <link>http://example.org/posts/absolute-space/</link>
+      <link>http://hhn-pham.github.io/posts/absolute-space/</link>
       <pubDate>Thu, 01 Jul 2021 13:52:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/absolute-space/</guid>
+      <guid>http://hhn-pham.github.io/posts/absolute-space/</guid>
       <description>The Cartesian body  motion of a body is a change of relation to the bodies that surround it. concept of inertia  a body&amp;rsquo;s motion wil be preserved unless caused to deviate from its path so not a function of its spatial relations to other bodies but of its causal relation    The Newtonian body  a body&amp;rsquo;s motion is not a function of its spatial relations to other objects but rather of whether forces are impressed on it.</description>
     </item>
     
     <item>
       <title>Mechanics (Core 1)</title>
-      <link>http://example.org/posts/mechanics-core-1/</link>
+      <link>http://hhn-pham.github.io/posts/mechanics-core-1/</link>
       <pubDate>Wed, 30 Jun 2021 12:39:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/mechanics-core-1/</guid>
+      <guid>http://hhn-pham.github.io/posts/mechanics-core-1/</guid>
       <description>Vectors Notations  the basis is the set of unit vectors from which all others are built perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$  helpful to remember: i = 8 o&amp;rsquo;clock, j = 4 o&amp;rsquo;clock, k = 12 o&amp;rsquo;clock (standard) this is right-handed axes (anti-clockwise)   $\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$  Components  $\theta$ taken from x-axis  $a_x = a\cos{\theta}$ $a_y = a\sin{\theta}$ $\tan{\theta} = \frac{a_y}{a_x}$ $\left|a\right| = \sqrt{a_x^2+a_y^2}$   3D components  pretty much compliant with 2D and 1D examples, but the concept of an e might be harder to visualise, we rely on the unit vectors as it&amp;rsquo;s a much easier system.</description>
     </item>
     

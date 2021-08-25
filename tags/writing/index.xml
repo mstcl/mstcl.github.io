@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>writing on Organisation x Knowledge Base</title>
+    <link>http://example.org/tags/writing/</link>
+    <description>Recent content in writing on Organisation x Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>Copyleft!</copyright>
+    <lastBuildDate>Tue, 24 Aug 2021 21:47:30 +0100</lastBuildDate><atom:link href="http://example.org/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Vimwiki to plain Markdown</title>
+      <link>http://example.org/posts/from-vimwiki-to-plain-markdown/</link>
+      <pubDate>Tue, 24 Aug 2021 21:47:30 +0100</pubDate>
+      
+      <guid>http://example.org/posts/from-vimwiki-to-plain-markdown/</guid>
+      <description>Why I&amp;rsquo;m changing I have been using a combination of vimwiki and Mkdocs inside neovim for a while now, but I&amp;rsquo;m not really satisified with the outcome. Although Mkdocs with the material theme is extremely feature-packed (python markdown extensions are really good), I feel like rejecting bloat and returning to simplicity is better for blogging/journalling/organising in general. Mkdocs was made with slick documentions in mind so the javascript was annoying me quite a bit.</description>
+    </item>
+    
+    <item>
+      <title>Moving from yay to paru</title>
+      <link>http://example.org/posts/paru/</link>
+      <pubDate>Sun, 01 Aug 2021 21:46:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/paru/</guid>
+      <description>Migration Moving from yay to paru, I discovered a few useful commands that existed in yay that I never bothered checking out.
+Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tldr:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  alias pu=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias pusu=&amp;#39;paru -Syu --noconfirm&amp;#39; #sync &amp;amp; upgrade w/o confirmation alias pfetch=&amp;#39;paru -Ps&amp;#39; #display stats alias pcom=&amp;#39;paru -Gc&amp;#39; #display comments alias pnews=&amp;#39;paru -Pw&amp;#39; #display news alias pid=&amp;#39;paru -U&amp;#39; #install from local file(s) alias pir=&amp;#39;paru -S&amp;#39; #install from repositories alias pnd=&amp;#39;paru -Qi&amp;#39; #display info from database alias pnr=&amp;#39;paru -Si&amp;#39; #display info from repositories alias pfd=&amp;#39;paru -Qs&amp;#39; #search in database alias pfr=&amp;#39;paru -Ss&amp;#39; #search in repositories alias pls=&amp;#39;paru -Q&amp;#39; #list packages installed alias plsa=&amp;#39;paru -Qea&amp;#39; #list packages explicitly installed alias porf=&amp;#39;paru -Qdt&amp;#39; #list orphaned packages alias pcc=&amp;#39;paru -Scd&amp;#39; #interactive cache removal   FZF integration I also found that defining an installing and removing function which uses FZF to crawl through the local database is great.</description>
+    </item>
+    
+    <item>
+      <title>Bash scripting</title>
+      <link>http://example.org/posts/bash-scripting/</link>
+      <pubDate>Fri, 30 Jul 2021 00:53:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/bash-scripting/</guid>
+      <description>Motivation I wanted a simple and creative way to manage my dotfiles, one which would allow more automation than my previous method. I stumbled upon many existing tools that can be utilised to manage dotfiles, such as GNU Stow and chezmoi. But they all seem to be too overkill for me, and their management method do not float my boat quite that well. Here&amp;rsquo;s what these tools might envision a ~/dotfiles or ~/.</description>
+    </item>
+    
+    <item>
+      <title>(Neo)vim</title>
+      <link>http://example.org/posts/vim/</link>
+      <pubDate>Sat, 24 Jul 2021 16:14:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/vim/</guid>
+      <description>Experience  I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&amp;rsquo;m a much better vim user now) I assigned ; to : a while ago, but I moved to &amp;lt;space&amp;gt;. While it&amp;rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence ++comma+semicolon++ executing &amp;lt;esc&amp;gt;  this removes the need for my small pinky to travel far to reach the actual escape key    Recently learned bindings  f(x) jumps to next x on the line  there is also ++t++ which does the same but jumps to the place preceding the x lower-case variants go forward and upper-case variants go backwards ; repeats the latest jump command, can be extended $n$ times    Plugins  which key zen  autosession symbols kommentary suda neoscroll replaces smoothie maximizer spaceless  </description>
+    </item>
+    
+    <item>
+      <title>Declutter</title>
+      <link>http://example.org/posts/declutter/</link>
+      <pubDate>Sat, 10 Jul 2021 12:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/declutter/</guid>
+      <description>Note to self Maybe it will help reduce the anxiety surrounding this aspect of my life. I have been struggling every time a move comes up, this usually involves flying back home from school abroad, or simply just packing up alone. I hate possessions, I hate going through them and feeling wasteful if I throw them away, but simply giving them away sometimes require too much effort. I would do it if it were to be more accessible.</description>
+    </item>
+    
+  </channel>
+</rss>

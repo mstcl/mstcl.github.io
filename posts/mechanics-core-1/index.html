@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Mechanics (Core 1) | Organisation x Knowledge Base</title>
+  <link rel = 'canonical' href = 'http://example.org/posts/mechanics-core-1/'>
+  <meta name="description" content="This is a personal blog, a digital agenda, a &#39;I-don&#39;t want to use emacs but I like orgmode&#39;, journal, and whatnot. It is owned by me, a university student studying Physics and Philosophy. I like tech, linux, privacy, anime and listening to obscure albums recommended by /mu/.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Mechanics (Core 1)" />
+<meta property="og:description" content="Vectors Notations  the basis is the set of unit vectors from which all others are built perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$  helpful to remember: i = 8 o&rsquo;clock, j = 4 o&rsquo;clock, k = 12 o&rsquo;clock (standard) this is right-handed axes (anti-clockwise)   $\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$  Components  $\theta$ taken from x-axis  $a_x = a\cos{\theta}$ $a_y = a\sin{\theta}$ $\tan{\theta} = \frac{a_y}{a_x}$ $\left|a\right| = \sqrt{a_x^2&#43;a_y^2}$   3D components  pretty much compliant with 2D and 1D examples, but the concept of an e might be harder to visualise, we rely on the unit vectors as it&rsquo;s a much easier system." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/mechanics-core-1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-30T12:39:00+00:00" />
+<meta property="article:modified_time" content="2021-06-30T12:39:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mechanics (Core 1)"/>
+<meta name="twitter:description" content="Vectors Notations  the basis is the set of unit vectors from which all others are built perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$  helpful to remember: i = 8 o&rsquo;clock, j = 4 o&rsquo;clock, k = 12 o&rsquo;clock (standard) this is right-handed axes (anti-clockwise)   $\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$  Components  $\theta$ taken from x-axis  $a_x = a\cos{\theta}$ $a_y = a\sin{\theta}$ $\tan{\theta} = \frac{a_y}{a_x}$ $\left|a\right| = \sqrt{a_x^2&#43;a_y^2}$   3D components  pretty much compliant with 2D and 1D examples, but the concept of an e might be harder to visualise, we rely on the unit vectors as it&rsquo;s a much easier system."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="http://example.org/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="http://example.org/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts/digital-tasks">Tasks</a></li>
+         
+        <li><a href="/posts/personal-tasks">Todos</a></li>
+         
+        <li><a href="/posts/agenda">Agenda</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/posts/bookmarks">Bookmarks</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" http://example.org/posts/personal-tasks/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="http://example.org/posts/angle/" aria-label="Next">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&text=Mechanics%20%28Core%201%29" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&title=Mechanics%20%28Core%201%29" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&is_video=false&description=Mechanics%20%28Core%201%29" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Mechanics%20%28Core%201%29&body=Check out this article: http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&title=Mechanics%20%28Core%201%29" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&title=Mechanics%20%28Core%201%29" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&name=Mechanics%20%28Core%201%29&description=Vectors%20Notations%20%20the%20basis%20is%20the%20set%20of%20unit%20vectors%20from%20which%20all%20others%20are%20built%20perpendicular%20axes%20normally%20have%20basis%20vectors%20%24%5cboldsymbol%7b%5chat%7bi%7d%2c%5chat%7bj%7d%2c%5chat%7bk%7d%7d%24%20%20helpful%20to%20remember%3a%20i%20%3d%208%20o%26rsquo%3bclock%2c%20j%20%3d%204%20o%26rsquo%3bclock%2c%20k%20%3d%2012%20o%26rsquo%3bclock%20%28standard%29%20this%20is%20right-handed%20axes%20%28anti-clockwise%29%20%20%20%24%5cboldsymbol%7b%5chat%7ba%7d%7d%20%3d%20%5cfrac%7b%5cboldsymbol%7ba%7d%7d%7b%5cleft%7ca%5cright%7c%7d%24%20%20Components%20%20%24%5ctheta%24%20taken%20from%20x-axis%20%20%24a_x%20%3d%20a%5ccos%7b%5ctheta%7d%24%20%24a_y%20%3d%20a%5csin%7b%5ctheta%7d%24%20%24%5ctan%7b%5ctheta%7d%20%3d%20%5cfrac%7ba_y%7d%7ba_x%7d%24%20%24%5cleft%7ca%5cright%7c%20%3d%20%5csqrt%7ba_x%5e2%2ba_y%5e2%7d%24%20%20%203D%20components%20%20pretty%20much%20compliant%20with%202D%20and%201D%20examples%2c%20but%20the%20concept%20of%20an%20e%20might%20be%20harder%20to%20visualise%2c%20we%20rely%20on%20the%20unit%20vectors%20as%20it%26rsquo%3bs%20a%20much%20easier%20system." aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&t=Mechanics%20%28Core%201%29" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vectors">Vectors</a>
+      <ul>
+        <li><a href="#notations">Notations</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#position-vectors">Position vectors</a></li>
+        <li><a href="#vector-algebra">Vector algebra</a></li>
+      </ul>
+    </li>
+    <li><a href="#equations-of-motion">Equations of motion</a>
+      <ul>
+        <li><a href="#constant-acceleration">Constant acceleration</a></li>
+        <li><a href="#varying-acceleration">Varying acceleration</a></li>
+      </ul>
+    </li>
+    <li><a href="#equations-of-motions-vectors">Equations of motions (vectors)</a>
+      <ul>
+        <li><a href="#constant-acceleration-1">Constant acceleration</a></li>
+        <li><a href="#varying-acceleration-1">Varying acceleration</a></li>
+      </ul>
+    </li>
+    <li><a href="#newtons-first-law">Newton&rsquo;s first law</a>
+      <ul>
+        <li><a href="#reference-frames">Reference frames</a></li>
+        <li><a href="#momentum-and-com-frame">Momentum and c.o.m. frame</a></li>
+      </ul>
+    </li>
+    <li><a href="#newtons-second-law-and-forces">Newton&rsquo;s second law and forces</a>
+      <ul>
+        <li><a href="#friction">Friction</a></li>
+        <li><a href="#drag">Drag</a></li>
+        <li><a href="#fields">Fields</a></li>
+        <li><a href="#rocket-equation">Rocket equation</a></li>
+      </ul>
+    </li>
+    <li><a href="#newtons-third-law">Newton&rsquo;s third law</a>
+      <ul>
+        <li><a href="#two-body-problem">Two-body problem</a></li>
+        <li><a href="#composite-rigid-bodies">Composite rigid bodies</a></li>
+      </ul>
+    </li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#potential-energy">Potential energy</a></li>
+    <li><a href="#mechanical-energy">Mechanical energy</a></li>
+    <li><a href="#conservative-forces">Conservative forces</a></li>
+    <li><a href="#application-transfer-to-com-frame">Application: transfer to c.o.m. frame</a></li>
+  </ul>
+</nav>
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Mechanics (Core 1)
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-06-30 12:39:00 &#43;0000 UTC" itemprop="datePublished">2021-06-30</time>
+          
+        </div>
+        
+        
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/physics" rel="tag">physics</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/uni" rel="tag">uni</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    
+    <div class="content" itemprop="articleBody">
+      <h2 id="vectors">Vectors</h2>
+<h3 id="notations">Notations</h3>
+<ul>
+<li>the basis is the set of <a href="unit-vectors.md">unit vectors</a> from which all others are built</li>
+<li>perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$
+<ul>
+<li>helpful to remember: i = 8 o&rsquo;clock, j = 4 o&rsquo;clock, k = 12 o&rsquo;clock (standard)</li>
+<li>this is right-handed axes (anti-clockwise)</li>
+</ul>
+</li>
+<li>$\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$</li>
+</ul>
+<h3 id="components">Components</h3>
+<ul>
+<li>$\theta$ taken from x-axis
+<ul>
+<li>$a_x = a\cos{\theta}$</li>
+<li>$a_y = a\sin{\theta}$</li>
+<li>$\tan{\theta} = \frac{a_y}{a_x}$</li>
+<li>$\left|a\right| = \sqrt{a_x^2+a_y^2}$</li>
+</ul>
+</li>
+<li>3D components
+<ul>
+<li>pretty much compliant with 2D and 1D examples, but the concept of an <a href="angl">e</a> might be harder to visualise, we rely on the unit vectors as it&rsquo;s a much easier system.</li>
+</ul>
+</li>
+</ul>
+<h3 id="position-vectors">Position vectors</h3>
+<ul>
+<li>specifies position relative to a defined origin</li>
+<li>not all quantities have position vectors
+<ul>
+<li>forces do not have origins</li>
+</ul>
+</li>
+<li>arbitrary $\boldsymbol{r}$ is a vector with $(x,y,z)$ components which can vary with time.
+<ul>
+<li>$\boldsymbol{r}(t)$ can describe a point P</li>
+<li>one can perform standard calculus to find velocity/acceleration etc.</li>
+</ul>
+</li>
+</ul>
+<h3 id="vector-algebra">Vector algebra</h3>
+<ul>
+<li>associative</li>
+<li>commutative</li>
+<li>distributive</li>
+<li>there is no such thing as division</li>
+<li>scalar multiplication</li>
+<li>products
+<ul>
+<li>dot</li>
+<li>cross</li>
+</ul>
+</li>
+<li>magnitude and direction are fixed in space and do not depend on choice of coordinate system (<a href="absolute-space.md">absolute-space</a>)</li>
+<li>3D directions
+<ol>
+<li>normally taken as an <a href="angle">angle</a> projected off a plane</li>
+<li>direction cosines: components of the unit vectors
+<ul>
+<li>each component is projected onto their respective axis (the cosines of the magnitude) so we need to calculate 3 angles</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>rotated frames
+<ul>
+<li>(x,y,z) rotated by $\theta$</li>
+<li>vectors have the same magnitudes with directions fixed in space described relative to frame</li>
+<li>components are related by $\phi, \phi &lsquo;$
+<ul>
+<li>$\phi ' = \phi - \theta$</li>
+<li>using trigonometric angle additions
+<ul>
+<li>$a_x&rsquo;=a_x\cos(\theta) + a_y\sin(\theta)$</li>
+<li>$a_y'=a_y\cos(\theta) - a_x\sin(\theta)$</li>
+<li>for basis vectors:
+<ul>
+<li>$\boldsymbol{i} = \boldsymbol{i'}\cos{\theta} - \boldsymbol{j'}\sin{\theta}$</li>
+<li>$\boldsymbol{j} = \boldsymbol{i'}\sin{\theta} + \boldsymbol{j'}\cos{\theta}$</li>
+<li>$\boldsymbol{i'} = \boldsymbol{i}\cos{\theta} + \boldsymbol{j}\sin{\theta}$</li>
+<li>$\boldsymbol{j'} = - \boldsymbol{i}\sin{\theta} + \boldsymbol{j}\cos{\theta}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="polar-coordinates.md">polar coordinates</a>: an easier system</li>
+</ul>
+<h2 id="equations-of-motion">Equations of motion</h2>
+<h3 id="constant-acceleration">Constant acceleration</h3>
+<ul>
+<li>calculus in mechanics
+<ul>
+<li>the derivative of a quantity tells us the rate of change of the quantity</li>
+<li>the integral of a quantity tells us the area under the function describing that quantity.</li>
+<li>notations: $\ddot{s} = \dot{v} = a$</li>
+<li>wrapping my head around signs
+<ul>
+<li>a -ve slope = derivative is -ve</li>
+</ul>
+</li>
+<li>classifying stationary points by inspection
+<ul>
+<li>maximum: +ve (approaching $x$) and -ve (receding $x$)</li>
+<li>minimum: -ve (approaching x) and +ve (approaching x)</li>
+<li>o/e inflection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1D Newton&rsquo;s laws (simple but important)
+<ul>
+<li>NII: sum of <em>resultant</em> forces acting on a body is the product of mass and resultant acceleration
+<ul>
+<li>assumption: constant acceleration $a(t) = a_0$</li>
+<li>dummy variables: the sole purpose is to retain the final results with our main variables like $t$ or $v$.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>equations of motion sans derivation
+<ul>
+<li>$v = v_0 + at$</li>
+<li>$s = s_0 + v_0t + \frac{1}{2}at^2$</li>
+<li>$v^2 = v_0^2 + 2as$</li>
+<li>$s = \frac{1}{2}(v+v_0)t$</li>
+</ul>
+</li>
+</ul>
+<h3 id="varying-acceleration">Varying acceleration</h3>
+<ul>
+<li>easy if acceleration is a linear function of time
+<ul>
+<li>Example: $a(t) = a_0 + a_1t$
+<ul>
+<li>$v$ found by integrating once
+<ul>
+<li>$v(t) = a_0t + \frac{1}{2!}a_1t^2$</li>
+</ul>
+</li>
+<li>$s$ found by integrating once more
+<ul>
+<li>$\frac{1}{2}a_0t^2 + \frac{1}{3!}a_1t^3$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>if acceleration is a function of position, it might be possible to use chain rule
+<ul>
+<li>Using $a(s) = v\frac{dv}{ds}$</li>
+<li>$a(s) = a_0 + a_1s$
+<ul>
+<li>$v$ found by integrating $a\cdot ds$ and $v\cdot dv$
+<ul>
+<li>$v = \pm \sqrt{2a_0s + \frac{1}{2}a_1s^2 + C}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>physical example 1 - SHM:
+<ul>
+<li>$-kx = ma$
+<ul>
+<li>eventually leads to $KE = -PE + $ const</li>
+</ul>
+</li>
+<li>$\ddot{x} = -\omega x$</li>
+<li>boundary conditions:
+<ul>
+<li>$v = v_{max}, x = 0$ and the inverse also holds</li>
+<li>this leads to max KE = max KE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>physical example 2 - gravity well:
+<ul>
+<li>Newton&rsquo;s law of gravitation: $F = -\frac{GMm}{r^2} = ma$</li>
+<li>integrating the differentials $dr$ and $dv$ gives change in PE = change in KE</li>
+</ul>
+</li>
+<li>fundamental point: conservation of energy holds</li>
+</ul>
+<h2 id="equations-of-motions-vectors">Equations of motions (vectors)</h2>
+<h3 id="constant-acceleration-1">Constant acceleration</h3>
+<ul>
+<li>all systems of equations can be rewritten in vector forms</li>
+</ul>
+<h3 id="varying-acceleration-1">Varying acceleration</h3>
+<ul>
+<li>example: $\boldsymbol{a} = a_0t\boldsymbol{\hat{i}}+a_0\boldsymbol{\hat{j}}$
+<ul>
+<li>integrate both sides would give velocity vector $\boldsymbol{v} = \left(\frac{a_0t^2}{2}+v_{0x}\right)\boldsymbol{\hat{i}} + \left(a_0t+v_{0y}\right)\boldsymbol{\hat{j}}$</li>
+<li>repeat for position vector with positional constants</li>
+</ul>
+</li>
+<li>circular motion
+<ul>
+<li>polar coordinate system $\left(r,\theta\right)$
+<ul>
+<li>$\boldsymbol{r}(t) = r\cos{\omega t}\boldsymbol{\hat{i}} + r\sin{\omega t}\boldsymbol{\hat{j}}$</li>
+</ul>
+</li>
+<li>get something like SHM</li>
+<li>velocity vector tangential to the circular motion
+<ul>
+<li>$\left|v\right| = r\omega$</li>
+</ul>
+</li>
+<li>acceleration always radial towards origin
+<ul>
+<li>$\left|a\right| = r\omega^2$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="newtons-first-law">Newton&rsquo;s first law</h2>
+<ul>
+<li>statement 1: force is needed to change motion, i.e. force is proportional to the rate of change of velocity.
+<ul>
+<li>it reveals nothing about absolute velocity</li>
+<li>it is really about relativity :classical relativity:
+<ul>
+<li>but it does postulate an <a href="absolute-space">absolute space</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>statement 2: every body preserves its state of rest or uniform motion, unless acted on by an external force</li>
+</ul>
+<h3 id="reference-frames">Reference frames</h3>
+<ul>
+<li>inertial frames
+<ul>
+<li>a frame of reference associated with an inertial observer moving at constant velocity</li>
+<li>a frame that is not accelerating</li>
+<li>converting between inertial frames, A and B:
+<ul>
+<li>origin coincides at $t = 0$</li>
+<li>origin of B in A: $x = vt$
+<ul>
+<li>point in B with coordinate $x'$
+<ul>
+<li>measured in A as $x = vt + x'$</li>
+<li>general vector case $\boldsymbol{r} = \boldsymbol{v}t+\boldsymbol{r'}$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>velocity
+<ul>
+<li>differentiate wrt time
+<ul>
+<li>$\boldsymbol{u = u' + v}$</li>
+<li>object moving at $\boldsymbol{u'}$ in B, which is moving at $v$ wrt A, is moving at $\boldsymbol{u}$ in A.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>acceleration
+<ul>
+<li>$\boldsymbol{\dot{u}}=\boldsymbol{ \dot{u'} }$</li>
+<li>the action of forces is independent of inertial frames</li>
+</ul>
+</li>
+<li>momentum
+<ul>
+<li>$\boldsymbol{p = p'} + m\boldsymbol{v}$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>all laws independent of frame of reference $s=uv$</li>
+<li>higher dimensions
+<ul>
+<li>just use use vectors</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="momentum-and-com-frame">Momentum and c.o.m. frame</h3>
+<ul>
+<li>one can derive conservation of momentum from NI.
+<ul>
+<li>in the absence of external forces, total momentum is conserved, i.e. constant in time
+<ul>
+<li>$\frac{d\boldsymbol{p_{tot}}}{dt}= 0$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>in a system of N particles, the $\boldsymbol{p_{tot}}$ is the sum of the products of individual masses and velocities (all momenta). can write their velocities in terms of rate of change of position
+<ul>
+<li>what is the c.o.m.:
+<ul>
+<li>a point in a mass system where any force applied cannot exert moment or torque on the body or plane (no angular acceleration)
+<ul>
+<li>from this definition:</li>
+<li>$\sum_{j=1}^{N} m_j\left(\boldsymbol{r_j}-\boldsymbol{r_{c.o.m.}}\right) = 0$</li>
+<li>rationale: all particles exert a force of $m_j\boldsymbol{g}$, at the c.o.m. their total moments sum to zero, so we can just divide by $\boldsymbol{g}$</li>
+<li>$\boldsymbol{r_{c.o.m.}} = \frac{1}{M}\sum_{j=1}^{N} m_j\boldsymbol{r_j}$</li>
+<li>relating to momentum: $\boldsymbol{p_{tot}}=M\cdot\boldsymbol{v_{c.o.m.}}$</li>
+<li>in words, the total momentum is the product of total mass and velocity of c.o.m.
+<ul>
+<li>advantages: ignore individual motion of particles and consider only the c.o.m.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>it is the mean location of the distribution of mass</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>c.o.m. frame (zero momentum frame)
+<ul>
+<li>inertial frame chosen such that $\boldsymbol{v_{c.o.m.}}=0$
+<ul>
+<li>strategy: find the velocity of the c.o.m. of a system and transfer to that frame so that it is stationary
+<ul>
+<li>this frame will continue to be the zero-momentum provided there will not be any external forces</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="newtons-second-law-and-forces">Newton&rsquo;s second law and forces</h2>
+<ul>
+<li>statement:
+<ol>
+<li><em>the rate of change of momentum of a body is proportional to the applied force, and takes place in the direction of that force.</em>
+<ul>
+<li>if momentum is conserved, this implies that $\boldsymbol{F} = \frac{d\boldsymbol{p}}{dt} = 0$</li>
+<li>this is inline with conservation of momentum derived from <a href="#newtons-first-law">NI</a></li>
+<li>forces lead to a change in momentumm, which can be a change in speed, direction (since velocity is a vector), or both (or mass).</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>impulse:
+<ul>
+<li>the force integrated over a given time interval
+<ul>
+<li>$\Delta \boldsymbol{N} = \int_{t_0}^{t_1} \boldsymbol{F} ,dt$</li>
+</ul>
+</li>
+<li><em>Impulse-momentum theorem</em>: from NII, we can deduce that impulse is the <em>change</em> in velocity.
+<ul>
+<li>the duration of impulse is often short (10-500 ms), and the shape of $\boldsymbol{F}\left(t\right)$ is generally not important as we just want the integral.
+<ul>
+<li>we can say that since the duration is small, we can use an average force (that the force is constant).</li>
+<li>thus $\Delta \boldsymbol{N} = \bar{F}\delta t$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>contact forces versus force fields
+<ul>
+<li>act at a point on the body, generally due to contact with another part of the system
+<ul>
+<li>examples: friction, tension, steam pushing against an engine piston</li>
+<li>on a macro level, these are referred to as contact forces even if on a micro level, these are defined as interactions within force fields.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="friction">Friction</h3>
+<ul>
+<li>empirically, friction is observed to be proportional to normal reaction force, with the constant of proportionality the coefficient $\mu$</li>
+<li>friction acts to oppose the direction of motion</li>
+<li>if the body is already moving, we consider <em>kinetic</em> friction, related as $\boldsymbol{f} = -\boldsymbol{\hat{v}}\mu_k\left|\boldsymbol{N}\right|$, which can also be written in scalar form</li>
+<li>if the body is not moving, we consider <em>static</em> friction
+<ul>
+<li>friction is a limiting force, it opposes forces with magnitude big enough to prevent motion</li>
+<li>the relation is $\boldsymbol{f}\leq\mu_sN$</li>
+<li>when the driving force exceeds this, then the body will begin to slide, then it will continue in general</li>
+</ul>
+</li>
+<li>rolling friction
+<ul>
+<li>pulling through c.o.m., and the point of contact is a <em>static</em> point as there is no relative movement (no sliding)</li>
+<li>movement comes from friction as a torque acting through c.o.m.</li>
+<li>rolling resistance (coefficient of rolling friction) $\mu_r$
+<ul>
+<li>determines friction and energy loss when rolling</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="drag">Drag</h3>
+<ul>
+<li>friction due to motion through a fluid, gas or liquid
+<ul>
+<li>opposes net motion like friction</li>
+<li>amplitude of the friction is generally proportional to the speed of the motion raised to some power $n$.</li>
+<li>constant of proportionality $k$ is the drag constant (not the drag coefficient!)
+<ul>
+<li>the unit of the drag constant: kg/m</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the drag coefficient
+<ul>
+<li>normally $c_d = \frac{2k}{\rho A}$</li>
+</ul>
+</li>
+</ul>
+<h3 id="fields">Fields</h3>
+<ul>
+<li>gravitational field
+<ul>
+<li>$\boldsymbol{F_{12}}=\frac{Gm_1m_2}{r_{12}^2}\boldsymbol{\hat{r}_{12}}$</li>
+</ul>
+</li>
+<li>electric fields
+<ul>
+<li>$\boldsymbol{F} = q\boldsymbol{E}$
+<ul>
+<li>direction depends on sign of charge</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>magnetic fields
+<ul>
+<li>$\boldsymbol{F}=q\boldsymbol{v}\times\boldsymbol{B}$</li>
+</ul>
+</li>
+<li>Lorentz force
+<ul>
+<li>$\boldsymbol{F}=q\left(\boldsymbol{E} + \boldsymbol{v \times B}\right)$</li>
+</ul>
+</li>
+</ul>
+<h3 id="rocket-equation">Rocket equation</h3>
+<ul>
+<li>rate of change of mass non-zero
+<ul>
+<li>mass ejected at relative velocity $\boldsymbol{ v_{rel} }$</li>
+<li>conserved quantities: momentum, total mass of system</li>
+</ul>
+</li>
+<li>relates the resultant thrust of the rocket depending on the relative velocity of the exhaust gass and the rate of change of mass
+<ul>
+<li>$m\frac{d\boldsymbol{v}}{dt}=\boldsymbol{v_{rel}}\frac{dm}{dt}$</li>
+<li>sign sanity check:
+<ul>
+<li>we want thrust in the +ve direction</li>
+<li>$v_{rel}$ is in the -ve direction, rate of change of mass is also negative since the rocket is losing mass</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>with the influence of gravity
+<ul>
+<li>the thrust has a negative term of $-m\boldsymbol{ g }$ (slightly inaccurate)</li>
+<li>this gives velocity $\boldsymbol{v = v_0 + v_{rel}}\log_e\frac{m}{m_0}+\boldsymbol{g}t$</li>
+</ul>
+</li>
+</ul>
+<h2 id="newtons-third-law">Newton&rsquo;s third law</h2>
+<ul>
+<li>statement: <em>to any action there is an equal and opposite reaction; in other words, the actions of two bodies on each other are always equal and always opposite in direction</em></li>
+</ul>
+<h3 id="two-body-problem">Two-body problem</h3>
+<ul>
+<li>consider two bodies 1 and 2, then each exert a force on the other</li>
+<li>from <a href="#newtons-second-law-and-forces">NII</a>, we can find the acceleration of one body from their masses and the other body&rsquo;s acceleration
+<ul>
+<li>since these are non-inertial frames, acceleration of body 1 in the frame of body 2 is $\boldsymbol{a_{{net}} = a_1 - a_2}$</li>
+<li>this gives $\boldsymbol{a_{net}} = \left(\frac{m_2 + m_1}{m_1m_2}\right)\cdot m_1\boldsymbol{a_1}$ let the term in bracket be $\mu$ (otherwise known as the *reduced mass*)
+<ul>
+<li>in body 2, force it exerts on 1 is $\boldsymbol{F_{12}} = \mu\boldsymbol{a_{net}}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="composite-rigid-bodies">Composite rigid bodies</h3>
+<ul>
+<li>a system of particles can be treated as one body when considering its c.o.m.</li>
+<li>with N3, the c.o.m. motion is not affected because it only relates to the individual forces acting on each particle, not the net force
+<ul>
+<li>in a closed system, the rate of change of momentum is 0</li>
+<li>in an open system, this will be equal to the external force, and thus $\boldsymbol{v_{com}}\neq 0$
+<ul>
+<li>this force acts at c.o.m, and cause acceleration of the total mass</li>
+<li>an external force which does not act through the c.o.m may cause rotation about some axis</li>
+<li>thus, the complete picture of the motion of a rigid body is
+<ol>
+<li>motion of c.o.m</li>
+<li>rotation about c.o.m</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="work">Work</h2>
+<ul>
+<li>definition: when a force acts on a particle such that its point of action moves through a distance, we say work is done on the particle.
+<ul>
+<li>key equations:
+<ul>
+<li>$W = \int_{x=0}^{d} F\left(x\right) \cdot dx$
+<ul>
+<li>note that it is a dot product, meaning a force at an angle obeys the dot product</li>
+<li>the general case would be a line integral where dr might vary as well</li>
+</ul>
+</li>
+<li>$P = Fv$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>in different [reference frames](#reference-   frames):
+<ul>
+<li>since KE will be different in 2 frames, statement relating to conservation of energy must be restricted to a single given reference frame</li>
+</ul>
+</li>
+</ul>
+<h2 id="potential-energy">Potential energy</h2>
+<ul>
+<li>we can define a potential difference of a particle as the work done <em>against</em> the force
+<ul>
+<li>as defined by a path from A to B:
+<ul>
+<li>$\Delta V = - \int_{0}^{B} F\left(x\right) dx - - \int_{0}^{A} F\left(x\right) dx$</li>
+<li>both points use the same reference point (this can be at the origin, or at infinity, it does not actually matter)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>it is a scalar function
+<ul>
+<li>$F\left(x\right) = -\frac{dV\left(x\right)}{dx}$</li>
+<li>or i.e., force is the negative gradient of the potential</li>
+</ul>
+</li>
+</ul>
+<h2 id="mechanical-energy">Mechanical energy</h2>
+<ul>
+<li>energy is dissipated when work is done by friction or drag</li>
+<li>the total energy which is the sum KE and PE minus energy dissipated, must be constant in time in a closed system to conserve energy
+<ul>
+<li>a closed system has no external forces</li>
+<li>in the presence of external forces, the work done externally has to be factored in as it leads to changes in both KE &amp; PE</li>
+</ul>
+</li>
+</ul>
+<h2 id="conservative-forces">Conservative forces</h2>
+<ul>
+<li>definition
+<ul>
+<li>if we can define a change in potential in terms of the work done against a force, and that the potential does not depend on the path taken, then that force is considered to be <em>conservative</em>
+<ul>
+<li>from this, we can deduce that the work done by a conservative force around a closed loop is zero</li>
+<li>energy is conserved under the action of a conservative force</li>
+<li>forces which lead to energy dissipation in the form of heat loss is <a href="non-conservative-forces">non-conservative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="application-transfer-to-com-frame">Application: transfer to c.o.m. frame</h2>
+<ul>
+<li>since total momentum is always zero in the c.o.m. frame
+<ul>
+<li>2 particles moving in 2D towards each other has a $\boldsymbol{v_{com}}$
+<ul>
+<li>$\boldsymbol{v_{com}} = \frac{m_1\boldsymbol{u_1}+m_2\boldsymbol{u_2}}{m_1+m_2}$ <a href="#momentum-and-com-frame">here</a></li>
+<li>find $\boldsymbol{u'<em>1} = \boldsymbol{u_1 - v</em>{com}}$</li>
+<li>and $\boldsymbol{u'<em>2} = \boldsymbol{u_2 - v</em>{com}}$</li>
+<li>also final velocities, use this to find coefficient of restitution $e = \frac{\left|\boldsymbol{v_2-v_1}\right|}{\left|\boldsymbol{u_2-u_1}\right|}$</li>
+<li>also ratio between total final KE and total initial KE is $e^2$ in this frame</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts/digital-tasks">Tasks</a></li>
+         
+          <li><a href="/posts/personal-tasks">Todos</a></li>
+         
+          <li><a href="/posts/agenda">Agenda</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/posts/bookmarks">Bookmarks</a></li>
+        
+      </ul>
+    </div>
+
+    
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vectors">Vectors</a>
+      <ul>
+        <li><a href="#notations">Notations</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#position-vectors">Position vectors</a></li>
+        <li><a href="#vector-algebra">Vector algebra</a></li>
+      </ul>
+    </li>
+    <li><a href="#equations-of-motion">Equations of motion</a>
+      <ul>
+        <li><a href="#constant-acceleration">Constant acceleration</a></li>
+        <li><a href="#varying-acceleration">Varying acceleration</a></li>
+      </ul>
+    </li>
+    <li><a href="#equations-of-motions-vectors">Equations of motions (vectors)</a>
+      <ul>
+        <li><a href="#constant-acceleration-1">Constant acceleration</a></li>
+        <li><a href="#varying-acceleration-1">Varying acceleration</a></li>
+      </ul>
+    </li>
+    <li><a href="#newtons-first-law">Newton&rsquo;s first law</a>
+      <ul>
+        <li><a href="#reference-frames">Reference frames</a></li>
+        <li><a href="#momentum-and-com-frame">Momentum and c.o.m. frame</a></li>
+      </ul>
+    </li>
+    <li><a href="#newtons-second-law-and-forces">Newton&rsquo;s second law and forces</a>
+      <ul>
+        <li><a href="#friction">Friction</a></li>
+        <li><a href="#drag">Drag</a></li>
+        <li><a href="#fields">Fields</a></li>
+        <li><a href="#rocket-equation">Rocket equation</a></li>
+      </ul>
+    </li>
+    <li><a href="#newtons-third-law">Newton&rsquo;s third law</a>
+      <ul>
+        <li><a href="#two-body-problem">Two-body problem</a></li>
+        <li><a href="#composite-rigid-bodies">Composite rigid bodies</a></li>
+      </ul>
+    </li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#potential-energy">Potential energy</a></li>
+    <li><a href="#mechanical-energy">Mechanical energy</a></li>
+    <li><a href="#conservative-forces">Conservative forces</a></li>
+    <li><a href="#application-transfer-to-com-frame">Application: transfer to c.o.m. frame</a></li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&text=Mechanics%20%28Core%201%29" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&title=Mechanics%20%28Core%201%29" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&is_video=false&description=Mechanics%20%28Core%201%29" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Mechanics%20%28Core%201%29&body=Check out this article: http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&title=Mechanics%20%28Core%201%29" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&title=Mechanics%20%28Core%201%29" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&name=Mechanics%20%28Core%201%29&description=Vectors%20Notations%20%20the%20basis%20is%20the%20set%20of%20unit%20vectors%20from%20which%20all%20others%20are%20built%20perpendicular%20axes%20normally%20have%20basis%20vectors%20%24%5cboldsymbol%7b%5chat%7bi%7d%2c%5chat%7bj%7d%2c%5chat%7bk%7d%7d%24%20%20helpful%20to%20remember%3a%20i%20%3d%208%20o%26rsquo%3bclock%2c%20j%20%3d%204%20o%26rsquo%3bclock%2c%20k%20%3d%2012%20o%26rsquo%3bclock%20%28standard%29%20this%20is%20right-handed%20axes%20%28anti-clockwise%29%20%20%20%24%5cboldsymbol%7b%5chat%7ba%7d%7d%20%3d%20%5cfrac%7b%5cboldsymbol%7ba%7d%7d%7b%5cleft%7ca%5cright%7c%7d%24%20%20Components%20%20%24%5ctheta%24%20taken%20from%20x-axis%20%20%24a_x%20%3d%20a%5ccos%7b%5ctheta%7d%24%20%24a_y%20%3d%20a%5csin%7b%5ctheta%7d%24%20%24%5ctan%7b%5ctheta%7d%20%3d%20%5cfrac%7ba_y%7d%7ba_x%7d%24%20%24%5cleft%7ca%5cright%7c%20%3d%20%5csqrt%7ba_x%5e2%2ba_y%5e2%7d%24%20%20%203D%20components%20%20pretty%20much%20compliant%20with%202D%20and%201D%20examples%2c%20but%20the%20concept%20of%20an%20e%20might%20be%20harder%20to%20visualise%2c%20we%20rely%20on%20the%20unit%20vectors%20as%20it%26rsquo%3bs%20a%20much%20easier%20system." aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2fexample.org%2fposts%2fmechanics-core-1%2f&t=Mechanics%20%28Core%201%29" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Copyleft! 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts/digital-tasks">Tasks</a></li>
+         
+        <li><a href="/posts/personal-tasks">Todos</a></li>
+         
+        <li><a href="/posts/agenda">Agenda</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/posts/bookmarks">Bookmarks</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/code-copy.js></script>
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Moving from yay to paru | Organisation x Knowledge Base</title>
+  <link rel = 'canonical' href = 'http://example.org/posts/paru/'>
+  <meta name="description" content="This is a personal blog, a digital agenda, a &#39;I-don&#39;t want to use emacs but I like orgmode&#39;, journal, and whatnot. It is owned by me, a university student studying Physics and Philosophy. I like tech, linux, privacy, anime and listening to obscure albums recommended by /mu/.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Moving from yay to paru" />
+<meta property="og:description" content="Migration Moving from yay to paru, I discovered a few useful commands that existed in yay that I never bothered checking out.
+Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tldr:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  alias pu=&#39;paru -Syu&#39; #sync &amp; upgrade alias pusu=&#39;paru -Syu --noconfirm&#39; #sync &amp; upgrade w/o confirmation alias pfetch=&#39;paru -Ps&#39; #display stats alias pcom=&#39;paru -Gc&#39; #display comments alias pnews=&#39;paru -Pw&#39; #display news alias pid=&#39;paru -U&#39; #install from local file(s) alias pir=&#39;paru -S&#39; #install from repositories alias pnd=&#39;paru -Qi&#39; #display info from database alias pnr=&#39;paru -Si&#39; #display info from repositories alias pfd=&#39;paru -Qs&#39; #search in database alias pfr=&#39;paru -Ss&#39; #search in repositories alias pls=&#39;paru -Q&#39; #list packages installed alias plsa=&#39;paru -Qea&#39; #list packages explicitly installed alias porf=&#39;paru -Qdt&#39; #list orphaned packages alias pcc=&#39;paru -Scd&#39; #interactive cache removal   FZF integration I also found that defining an installing and removing function which uses FZF to crawl through the local database is great." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/paru/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-01T21:46:00+00:00" />
+<meta property="article:modified_time" content="2021-08-01T21:46:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Moving from yay to paru"/>
+<meta name="twitter:description" content="Migration Moving from yay to paru, I discovered a few useful commands that existed in yay that I never bothered checking out.
+Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tldr:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  alias pu=&#39;paru -Syu&#39; #sync &amp; upgrade alias pusu=&#39;paru -Syu --noconfirm&#39; #sync &amp; upgrade w/o confirmation alias pfetch=&#39;paru -Ps&#39; #display stats alias pcom=&#39;paru -Gc&#39; #display comments alias pnews=&#39;paru -Pw&#39; #display news alias pid=&#39;paru -U&#39; #install from local file(s) alias pir=&#39;paru -S&#39; #install from repositories alias pnd=&#39;paru -Qi&#39; #display info from database alias pnr=&#39;paru -Si&#39; #display info from repositories alias pfd=&#39;paru -Qs&#39; #search in database alias pfr=&#39;paru -Ss&#39; #search in repositories alias pls=&#39;paru -Q&#39; #list packages installed alias plsa=&#39;paru -Qea&#39; #list packages explicitly installed alias porf=&#39;paru -Qdt&#39; #list orphaned packages alias pcc=&#39;paru -Scd&#39; #interactive cache removal   FZF integration I also found that defining an installing and removing function which uses FZF to crawl through the local database is great."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="http://example.org/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="http://example.org/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts/digital-tasks">Tasks</a></li>
+         
+        <li><a href="/posts/personal-tasks">Todos</a></li>
+         
+        <li><a href="/posts/agenda">Agenda</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/posts/bookmarks">Bookmarks</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" http://example.org/posts/cleaning-home/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="http://example.org/posts/casing-and-spacing/" aria-label="Next">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fexample.org%2fposts%2fparu%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&text=Moving%20from%20yay%20to%20paru" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&title=Moving%20from%20yay%20to%20paru" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&is_video=false&description=Moving%20from%20yay%20to%20paru" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Moving%20from%20yay%20to%20paru&body=Check out this article: http%3a%2f%2fexample.org%2fposts%2fparu%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&title=Moving%20from%20yay%20to%20paru" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&title=Moving%20from%20yay%20to%20paru" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&name=Moving%20from%20yay%20to%20paru&description=Migration%20Moving%20from%20yay%20to%20paru%2c%20I%20discovered%20a%20few%20useful%20commands%20that%20existed%20in%20yay%20that%20I%20never%20bothered%20checking%20out.%0aCheatsheet%20Below%20is%20a%20snippet%20from%20my%20zshrc%20showing%20my%20paru%20aliases%20and%20their%20tldr%3a%0a1%202%203%204%205%206%207%208%209%2010%2011%2012%2013%2014%2015%20%20alias%20pu%3d%26%2339%3bparu%20-Syu%26%2339%3b%20%23sync%20%26amp%3b%20upgrade%20alias%20pusu%3d%26%2339%3bparu%20-Syu%20--noconfirm%26%2339%3b%20%23sync%20%26amp%3b%20upgrade%20w%2fo%20confirmation%20alias%20pfetch%3d%26%2339%3bparu%20-Ps%26%2339%3b%20%23display%20stats%20alias%20pcom%3d%26%2339%3bparu%20-Gc%26%2339%3b%20%23display%20comments%20alias%20pnews%3d%26%2339%3bparu%20-Pw%26%2339%3b%20%23display%20news%20alias%20pid%3d%26%2339%3bparu%20-U%26%2339%3b%20%23install%20from%20local%20file%28s%29%20alias%20pir%3d%26%2339%3bparu%20-S%26%2339%3b%20%23install%20from%20repositories%20alias%20pnd%3d%26%2339%3bparu%20-Qi%26%2339%3b%20%23display%20info%20from%20database%20alias%20pnr%3d%26%2339%3bparu%20-Si%26%2339%3b%20%23display%20info%20from%20repositories%20alias%20pfd%3d%26%2339%3bparu%20-Qs%26%2339%3b%20%23search%20in%20database%20alias%20pfr%3d%26%2339%3bparu%20-Ss%26%2339%3b%20%23search%20in%20repositories%20alias%20pls%3d%26%2339%3bparu%20-Q%26%2339%3b%20%23list%20packages%20installed%20alias%20plsa%3d%26%2339%3bparu%20-Qea%26%2339%3b%20%23list%20packages%20explicitly%20installed%20alias%20porf%3d%26%2339%3bparu%20-Qdt%26%2339%3b%20%23list%20orphaned%20packages%20alias%20pcc%3d%26%2339%3bparu%20-Scd%26%2339%3b%20%23interactive%20cache%20removal%20%20%20FZF%20integration%20I%20also%20found%20that%20defining%20an%20installing%20and%20removing%20function%20which%20uses%20FZF%20to%20crawl%20through%20the%20local%20database%20is%20great." aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2fexample.org%2fposts%2fparu%2f&t=Moving%20from%20yay%20to%20paru" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#migration">Migration</a></li>
+    <li><a href="#cheatsheet">Cheatsheet</a></li>
+    <li><a href="#fzf-integration">FZF integration</a></li>
+  </ul>
+</nav>
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Moving from yay to paru
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-08-01 21:46:00 &#43;0000 UTC" itemprop="datePublished">2021-08-01</time>
+          
+        </div>
+        
+        
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/tech" rel="tag">tech</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/linux" rel="tag">linux</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/writing" rel="tag">writing</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    
+    <div class="content" itemprop="articleBody">
+      <h2 id="migration">Migration</h2>
+<p>Moving from <code>yay</code> to <code>paru</code>, I discovered a few useful commands that existed in <code>yay</code> that I never bothered checking out.</p>
+<h2 id="cheatsheet">Cheatsheet</h2>
+<p>Below is a snippet from my <code>zshrc</code> showing my paru aliases and their tldr:</p>
+<div class="highlight"><div style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#81a1c1">alias</span> pu<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Syu&#39;</span> <span style="color:#616e87;font-style:italic">#sync &amp; upgrade</span>
+<span style="color:#81a1c1">alias</span> pusu<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Syu --noconfirm&#39;</span> <span style="color:#616e87;font-style:italic">#sync &amp; upgrade w/o confirmation</span>
+<span style="color:#81a1c1">alias</span> pfetch<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Ps&#39;</span> <span style="color:#616e87;font-style:italic">#display stats</span>
+<span style="color:#81a1c1">alias</span> pcom<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Gc&#39;</span> <span style="color:#616e87;font-style:italic">#display comments</span>
+<span style="color:#81a1c1">alias</span> pnews<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Pw&#39;</span> <span style="color:#616e87;font-style:italic">#display news</span>
+<span style="color:#81a1c1">alias</span> pid<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -U&#39;</span> <span style="color:#616e87;font-style:italic">#install from local file(s)</span>
+<span style="color:#81a1c1">alias</span> pir<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -S&#39;</span> <span style="color:#616e87;font-style:italic">#install from repositories</span>
+<span style="color:#81a1c1">alias</span> pnd<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Qi&#39;</span> <span style="color:#616e87;font-style:italic">#display info from database</span>
+<span style="color:#81a1c1">alias</span> pnr<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Si&#39;</span> <span style="color:#616e87;font-style:italic">#display info from repositories</span>
+<span style="color:#81a1c1">alias</span> pfd<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Qs&#39;</span> <span style="color:#616e87;font-style:italic">#search in database</span>
+<span style="color:#81a1c1">alias</span> pfr<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Ss&#39;</span> <span style="color:#616e87;font-style:italic">#search in repositories</span>
+<span style="color:#81a1c1">alias</span> pls<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Q&#39;</span> <span style="color:#616e87;font-style:italic">#list packages installed</span>
+<span style="color:#81a1c1">alias</span> plsa<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Qea&#39;</span> <span style="color:#616e87;font-style:italic">#list packages explicitly installed</span>
+<span style="color:#81a1c1">alias</span> porf<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Qdt&#39;</span> <span style="color:#616e87;font-style:italic">#list orphaned packages</span>
+<span style="color:#81a1c1">alias</span> pcc<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#39;paru -Scd&#39;</span> <span style="color:#616e87;font-style:italic">#interactive cache removal</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="fzf-integration">FZF integration</h2>
+<p>I also found that defining an installing and removing function which uses FZF to crawl through the local database is great. Here are the function</p>
+<div class="highlight"><div style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#616e87;font-style:italic"># Paru fuzzy install</span>
+<span style="color:#81a1c1;font-weight:bold">function</span> ins <span style="color:#81a1c1">{</span>
+    paru -Slq <span style="color:#eceff4">|</span> fzf --height<span style="color:#81a1c1">=</span>80% --prompt<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34; &#34;</span> --preview-window<span style="color:#81a1c1">=</span>hidden --preview <span style="color:#a3be8c">&#39;paru -Si {1}&#39;</span> <span style="color:#eceff4">|</span> xargs -ro paru -S --removemake --cleanafter
+<span style="color:#81a1c1">}</span>
+
+<span style="color:#616e87;font-style:italic"># Paru fuzzy remove</span>
+<span style="color:#81a1c1;font-weight:bold">function</span> rem<span style="color:#81a1c1">()</span> <span style="color:#81a1c1">{</span>
+    paru -Qq <span style="color:#eceff4">|</span> fzf -q <span style="color:#a3be8c">&#34;</span>$1<span style="color:#a3be8c">&#34;</span> --height<span style="color:#81a1c1">=</span>80% --prompt<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34; &#34;</span> --preview-window<span style="color:#81a1c1">=</span>hidden --preview <span style="color:#a3be8c">&#39;paru -Qi {1}&#39;</span> <span style="color:#eceff4">|</span> xargs -ro paru -Rns
+<span style="color:#81a1c1">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts/digital-tasks">Tasks</a></li>
+         
+          <li><a href="/posts/personal-tasks">Todos</a></li>
+         
+          <li><a href="/posts/agenda">Agenda</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/posts/bookmarks">Bookmarks</a></li>
+        
+      </ul>
+    </div>
+
+    
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#migration">Migration</a></li>
+    <li><a href="#cheatsheet">Cheatsheet</a></li>
+    <li><a href="#fzf-integration">FZF integration</a></li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fexample.org%2fposts%2fparu%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&text=Moving%20from%20yay%20to%20paru" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&title=Moving%20from%20yay%20to%20paru" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&is_video=false&description=Moving%20from%20yay%20to%20paru" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Moving%20from%20yay%20to%20paru&body=Check out this article: http%3a%2f%2fexample.org%2fposts%2fparu%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&title=Moving%20from%20yay%20to%20paru" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&title=Moving%20from%20yay%20to%20paru" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2fexample.org%2fposts%2fparu%2f&name=Moving%20from%20yay%20to%20paru&description=Migration%20Moving%20from%20yay%20to%20paru%2c%20I%20discovered%20a%20few%20useful%20commands%20that%20existed%20in%20yay%20that%20I%20never%20bothered%20checking%20out.%0aCheatsheet%20Below%20is%20a%20snippet%20from%20my%20zshrc%20showing%20my%20paru%20aliases%20and%20their%20tldr%3a%0a1%202%203%204%205%206%207%208%209%2010%2011%2012%2013%2014%2015%20%20alias%20pu%3d%26%2339%3bparu%20-Syu%26%2339%3b%20%23sync%20%26amp%3b%20upgrade%20alias%20pusu%3d%26%2339%3bparu%20-Syu%20--noconfirm%26%2339%3b%20%23sync%20%26amp%3b%20upgrade%20w%2fo%20confirmation%20alias%20pfetch%3d%26%2339%3bparu%20-Ps%26%2339%3b%20%23display%20stats%20alias%20pcom%3d%26%2339%3bparu%20-Gc%26%2339%3b%20%23display%20comments%20alias%20pnews%3d%26%2339%3bparu%20-Pw%26%2339%3b%20%23display%20news%20alias%20pid%3d%26%2339%3bparu%20-U%26%2339%3b%20%23install%20from%20local%20file%28s%29%20alias%20pir%3d%26%2339%3bparu%20-S%26%2339%3b%20%23install%20from%20repositories%20alias%20pnd%3d%26%2339%3bparu%20-Qi%26%2339%3b%20%23display%20info%20from%20database%20alias%20pnr%3d%26%2339%3bparu%20-Si%26%2339%3b%20%23display%20info%20from%20repositories%20alias%20pfd%3d%26%2339%3bparu%20-Qs%26%2339%3b%20%23search%20in%20database%20alias%20pfr%3d%26%2339%3bparu%20-Ss%26%2339%3b%20%23search%20in%20repositories%20alias%20pls%3d%26%2339%3bparu%20-Q%26%2339%3b%20%23list%20packages%20installed%20alias%20plsa%3d%26%2339%3bparu%20-Qea%26%2339%3b%20%23list%20packages%20explicitly%20installed%20alias%20porf%3d%26%2339%3bparu%20-Qdt%26%2339%3b%20%23list%20orphaned%20packages%20alias%20pcc%3d%26%2339%3bparu%20-Scd%26%2339%3b%20%23interactive%20cache%20removal%20%20%20FZF%20integration%20I%20also%20found%20that%20defining%20an%20installing%20and%20removing%20function%20which%20uses%20FZF%20to%20crawl%20through%20the%20local%20database%20is%20great." aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2fexample.org%2fposts%2fparu%2f&t=Moving%20from%20yay%20to%20paru" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Copyleft! 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts/digital-tasks">Tasks</a></li>
+         
+        <li><a href="/posts/personal-tasks">Todos</a></li>
+         
+        <li><a href="/posts/agenda">Agenda</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/posts/bookmarks">Bookmarks</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/code-copy.js></script>
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</html>

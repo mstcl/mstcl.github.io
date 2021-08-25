@@ -1,10 +1,183 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
+    <title>Tags on Organisation x Knowledge Base</title>
     <link>http://example.org/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <description>Recent content in Tags on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language>
+    <copyright>Copyleft!</copyright>
+    <lastBuildDate>Tue, 24 Aug 2021 21:47:30 +0100</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tech</title>
+      <link>http://example.org/tags/tech/</link>
+      <pubDate>Tue, 24 Aug 2021 21:47:30 +0100</pubDate>
+      
+      <guid>http://example.org/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writing</title>
+      <link>http://example.org/tags/writing/</link>
+      <pubDate>Tue, 24 Aug 2021 21:47:30 +0100</pubDate>
+      
+      <guid>http://example.org/tags/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://example.org/tags/linux/</link>
+      <pubDate>Sat, 21 Aug 2021 19:01:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rice</title>
+      <link>http://example.org/tags/rice/</link>
+      <pubDate>Sat, 21 Aug 2021 19:01:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/rice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cpp</title>
+      <link>http://example.org/tags/cpp/</link>
+      <pubDate>Fri, 13 Aug 2021 16:06:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/cpp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>compphys</title>
+      <link>http://example.org/tags/compphys/</link>
+      <pubDate>Wed, 11 Aug 2021 14:04:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/compphys/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web-dev</title>
+      <link>http://example.org/tags/web-dev/</link>
+      <pubDate>Tue, 10 Aug 2021 17:42:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/web-dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>list</title>
+      <link>http://example.org/tags/list/</link>
+      <pubDate>Sat, 24 Jul 2021 16:14:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>compsci</title>
+      <link>http://example.org/tags/compsci/</link>
+      <pubDate>Sat, 24 Jul 2021 14:40:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/compsci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://example.org/tags/python/</link>
+      <pubDate>Sat, 24 Jul 2021 14:40:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bookmarks</title>
+      <link>http://example.org/tags/bookmarks/</link>
+      <pubDate>Fri, 23 Jul 2021 02:37:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/bookmarks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>links</title>
+      <link>http://example.org/tags/links/</link>
+      <pubDate>Fri, 23 Jul 2021 02:37:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>physics</title>
+      <link>http://example.org/tags/physics/</link>
+      <pubDate>Thu, 15 Jul 2021 14:37:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/physics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lists</title>
+      <link>http://example.org/tags/lists/</link>
+      <pubDate>Sat, 10 Jul 2021 12:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/lists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>http://example.org/tags/personal/</link>
+      <pubDate>Sat, 10 Jul 2021 12:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>todo</title>
+      <link>http://example.org/tags/todo/</link>
+      <pubDate>Sat, 10 Jul 2021 03:15:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/todo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maths</title>
+      <link>http://example.org/tags/maths/</link>
+      <pubDate>Sat, 10 Jul 2021 01:37:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>philosophy</title>
+      <link>http://example.org/tags/philosophy/</link>
+      <pubDate>Thu, 01 Jul 2021 13:52:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uni</title>
+      <link>http://example.org/tags/uni/</link>
+      <pubDate>Wed, 30 Jun 2021 12:39:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/uni/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

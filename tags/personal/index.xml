@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal on Organisation x Knowledge Base</title>
+    <link>http://example.org/tags/personal/</link>
+    <description>Recent content in personal on Organisation x Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>Copyleft!</copyright>
+    <lastBuildDate>Sat, 10 Jul 2021 12:30:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Declutter</title>
+      <link>http://example.org/posts/declutter/</link>
+      <pubDate>Sat, 10 Jul 2021 12:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/declutter/</guid>
+      <description>Note to self Maybe it will help reduce the anxiety surrounding this aspect of my life. I have been struggling every time a move comes up, this usually involves flying back home from school abroad, or simply just packing up alone. I hate possessions, I hate going through them and feeling wasteful if I throw them away, but simply giving them away sometimes require too much effort. I would do it if it were to be more accessible.</description>
+    </item>
+    
+    <item>
+      <title>Moving out</title>
+      <link>http://example.org/posts/moving-out/</link>
+      <pubDate>Sat, 10 Jul 2021 03:15:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/moving-out/</guid>
+      <description>Note to self moving date (17/07) what&amp;rsquo;s a sane order? I would say &amp;ldquo;other bits&amp;rdquo; first, obviously leaving the pc + monitor + peripherals until the day before but most clothes can be packed 3/4 days after a final laundry load (or I could just honestly wait to do laundry at the new place to save some dough)
+ the boxes  monitor (I wouldn&amp;rsquo;t put other things in) speakers + other bits rice-cooker + other bits pc leftover pantry items + other bits cookware + cutlery + other bits beddings   the suitcases  un: clothes (!</description>
+    </item>
+    
+    <item>
+      <title>Agenda</title>
+      <link>http://example.org/posts/agenda/</link>
+      <pubDate>Thu, 01 Jul 2021 01:37:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/agenda/</guid>
+      <description>2021    Date Event     22 Jul Result day   25 Jul Bebe   06 Aug Rent due   25 Aug Southville rent due   01 Sep southville tenancy starts   04 Sep 2nd dose   05 Sep UWE tenancy ends    </description>
+    </item>
+    
+    <item>
+      <title>Personal tasks</title>
+      <link>http://example.org/posts/personal-tasks/</link>
+      <pubDate>Thu, 24 Jun 2021 16:10:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/personal-tasks/</guid>
+      <description>24-07  buy bus ticket 🚌 buy groceries 🍉 clothes  dress shorts shirts    </description>
+    </item>
+    
+  </channel>
+</rss>

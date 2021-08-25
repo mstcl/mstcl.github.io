@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>compsci on Organisation x Knowledge Base</title>
-    <link>http://hhn-pham.github.io/tags/compsci/</link>
+    <link>https://github.com/hhn-pham/hhn-pham.github.io/tags/compsci/</link>
     <description>Recent content in compsci on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Sat, 24 Jul 2021 14:40:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/compsci/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jul 2021 14:40:00 +0000</lastBuildDate><atom:link href="https://github.com/hhn-pham/hhn-pham.github.io/tags/compsci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python sets</title>
-      <link>http://hhn-pham.github.io/posts/python-set/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/python-set/</link>
       <pubDate>Sat, 24 Jul 2021 14:40:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/python-set/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/python-set/</guid>
       <description> a python set is unordered and unindexed, they cannot be accessed through an index they also do not allow duplicated values  1 2  myset = {&amp;#34;ten&amp;#34;,&amp;#34;one&amp;#34;,&amp;#34;three&amp;#34;,&amp;#34;four&amp;#34;} print(myset)   </description>
     </item>
     
     <item>
       <title>Python tuples</title>
-      <link>http://hhn-pham.github.io/posts/python-tuple/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/python-tuple/</link>
       <pubDate>Sat, 24 Jul 2021 14:35:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/python-tuple/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/python-tuple/</guid>
       <description> a python tuple is an immutable, ordered collection once it is created it cannot be updated  1  mytuple = (&amp;#34;string&amp;#34;,pi)   </description>
     </item>
     

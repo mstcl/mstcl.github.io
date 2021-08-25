@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>todo on Organisation x Knowledge Base</title>
-    <link>http://hhn-pham.github.io/tags/todo/</link>
+    <link>https://github.com/hhn-pham/hhn-pham.github.io/tags/todo/</link>
     <description>Recent content in todo on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Sat, 10 Jul 2021 03:15:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/todo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 03:15:00 +0000</lastBuildDate><atom:link href="https://github.com/hhn-pham/hhn-pham.github.io/tags/todo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Moving out</title>
-      <link>http://hhn-pham.github.io/posts/moving-out/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/moving-out/</link>
       <pubDate>Sat, 10 Jul 2021 03:15:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/moving-out/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/moving-out/</guid>
       <description>Note to self moving date (17/07) what&amp;rsquo;s a sane order? I would say &amp;ldquo;other bits&amp;rdquo; first, obviously leaving the pc + monitor + peripherals until the day before but most clothes can be packed 3/4 days after a final laundry load (or I could just honestly wait to do laundry at the new place to save some dough)
  the boxes  monitor (I wouldn&amp;rsquo;t put other things in) speakers + other bits rice-cooker + other bits pc leftover pantry items + other bits cookware + cutlery + other bits beddings   the suitcases  un: clothes (!</description>
     </item>
     
     <item>
       <title>Groceries</title>
-      <link>http://hhn-pham.github.io/posts/groceries/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/groceries/</link>
       <pubDate>Sat, 03 Jul 2021 01:53:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/groceries/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/groceries/</guid>
       <description>Things to buy  rice soy sauce lentils cereal dishwashing liquid a stock pot a small baking tray eggs butter pierogi soy sauce/that thing ketchup milk cheese bread potatoes deodorant eggs cereal muesli meatballs pasta condiments pasta (farfalle) pasta sauce (pesto) rice chickpeas cereal milk block of cheddar &amp;amp; ricotto ice cream broccy tomatoes bananas yoghurt? milk cereal (for him and for her) parmesan bread cream cheese soy sauce soyjacks bananas cocoa smol rice 1kg et Al jogury  </description>
     </item>
     
     <item>
       <title>Personal tasks</title>
-      <link>http://hhn-pham.github.io/posts/personal-tasks/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/personal-tasks/</link>
       <pubDate>Thu, 24 Jun 2021 16:10:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/personal-tasks/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/personal-tasks/</guid>
       <description>24-07  buy bus ticket 🚌 buy groceries 🍉 clothes  dress shorts shirts    </description>
     </item>
     
     <item>
       <title>Digital tasks</title>
-      <link>http://hhn-pham.github.io/posts/digital-tasks/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/digital-tasks/</link>
       <pubDate>Thu, 24 Jun 2021 06:02:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/digital-tasks/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/digital-tasks/</guid>
       <description>Arch fix it before you reinstall
  get a Windows VM going (bonus if I can achieve GPU passthrough) rofi emoji switcher is it possible to rice systemd-boot? the answer is no 😥 neovim needs more of your attention background manga setup with hakuneko + zathura or mangodl with ranger backup files on the hard disk and make it btrfs! updated: no, going with ext4 vimwiki as git home zathura rice discord rice spotify rice migrate from wal to wpgtk i3 stuff:  i3-notifier i3-resurrect i3-bar as a hidden status line make a theme randomizer/chooser with rofi make a rofi cheatsheet (I&amp;rsquo;m too alpha for this) floating vim everywhere 😵 thread   configure broot transfer dotfiles to one folder and symlink everything git dotfiles + reddit post?</description>
     </item>

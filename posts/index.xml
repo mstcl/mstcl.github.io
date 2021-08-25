@@ -2,64 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Organisation x Knowledge Base</title>
-    <link>http://hhn-pham.github.io/posts/</link>
+    <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/</link>
     <description>Recent content in Posts on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Tue, 24 Aug 2021 21:47:30 +0100</lastBuildDate><atom:link href="http://hhn-pham.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Aug 2021 21:47:30 +0100</lastBuildDate><atom:link href="https://github.com/hhn-pham/hhn-pham.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Vimwiki to plain Markdown</title>
-      <link>http://hhn-pham.github.io/posts/from-vimwiki-to-plain-markdown/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/from-vimwiki-to-plain-markdown/</link>
       <pubDate>Tue, 24 Aug 2021 21:47:30 +0100</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/from-vimwiki-to-plain-markdown/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/from-vimwiki-to-plain-markdown/</guid>
       <description>Why I&amp;rsquo;m changing I have been using a combination of vimwiki and Mkdocs inside neovim for a while now, but I&amp;rsquo;m not really satisified with the outcome. Although Mkdocs with the material theme is extremely feature-packed (python markdown extensions are really good), I feel like rejecting bloat and returning to simplicity is better for blogging/journalling/organising in general. Mkdocs was made with slick documentions in mind so the javascript was annoying me quite a bit.</description>
     </item>
     
     <item>
       <title>Dotfiles</title>
-      <link>http://hhn-pham.github.io/posts/dotfiles/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/dotfiles/</link>
       <pubDate>Sat, 21 Aug 2021 19:01:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/dotfiles/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/dotfiles/</guid>
       <description>Dotfiles This a write-up for the README.md file for my dotfiles repository so the links will not work.
 Programs and tools    Program Name     Shell ZSH   Editor Neovim   Window manager i3-gaps   Compositor Picom   Bar Polybar   Launcher rofi   Browser Brave   Audio Pipewire   Spotify ncspot   PDF viewer Zathura   Media player MPV   GTK &amp;amp; colors wpgtk   Colorscheme Custom   Fetch neofetch   Prompt Spaceship   Terminal Kitty   Icons Fluent dark   Cursor Bibata   Lock i3-lock   Display manager LightDM   LightDM theme Aether   Notifications i3-notifier   Downloads Aria2   Image viewer feh    </description>
     </item>
     
     <item>
       <title>L-values and R-values</title>
-      <link>http://hhn-pham.github.io/posts/l-r-values/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/l-r-values/</link>
       <pubDate>Fri, 13 Aug 2021 16:06:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/l-r-values/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/l-r-values/</guid>
       <description>Assignment operators  an operand that legally can be on the left side of an assignment operator is an l-value. one that can be on the right side is an r-value not all l-values are r-values, but not all r-values are l-values.  </description>
     </item>
     
     <item>
       <title>Pointers</title>
-      <link>http://hhn-pham.github.io/posts/pointers/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/pointers/</link>
       <pubDate>Wed, 11 Aug 2021 14:04:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/pointers/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/pointers/</guid>
       <description>Definition  define an integer and reserves a location in memory for this specific variable  take an integer #!cpp pointer:    1  int *pointer    this defines an integer #!cpp pointer such that its content is the address of another place in memory  1 2 3  int var var = 10 pointer = &amp;amp;var    this defines an integer #!cpp var, and #!</description>
     </item>
     
     <item>
       <title>Casing and spacing</title>
-      <link>http://hhn-pham.github.io/posts/casing-and-spacing/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/casing-and-spacing/</link>
       <pubDate>Tue, 10 Aug 2021 17:42:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/casing-and-spacing/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/casing-and-spacing/</guid>
       <description> best practice: writing folder and file names lower-case, with no spaces, and words separated by hyphens (not underscores).  </description>
     </item>
     
     <item>
       <title>Moving from yay to paru</title>
-      <link>http://hhn-pham.github.io/posts/paru/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/paru/</link>
       <pubDate>Sun, 01 Aug 2021 21:46:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/paru/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/paru/</guid>
       <description>Migration Moving from yay to paru, I discovered a few useful commands that existed in yay that I never bothered checking out.
 Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tldr:
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  alias pu=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias pusu=&amp;#39;paru -Syu --noconfirm&amp;#39; #sync &amp;amp; upgrade w/o confirmation alias pfetch=&amp;#39;paru -Ps&amp;#39; #display stats alias pcom=&amp;#39;paru -Gc&amp;#39; #display comments alias pnews=&amp;#39;paru -Pw&amp;#39; #display news alias pid=&amp;#39;paru -U&amp;#39; #install from local file(s) alias pir=&amp;#39;paru -S&amp;#39; #install from repositories alias pnd=&amp;#39;paru -Qi&amp;#39; #display info from database alias pnr=&amp;#39;paru -Si&amp;#39; #display info from repositories alias pfd=&amp;#39;paru -Qs&amp;#39; #search in database alias pfr=&amp;#39;paru -Ss&amp;#39; #search in repositories alias pls=&amp;#39;paru -Q&amp;#39; #list packages installed alias plsa=&amp;#39;paru -Qea&amp;#39; #list packages explicitly installed alias porf=&amp;#39;paru -Qdt&amp;#39; #list orphaned packages alias pcc=&amp;#39;paru -Scd&amp;#39; #interactive cache removal   FZF integration I also found that defining an installing and removing function which uses FZF to crawl through the local database is great.</description>
@@ -67,74 +67,74 @@ Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tl
     
     <item>
       <title>Cleaning $HOME</title>
-      <link>http://hhn-pham.github.io/posts/cleaning-home/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/cleaning-home/</link>
       <pubDate>Sat, 31 Jul 2021 20:33:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/cleaning-home/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/cleaning-home/</guid>
       <description>XDG_Base_Directory crisis I ls -a my home directory one morning and found that it is littered with .dir and .file from compilers and packages that do not comply with the XDG standards. I did realise that I did not export the variables in my zshrc, so I did that and emptied my home directory pretty well. However, there are quite a few that needed their separate variable, like PACKAGE_XYZ_CONFIG_DIR=$HOME/.config/xyz/, some even needed alias that points the config directory to the right place.</description>
     </item>
     
     <item>
       <title>Bash scripting</title>
-      <link>http://hhn-pham.github.io/posts/bash-scripting/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/bash-scripting/</link>
       <pubDate>Fri, 30 Jul 2021 00:53:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/bash-scripting/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/bash-scripting/</guid>
       <description>Motivation I wanted a simple and creative way to manage my dotfiles, one which would allow more automation than my previous method. I stumbled upon many existing tools that can be utilised to manage dotfiles, such as GNU Stow and chezmoi. But they all seem to be too overkill for me, and their management method do not float my boat quite that well. Here&amp;rsquo;s what these tools might envision a ~/dotfiles or ~/.</description>
     </item>
     
     <item>
       <title>/etc/hosts</title>
-      <link>http://hhn-pham.github.io/posts/hostfile/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/hostfile/</link>
       <pubDate>Fri, 30 Jul 2021 00:32:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/hostfile/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/hostfile/</guid>
       <description>Utility I am now using hblock and it seems to be really great at managing /etc/hosts. To put simply, I have a template with my hostname and localhost, and then a sources.list file with StevenBlack master hostfile. Hblock essentially appends the StevenBlack&amp;rsquo;s hostfile to the template and then move it to /etc/hosts.</description>
     </item>
     
     <item>
       <title>(Neo)vim</title>
-      <link>http://hhn-pham.github.io/posts/vim/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/vim/</link>
       <pubDate>Sat, 24 Jul 2021 16:14:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/vim/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/vim/</guid>
       <description>Experience  I wanted to make a custom cheatsheet with all my custom bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&amp;rsquo;m a much better vim user now) I assigned ; to : a while ago, but I moved to &amp;lt;space&amp;gt;. While it&amp;rsquo;s been hard to change my muscle memory, it means since my leader key is ,, I can have the sequence ++comma+semicolon++ executing &amp;lt;esc&amp;gt;  this removes the need for my small pinky to travel far to reach the actual escape key    Recently learned bindings  f(x) jumps to next x on the line  there is also ++t++ which does the same but jumps to the place preceding the x lower-case variants go forward and upper-case variants go backwards ; repeats the latest jump command, can be extended $n$ times    Plugins  which key zen  autosession symbols kommentary suda neoscroll replaces smoothie maximizer spaceless  </description>
     </item>
     
     <item>
       <title>Python sets</title>
-      <link>http://hhn-pham.github.io/posts/python-set/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/python-set/</link>
       <pubDate>Sat, 24 Jul 2021 14:40:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/python-set/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/python-set/</guid>
       <description> a python set is unordered and unindexed, they cannot be accessed through an index they also do not allow duplicated values  1 2  myset = {&amp;#34;ten&amp;#34;,&amp;#34;one&amp;#34;,&amp;#34;three&amp;#34;,&amp;#34;four&amp;#34;} print(myset)   </description>
     </item>
     
     <item>
       <title>Python tuples</title>
-      <link>http://hhn-pham.github.io/posts/python-tuple/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/python-tuple/</link>
       <pubDate>Sat, 24 Jul 2021 14:35:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/python-tuple/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/python-tuple/</guid>
       <description> a python tuple is an immutable, ordered collection once it is created it cannot be updated  1  mytuple = (&amp;#34;string&amp;#34;,pi)   </description>
     </item>
     
     <item>
       <title>Chat services</title>
-      <link>http://hhn-pham.github.io/posts/chat-services/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/chat-services/</link>
       <pubDate>Fri, 23 Jul 2021 17:46:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/chat-services/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/chat-services/</guid>
       <description>Here&amp;rsquo;s a qualm: there are simply too many chat services, it&amp;rsquo;s splitting my brain
  discord as primary communication with my boyfriend, some of my friends, and most of popular public servers  discord + e2ee @ browser for main discord &amp;ndash;&amp;gt; insular @ android for main discord electron + betterdiscord integrations @ linux for alt, only for calling my boyfriend   telegram with my parents &amp;amp; lingering privacy-centric groups, or android modding groups  nekogram x @ android telegram k web @ browser   matrix (with libera bridge) for most public groups that are worthy enough to use the protocol, mainly privacy-focussed group and tech-related  fluffychat @ android mirage @ linux   whatsapp for absolute normies (uni groups, housemates, most irl boomers)  whatsapp &amp;ndash;&amp;gt; insular @ android whatsapp web @ browser but cookies are not saved   messenger/facebook/instagram for some old friends, but I probably open those websites once a year at this point  barinsta &amp;ndash;&amp;gt; insular @ android with chat function web versions @ browser but again, I simply avoid using it    Internet guide I followed this link below to integrate libera.</description>
     </item>
     
     <item>
       <title>TTRSS</title>
-      <link>http://hhn-pham.github.io/posts/ttrss/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/ttrss/</link>
       <pubDate>Fri, 23 Jul 2021 17:28:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/ttrss/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/ttrss/</guid>
       <description>Local-hosting So I&amp;rsquo;m hosting a Tiny Tiny RSS locally (LAN-only) and it works great, the web-ui is so damn slick with awesome-ttrss
 On the phone I am using the default app on f-droid and although there is no inline reading mode, it still works pretty well, all articles will have to be saved offline once I leave my house
 To get it running on my box: 1 2  cd $HOME/docker/rss docker-compose up -d   </description>
@@ -142,37 +142,37 @@ To get it running on my box: 1 2  cd $HOME/docker/rss docker-compose up -d   </d
     
     <item>
       <title>Bitwarden</title>
-      <link>http://hhn-pham.github.io/posts/bitwarden/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/bitwarden/</link>
       <pubDate>Fri, 23 Jul 2021 03:56:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/bitwarden/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/bitwarden/</guid>
       <description>Self-hosting  I sucesfully setup a docker container that is self-hosting bitwarden locally. I cannot expose the server so locally should be ideal still since I&amp;rsquo;m not going out as much or doing anything which requires instantaneous syncing. my passwords now contain a single point of failure, and that is my physical computer, if anything were to happen to the data on my nvme, then my passwords are screwed but hey, at least my passwords are not lingering somewhere on a centralised server that is very attractive to those with malicious intents I&amp;rsquo;m not important anyway, who would want to attack my local data?</description>
     </item>
     
     <item>
       <title>Bookmarks</title>
-      <link>http://hhn-pham.github.io/posts/bookmarks/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/bookmarks/</link>
       <pubDate>Fri, 23 Jul 2021 02:37:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/bookmarks/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/bookmarks/</guid>
       <description>Content  reddit mastodon lemmy hacker news rss  Cloud  mega nextcloud github  Utilities  syncthing nextdns anonaddy custom rom  Messaging  whatsapp telegram discord matrix  Media  predb snahp last.fm  youtube  Inboxes  protonmail disroot outlook uni gmail  Read later  consciousness &amp;amp; qp intro to dl bell&amp;rsquo;s theorem homunculus  </description>
     </item>
     
     <item>
       <title>Round-off errors</title>
-      <link>http://hhn-pham.github.io/posts/round-off-errors/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/round-off-errors/</link>
       <pubDate>Sun, 18 Jul 2021 19:31:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/round-off-errors/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/round-off-errors/</guid>
       <description>Page 27, paragraph 2, line 8-17  Since e^-20^ is a very small number and each term in the series can be rather large (of the order of 10^8^,it is clear that other terms as large as 10^8^, but negative, must cancel the figures in front of the decimal point and some behind as well. Since a computer can only hold a fixed number of significant figures, all those in front of the decimal point are not only useless, they are crowding out needed figures at the right end of the number.</description>
     </item>
     
     <item>
       <title>The loss-of-precision theorem</title>
-      <link>http://hhn-pham.github.io/posts/the-loss-of-precision-theorem/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/the-loss-of-precision-theorem/</link>
       <pubDate>Sun, 18 Jul 2021 12:43:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/the-loss-of-precision-theorem/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/the-loss-of-precision-theorem/</guid>
       <description>Subtraction If b and c are positive normalized floating-point binary machine numbers with $b &amp;lt; c$ and
 $$ 2^{-r} \leq 1 - \frac{c}{b} \leq 2^{-s}, $$
 Then at most $r$ and at least $s$ significant binary bits are lost in the subtraction $b-c$.</description>
@@ -180,19 +180,19 @@ Then at most $r$ and at least $s$ significant binary bits are lost in the subtra
     
     <item>
       <title>Dimensional analysis</title>
-      <link>http://hhn-pham.github.io/posts/dimensional-analysis/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/dimensional-analysis/</link>
       <pubDate>Thu, 15 Jul 2021 14:37:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/dimensional-analysis/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/dimensional-analysis/</guid>
       <description>Notations  [Y] = unit of Y  I always get this the other way around. Facepalm    </description>
     </item>
     
     <item>
       <title>Non-conservative forces</title>
-      <link>http://hhn-pham.github.io/posts/non-conservative-forces/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/non-conservative-forces/</link>
       <pubDate>Thu, 15 Jul 2021 13:43:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/non-conservative-forces/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/non-conservative-forces/</guid>
       <description>Question What on earth is a non-conservative force if all underlying forces of friction and other contact forces operate as conservative force on a microsopic level?
 This one partially answers my question here
 Hint: Mechanical energy is the keyword.
@@ -201,120 +201,120 @@ Another answer from stackexchange: Q: &amp;ldquo;How do many conservative forces
     
     <item>
       <title>Declutter</title>
-      <link>http://hhn-pham.github.io/posts/declutter/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/declutter/</link>
       <pubDate>Sat, 10 Jul 2021 12:30:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/declutter/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/declutter/</guid>
       <description>Note to self Maybe it will help reduce the anxiety surrounding this aspect of my life. I have been struggling every time a move comes up, this usually involves flying back home from school abroad, or simply just packing up alone. I hate possessions, I hate going through them and feeling wasteful if I throw them away, but simply giving them away sometimes require too much effort. I would do it if it were to be more accessible.</description>
     </item>
     
     <item>
       <title>Moving out</title>
-      <link>http://hhn-pham.github.io/posts/moving-out/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/moving-out/</link>
       <pubDate>Sat, 10 Jul 2021 03:15:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/moving-out/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/moving-out/</guid>
       <description>Note to self moving date (17/07) what&amp;rsquo;s a sane order? I would say &amp;ldquo;other bits&amp;rdquo; first, obviously leaving the pc + monitor + peripherals until the day before but most clothes can be packed 3/4 days after a final laundry load (or I could just honestly wait to do laundry at the new place to save some dough)
  the boxes  monitor (I wouldn&amp;rsquo;t put other things in) speakers + other bits rice-cooker + other bits pc leftover pantry items + other bits cookware + cutlery + other bits beddings   the suitcases  un: clothes (!</description>
     </item>
     
     <item>
       <title>Unit vectors</title>
-      <link>http://hhn-pham.github.io/posts/unit-vectors/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/unit-vectors/</link>
       <pubDate>Sat, 10 Jul 2021 01:37:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/unit-vectors/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/unit-vectors/</guid>
       <description>dot product  perpendicular/orthogonal components are 0  $\hat{i} \cdot \hat{j} = \hat{j} \cdot \hat{k} = \hat{k} \cdot \hat{i}$ and so on and so forth    vector product  I generally find the right hand rule to be very straight forward  index $\times$ middle = thumb    </description>
     </item>
     
     <item>
       <title>Polar coordinates</title>
-      <link>http://hhn-pham.github.io/posts/polar-coordinates/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/polar-coordinates/</link>
       <pubDate>Tue, 06 Jul 2021 00:01:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/polar-coordinates/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/polar-coordinates/</guid>
       <description>Conventions  $x = r\cos{\theta}$ $y = r\sin{\theta}$ $r = \sqrt{x^2 + y^2}$ $\phi = \arctan{\frac{y}{x}}$  </description>
     </item>
     
     <item>
       <title>Groceries</title>
-      <link>http://hhn-pham.github.io/posts/groceries/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/groceries/</link>
       <pubDate>Sat, 03 Jul 2021 01:53:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/groceries/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/groceries/</guid>
       <description>Things to buy  rice soy sauce lentils cereal dishwashing liquid a stock pot a small baking tray eggs butter pierogi soy sauce/that thing ketchup milk cheese bread potatoes deodorant eggs cereal muesli meatballs pasta condiments pasta (farfalle) pasta sauce (pesto) rice chickpeas cereal milk block of cheddar &amp;amp; ricotto ice cream broccy tomatoes bananas yoghurt? milk cereal (for him and for her) parmesan bread cream cheese soy sauce soyjacks bananas cocoa smol rice 1kg et Al jogury  </description>
     </item>
     
     <item>
       <title>Luks on LVM</title>
-      <link>http://hhn-pham.github.io/posts/luksonlvm/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/luksonlvm/</link>
       <pubDate>Sat, 03 Jul 2021 01:26:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/luksonlvm/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/luksonlvm/</guid>
       <description>A table demonstrating my setup +---------+-------------+-------------+-------------+ |...EFI...|...lv root...|...lv swap...|...lv home...| |../boot..|....../......|.............|..../home....| |..fat32..|.....ext.....|.............|.....ext.....| |../d/n1..|../d/m/root..|../d/m/swap..|../d/m/home..| |.........|....LUKS2....|...dmcrypt...|....LUKS2....| |.........|-------------+-------------+-------------+ |.........|..................vg.....................| |.........|-----------------------------------------| |.........|................pv./d/n2.................| +---------------------------------------------------+  </description>
     </item>
     
     <item>
       <title>Absolute space</title>
-      <link>http://hhn-pham.github.io/posts/absolute-space/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/absolute-space/</link>
       <pubDate>Thu, 01 Jul 2021 13:52:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/absolute-space/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/absolute-space/</guid>
       <description>The Cartesian body  motion of a body is a change of relation to the bodies that surround it. concept of inertia  a body&amp;rsquo;s motion wil be preserved unless caused to deviate from its path so not a function of its spatial relations to other bodies but of its causal relation    The Newtonian body  a body&amp;rsquo;s motion is not a function of its spatial relations to other objects but rather of whether forces are impressed on it.</description>
     </item>
     
     <item>
       <title>Agenda</title>
-      <link>http://hhn-pham.github.io/posts/agenda/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/agenda/</link>
       <pubDate>Thu, 01 Jul 2021 01:37:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/agenda/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/agenda/</guid>
       <description>2021    Date Event     22 Jul Result day   25 Jul Bebe   06 Aug Rent due   25 Aug Southville rent due   01 Sep southville tenancy starts   04 Sep 2nd dose   05 Sep UWE tenancy ends    </description>
     </item>
     
     <item>
       <title>Solid angles</title>
-      <link>http://hhn-pham.github.io/posts/angle/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/angle/</link>
       <pubDate>Thu, 01 Jul 2021 01:26:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/angle/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/angle/</guid>
       <description> unit: steradian (sr) analogous to plane angle, which is defined by arc length and radius, but unlike the plane angle, it is defined by the surface area of a sphere subtended by the lines and by the radius of that sphere (squared, for a correct dimensional analysis.  $\theta = \frac{l}{dr}$ $\Omega = \frac{a}{r^2}$ unlike the plane angle, it cannot be conceived of without reference to an arbitrary sphere.  this was a pretty intuitive and sympathetic explanation      </description>
     </item>
     
     <item>
       <title>Mechanics (Core 1)</title>
-      <link>http://hhn-pham.github.io/posts/mechanics-core-1/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/mechanics-core-1/</link>
       <pubDate>Wed, 30 Jun 2021 12:39:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/mechanics-core-1/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/mechanics-core-1/</guid>
       <description>Vectors Notations  the basis is the set of unit vectors from which all others are built perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$  helpful to remember: i = 8 o&amp;rsquo;clock, j = 4 o&amp;rsquo;clock, k = 12 o&amp;rsquo;clock (standard) this is right-handed axes (anti-clockwise)   $\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$  Components  $\theta$ taken from x-axis  $a_x = a\cos{\theta}$ $a_y = a\sin{\theta}$ $\tan{\theta} = \frac{a_y}{a_x}$ $\left|a\right| = \sqrt{a_x^2+a_y^2}$   3D components  pretty much compliant with 2D and 1D examples, but the concept of an e might be harder to visualise, we rely on the unit vectors as it&amp;rsquo;s a much easier system.</description>
     </item>
     
     <item>
       <title>Personal tasks</title>
-      <link>http://hhn-pham.github.io/posts/personal-tasks/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/personal-tasks/</link>
       <pubDate>Thu, 24 Jun 2021 16:10:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/personal-tasks/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/personal-tasks/</guid>
       <description>24-07  buy bus ticket 🚌 buy groceries 🍉 clothes  dress shorts shirts    </description>
     </item>
     
     <item>
       <title>Digital tasks</title>
-      <link>http://hhn-pham.github.io/posts/digital-tasks/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/digital-tasks/</link>
       <pubDate>Thu, 24 Jun 2021 06:02:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/digital-tasks/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/digital-tasks/</guid>
       <description>Arch fix it before you reinstall
  get a Windows VM going (bonus if I can achieve GPU passthrough) rofi emoji switcher is it possible to rice systemd-boot? the answer is no 😥 neovim needs more of your attention background manga setup with hakuneko + zathura or mangodl with ranger backup files on the hard disk and make it btrfs! updated: no, going with ext4 vimwiki as git home zathura rice discord rice spotify rice migrate from wal to wpgtk i3 stuff:  i3-notifier i3-resurrect i3-bar as a hidden status line make a theme randomizer/chooser with rofi make a rofi cheatsheet (I&amp;rsquo;m too alpha for this) floating vim everywhere 😵 thread   configure broot transfer dotfiles to one folder and symlink everything git dotfiles + reddit post?</description>
     </item>
     
     <item>
       <title>Scratchpad</title>
-      <link>http://hhn-pham.github.io/posts/scratchpad/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/scratchpad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/scratchpad/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/scratchpad/</guid>
       <description>Wayland shenanigans  migrating from X to wayland with the new nvidia-beta drivers  a few useful links  awesome wayland wayland migration guide   trying Gnome/KDE in place of sway because sway doesn&amp;rsquo;t like EGLS  further update&amp;hellip;I&amp;rsquo;m too lazy so fuck it. I like X, X works, most things + games work. why is steam @ linux so awful? capped at 60hz (just like chromium à la vanilla, because brave and vivaldi are buttery smooth, but any fork and flavour of chromium does.</description>
     </item>
     

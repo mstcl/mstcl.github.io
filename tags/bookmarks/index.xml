@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bookmarks on Organisation x Knowledge Base</title>
-    <link>http://hhn-pham.github.io/tags/bookmarks/</link>
+    <link>https://github.com/hhn-pham/hhn-pham.github.io/tags/bookmarks/</link>
     <description>Recent content in bookmarks on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Fri, 23 Jul 2021 02:37:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/bookmarks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jul 2021 02:37:00 +0000</lastBuildDate><atom:link href="https://github.com/hhn-pham/hhn-pham.github.io/tags/bookmarks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bookmarks</title>
-      <link>http://hhn-pham.github.io/posts/bookmarks/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/bookmarks/</link>
       <pubDate>Fri, 23 Jul 2021 02:37:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/bookmarks/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/bookmarks/</guid>
       <description>Content  reddit mastodon lemmy hacker news rss  Cloud  mega nextcloud github  Utilities  syncthing nextdns anonaddy custom rom  Messaging  whatsapp telegram discord matrix  Media  predb snahp last.fm  youtube  Inboxes  protonmail disroot outlook uni gmail  Read later  consciousness &amp;amp; qp intro to dl bell&amp;rsquo;s theorem homunculus  </description>
     </item>
     

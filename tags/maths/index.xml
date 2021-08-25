@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>maths on Organisation x Knowledge Base</title>
-    <link>http://hhn-pham.github.io/tags/maths/</link>
+    <link>https://github.com/hhn-pham/hhn-pham.github.io/tags/maths/</link>
     <description>Recent content in maths on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Sat, 10 Jul 2021 01:37:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/maths/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 01:37:00 +0000</lastBuildDate><atom:link href="https://github.com/hhn-pham/hhn-pham.github.io/tags/maths/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unit vectors</title>
-      <link>http://hhn-pham.github.io/posts/unit-vectors/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/unit-vectors/</link>
       <pubDate>Sat, 10 Jul 2021 01:37:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/unit-vectors/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/unit-vectors/</guid>
       <description>dot product  perpendicular/orthogonal components are 0  $\hat{i} \cdot \hat{j} = \hat{j} \cdot \hat{k} = \hat{k} \cdot \hat{i}$ and so on and so forth    vector product  I generally find the right hand rule to be very straight forward  index $\times$ middle = thumb    </description>
     </item>
     
     <item>
       <title>Polar coordinates</title>
-      <link>http://hhn-pham.github.io/posts/polar-coordinates/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/polar-coordinates/</link>
       <pubDate>Tue, 06 Jul 2021 00:01:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/polar-coordinates/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/polar-coordinates/</guid>
       <description>Conventions  $x = r\cos{\theta}$ $y = r\sin{\theta}$ $r = \sqrt{x^2 + y^2}$ $\phi = \arctan{\frac{y}{x}}$  </description>
     </item>
     
     <item>
       <title>Solid angles</title>
-      <link>http://hhn-pham.github.io/posts/angle/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/angle/</link>
       <pubDate>Thu, 01 Jul 2021 01:26:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/angle/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/angle/</guid>
       <description> unit: steradian (sr) analogous to plane angle, which is defined by arc length and radius, but unlike the plane angle, it is defined by the surface area of a sphere subtended by the lines and by the radius of that sphere (squared, for a correct dimensional analysis.  $\theta = \frac{l}{dr}$ $\Omega = \frac{a}{r^2}$ unlike the plane angle, it cannot be conceived of without reference to an arbitrary sphere.  this was a pretty intuitive and sympathetic explanation      </description>
     </item>
     

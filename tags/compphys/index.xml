@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>compphys on Organisation x Knowledge Base</title>
-    <link>http://hhn-pham.github.io/tags/compphys/</link>
+    <link>https://github.com/hhn-pham/hhn-pham.github.io/tags/compphys/</link>
     <description>Recent content in compphys on Organisation x Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>Copyleft!</copyright>
-    <lastBuildDate>Wed, 11 Aug 2021 14:04:00 +0000</lastBuildDate><atom:link href="http://hhn-pham.github.io/tags/compphys/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 14:04:00 +0000</lastBuildDate><atom:link href="https://github.com/hhn-pham/hhn-pham.github.io/tags/compphys/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pointers</title>
-      <link>http://hhn-pham.github.io/posts/pointers/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/pointers/</link>
       <pubDate>Wed, 11 Aug 2021 14:04:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/pointers/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/pointers/</guid>
       <description>Definition  define an integer and reserves a location in memory for this specific variable  take an integer #!cpp pointer:    1  int *pointer    this defines an integer #!cpp pointer such that its content is the address of another place in memory  1 2 3  int var var = 10 pointer = &amp;amp;var    this defines an integer #!cpp var, and #!</description>
     </item>
     
     <item>
       <title>Round-off errors</title>
-      <link>http://hhn-pham.github.io/posts/round-off-errors/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/round-off-errors/</link>
       <pubDate>Sun, 18 Jul 2021 19:31:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/round-off-errors/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/round-off-errors/</guid>
       <description>Page 27, paragraph 2, line 8-17  Since e^-20^ is a very small number and each term in the series can be rather large (of the order of 10^8^,it is clear that other terms as large as 10^8^, but negative, must cancel the figures in front of the decimal point and some behind as well. Since a computer can only hold a fixed number of significant figures, all those in front of the decimal point are not only useless, they are crowding out needed figures at the right end of the number.</description>
     </item>
     
     <item>
       <title>The loss-of-precision theorem</title>
-      <link>http://hhn-pham.github.io/posts/the-loss-of-precision-theorem/</link>
+      <link>https://github.com/hhn-pham/hhn-pham.github.io/posts/the-loss-of-precision-theorem/</link>
       <pubDate>Sun, 18 Jul 2021 12:43:00 +0000</pubDate>
       
-      <guid>http://hhn-pham.github.io/posts/the-loss-of-precision-theorem/</guid>
+      <guid>https://github.com/hhn-pham/hhn-pham.github.io/posts/the-loss-of-precision-theorem/</guid>
       <description>Subtraction If b and c are positive normalized floating-point binary machine numbers with $b &amp;lt; c$ and
 $$ 2^{-r} \leq 1 - \frac{c}{b} \leq 2^{-s}, $$
 Then at most $r$ and at least $s$ significant binary bits are lost in the subtraction $b-c$.</description>

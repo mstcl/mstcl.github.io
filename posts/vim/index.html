@@ -67,15 +67,23 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <p>I assigned <code>;</code> to <code>:</code> a while ago, but I moved to <code>&lt;space&gt;</code>. While it&rsquo;s been hard to change my muscle memory, it means since my <strong>leader</strong> key is <code>,</code>, I can have the sequence <code>comma+semicolon</code> executing <code>&lt;esc&gt;</code>. This removes the need for my small pinky to travel far to reach the actual escape key.</p>
 <h3 id="update-2508">Update 25/08</h3>
 <p>I used <code>,.</code> as leader for a while but now I am back to <code>,</code>. I am using a plugin called <a href="https://github.com/jdhao/better-escape.vim">Better Escape</a> and while it is not written in Lua, it means I can do <code>jk</code> quickly to escape insert mode.</p>
-<h2 id="recently-learned-bindings">Recently learned bindings</h2>
+<h2 id="recently-learned-things">Recently learned things</h2>
 <ul>
 <li><code>f[x]</code>  jumps to next <code>x</code> on the line
 <ul>
 <li>there is also <code>t</code> which does the same but jumps to the place preceding the <code>x</code></li>
-<li>lower-case variants go forward and upper-case variants go backwards</li>
-<li><code>;</code> repeats the latest jump command, can be extended as many times as I want</li>
 </ul>
 </li>
+<li><code>F</code> is like <code>f</code> but it goes backwards instead, same goes for <code>T</code>.
+<ul>
+<li><code>;</code> repeats the latest jump command, <code>,</code> repeats in the opposite direction</li>
+<li>However, since my leader key is <code>,</code>, I am using a plugin called Lightspeed to navigate and it uses something similar to Clever F.</li>
+</ul>
+</li>
+<li><code>&lt;C-A&gt;</code> to increment number under cursor and <code>&lt;C-X&gt;</code> to decrement number under cursor</li>
+<li><code>:123,345s/&lt;from&gt;/&lt;to&gt;/g</code> will do search and replace for those lines</li>
+<li><code>J</code> to append next line to current line, can be dot repeated however many lines with <code>5.</code>.</li>
+<li><code>&lt;C-o&gt;</code> to enter normal mode only and re-enter insert mode after one movement.</li>
 </ul>
 <h2 id="plugins-to-try-out">Plugins to try out</h2>
 <ul>
@@ -90,7 +98,7 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <li><input disabled="" type="checkbox"> <del><a href="https://github.com/lewis6991/spaceless.nvim">spaceless</a></del></li>
 </ul>
 <h3 id="plugins-im-currently-using">Plugins I&rsquo;m currently using</h3>
-<p>It is listed and annotated pretty well in my dotfile repository, link <a href="https://github.com/hhn-pham/dotfiles/blob/main/nvim-plugins.lua">here</a> and <a href="https://codeberg.org/lckdscl/dotfiles/src/branch/main/nvim-plugins.lua">here</a>. Regardless, here is a condense list, without link because I&rsquo;m lazy. Expect this list to change as I replace, remove, and add plugins.</p>
+<p>It is listed and annotated pretty well in my dotfile repository, link <a href="https://github.com/hhn-pham/dotfiles/blob/main/nvim-plugins.lua">here</a> and <a href="https://codeberg.org/lckdscl/dotfiles/src/branch/main/nvim-plugins.lua">here</a>. Regardless, here is a condensed list, without links because I&rsquo;m lazy. Expect this list to change as I replace, remove, and add plugins.</p>
 <ul>
 <li><strong>Plugin Manager</strong>
 <ul>
@@ -106,8 +114,8 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <li>Neoscroll</li>
 <li>Zen Mode</li>
 <li>Twilight</li>
-<li>Nvim Web Devicons</li>
-<li>Indent BLankline</li>
+<li>Web Devicons</li>
+<li>Indent Blankline</li>
 </ul>
 </li>
 <li><strong>Startscreen &amp; session control</strong>
@@ -120,10 +128,15 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <li>Colorbuddy</li>
 </ul>
 </li>
-<li><strong>Jupyter notebook remote editing</strong>
+<li><strong>Terminal</strong>
+<ul>
+<li>Floaterm</li>
+</ul>
+</li>
+<li><strong>Jupyter notebook</strong>
 <ul>
 <li>Jupytext</li>
-<li>Jupytervim</li>
+<li><del>Jupytervim</del></li>
 </ul>
 </li>
 <li><strong>Editing</strong>
@@ -136,6 +149,7 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <li>Undotree</li>
 <li>Neoformat</li>
 <li>Tabular</li>
+<li>Cleanfold</li>
 </ul>
 </li>
 <li><strong>Navigating</strong>
@@ -161,7 +175,7 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <li><strong>Snippets/Autocompletion</strong>
 <ul>
 <li>Compe</li>
-<li>Ultsnips</li>
+<li>Ultisnips</li>
 </ul>
 </li>
 <li><strong>Vim command</strong>
@@ -172,6 +186,7 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <li><strong>Git</strong>
 <ul>
 <li>Gitsigns</li>
+<li>Fugitive</li>
 </ul>
 </li>
 <li><strong>Lua BTS</strong>
@@ -179,15 +194,15 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <li>Plenary</li>
 </ul>
 </li>
+<li><strong>TEX</strong>
+<ul>
+<li>Tex conceal</li>
+</ul>
+</li>
 <li><strong>Language servers</strong>
 <ul>
 <li>Symbols Outline</li>
 <li>Lspconfig</li>
-</ul>
-</li>
-<li><strong>Vim meta</strong>
-<ul>
-<li>HiLinkTrace</li>
 </ul>
 </li>
 </ul>

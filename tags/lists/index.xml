@@ -27,42 +27,5 @@
  the boxes  monitor (I wouldn&amp;rsquo;t put other things in) speakers + other bits rice-cooker + other bits pc leftover pantry items + other bits cookware + cutlery + other bits beddings   the suitcases  un: clothes (!</description>
     </item>
     
-    <item>
-      <title>Groceries</title>
-      <link>https://hhn-pham.github.io/org/groceries/</link>
-      <pubDate>Sat, 03 Jul 2021 01:53:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/org/groceries/</guid>
-      <description>Things to buy  razor detergent fabric softener scissors extension plugs brick soyboyz L pepper shower things shuger ricotttto L eggies tuna rice soy sauce lentils cereal dishwashing liquid a stock pot eggs butter soy sauce/that thing ketchup milk cheese bread deodorant eggs cereal muesli meatballs pasta condiments pasta (farfalle) pasta sauce (pesto) rice chickpeas cereal milk block of cheddar &amp;amp; ricotto ice cream broccy tomatoes bananas yoghurt? milk cereal (for him and for her) parmesan bread cream cheese soy sauce soyjacks bananas cocoa smol rice 1kg et Al jogury cereal milk potatoes onion tuna some kind of meat cheese snackies  </description>
-    </item>
-    
-    <item>
-      <title>Agenda</title>
-      <link>https://hhn-pham.github.io/org/agenda/</link>
-      <pubDate>Thu, 01 Jul 2021 01:37:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/org/agenda/</guid>
-      <description>2021    Date Event     22 Jul Result day   25 Jul Bebe   06 Aug Rent due   25 Aug Southville rent due   01 Sep southville tenancy starts   04 Sep 2nd dose   05 Sep UWE tenancy ends    </description>
-    </item>
-    
-    <item>
-      <title>Personal tasks</title>
-      <link>https://hhn-pham.github.io/org/personal-tasks/</link>
-      <pubDate>Thu, 24 Jun 2021 16:10:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/org/personal-tasks/</guid>
-      <description>24-07  buy bus ticket 🚌 buy groceries 🍉 clothes  dress shorts shirts    </description>
-    </item>
-    
-    <item>
-      <title>Digital tasks</title>
-      <link>https://hhn-pham.github.io/org/digital-tasks/</link>
-      <pubDate>Thu, 24 Jun 2021 06:02:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/org/digital-tasks/</guid>
-      <description>Arch fix it before you reinstall
- get a Windows VM going (bonus if I can achieve GPU passthrough) rofi emoji switcher is it possible to rice systemd-boot? the answer is no 😥 neovim needs more of your attention background manga setup with hakuneko + zathura or mangodl with ranger backup files on the hard disk and make it btrfs! updated: no, going with ext4 vimwiki as git home zathura rice discord rice spotify rice migrate from wal to wpgtk i3 stuff: i3-notifier i3-resurrect i3-bar as a hidden status line make a theme randomizer/chooser with rofi make a rofi cheatsheet (I&amp;rsquo;m too alpha for this) floating vim everywhere 😵 thread configure broot transfer dotfiles to one folder and symlink everything git dotfiles + reddit post?</description>
-    </item>
-    
   </channel>
 </rss>

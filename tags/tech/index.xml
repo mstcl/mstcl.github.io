@@ -107,10 +107,10 @@ To get it running on my box: cd $HOME/docker/rss docker-compose up -d </descript
     
     <item>
       <title>Bookmarks</title>
-      <link>https://hhn-pham.github.io/org/bookmarks/</link>
+      <link>https://hhn-pham.github.io/cheats/bookmarks/</link>
       <pubDate>Fri, 23 Jul 2021 02:37:00 +0000</pubDate>
       
-      <guid>https://hhn-pham.github.io/org/bookmarks/</guid>
+      <guid>https://hhn-pham.github.io/cheats/bookmarks/</guid>
       <description>Content  reddit mastodon lemmy hacker news  Cloud  mega nextcloud github  Utilities  syncthing nextdns anonaddy custom rom  Messaging  whatsapp telegram discord matrix  Media  predb snahp listenbrainz youtube  Inboxes  protonmail disroot outlook uni gmail  Read later  consciousness &amp;amp; qp intro to dl bell&amp;rsquo;s theorem homunculus  </description>
     </item>
     
@@ -121,16 +121,6 @@ To get it running on my box: cd $HOME/docker/rss docker-compose up -d </descript
       
       <guid>https://hhn-pham.github.io/posts/luksonlvm/</guid>
       <description>LUKS setup I wanted to protect my desktop PC with LUKS2, I decided to use LVM after reading not so good things about BTRFS. I settled on LUKS on LVM instead of LVM on LUKS because I wanted to have partition separation for easier control if I do end up with a corrupted root partition. While chain unlocking is not as secure as entering two passwords to decrypt two partitions, the guide I used worked and it is a very good guide which explains everything.</description>
-    </item>
-    
-    <item>
-      <title>Digital tasks</title>
-      <link>https://hhn-pham.github.io/org/digital-tasks/</link>
-      <pubDate>Thu, 24 Jun 2021 06:02:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/org/digital-tasks/</guid>
-      <description>Arch fix it before you reinstall
- get a Windows VM going (bonus if I can achieve GPU passthrough) rofi emoji switcher is it possible to rice systemd-boot? the answer is no 😥 neovim needs more of your attention background manga setup with hakuneko + zathura or mangodl with ranger backup files on the hard disk and make it btrfs! updated: no, going with ext4 vimwiki as git home zathura rice discord rice spotify rice migrate from wal to wpgtk i3 stuff: i3-notifier i3-resurrect i3-bar as a hidden status line make a theme randomizer/chooser with rofi make a rofi cheatsheet (I&amp;rsquo;m too alpha for this) floating vim everywhere 😵 thread configure broot transfer dotfiles to one folder and symlink everything git dotfiles + reddit post?</description>
     </item>
     
   </channel>

@@ -7,14 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Wed, 25 Aug 2021 17:26:05 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Sep 2021 21:14:44 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sxhkd</title>
+      <link>https://hhn-pham.github.io/cheats/sxhkd/</link>
+      <pubDate>Sat, 04 Sep 2021 21:14:44 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/cheats/sxhkd/</guid>
+      <description>Launch    Command Mapping     Browser Super + b   Calculator Super + q   Colorpicker Super + c   Emoji picker Super + period   App launcher Super + space   Scratchpad Super + g   Terminal Super + Return   Floating terminal Super + Shift + Return   Sink picker Hyper + v   Powermenu Hyper + p   List of open windows Alt + Tab    Toggle    Command Mapping     Dunst Super + t + d   Picom Super + t + p   Keymap Alt + Space    Screenshot    Command Mapping     Screenshot region Super + p + r   Screenshot fullscreen Super + p + f    Music | Command | Mapping | | :&amp;mdash;&amp;mdash;&amp;ndash; | :&amp;ndash;| Command | Mapping | | :&amp;mdash;&amp;mdash;&amp;ndash; | :&amp;mdash;&amp;mdash;&amp;ndash; |&amp;mdash;&amp;mdash; | | Launch player | Super + s + p | | Play-pause | Super + s + slash | | Next song | Super + s + comma | | Previous song | Super + s + period | | Album cover | Super + s + c | | Visualisation | Super + s + v | | Lyrics | Super + s + l |</description>
+    </item>
+    
     <item>
       <title>Startup time</title>
       <link>https://hhn-pham.github.io/posts/startup-time/</link>
       <pubDate>Wed, 25 Aug 2021 17:26:05 +0100</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/startup-time/</guid>
-      <description>Neovim I tried to configure Neovim&amp;rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71ms to load the screen, pretty good considering I have 38 plugins.</description>
+      <description>Neovim I tried to configure Neovim&amp;rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 41 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71 64 ms to load the screen, pretty good considering I have a lot of plugins.</description>
     </item>
     
     <item>
@@ -35,7 +44,7 @@ Programs and tools    Program Name     Shell ZSH   Editor Neovim   Window manage
       <guid>https://hhn-pham.github.io/posts/paru/</guid>
       <description>Migration Moving from yay to paru, I discovered a few useful commands that existed in yay that I never bothered checking out.
 Cheatsheet Below is a snippet from my zshrc showing my paru aliases and their tldr:
-alias pu=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias pusu=&amp;#39;paru -Syu --noconfirm&amp;#39; #sync &amp;amp; upgrade w/o confirmation alias pfetch=&amp;#39;paru -Ps&amp;#39; #display stats alias pcom=&amp;#39;paru -Gc&amp;#39; #display comments alias pnews=&amp;#39;paru -Pw&amp;#39; #display news alias pid=&amp;#39;paru -U&amp;#39; #install from local file(s) alias pir=&amp;#39;paru -S&amp;#39; #install from repositories alias pnd=&amp;#39;paru -Qi&amp;#39; #display info from database alias pnr=&amp;#39;paru -Si&amp;#39; #display info from repositories alias pfd=&amp;#39;paru -Qs&amp;#39; #search in database alias pfr=&amp;#39;paru -Ss&amp;#39; #search in repositories alias pls=&amp;#39;paru -Q&amp;#39; #list packages installed alias plsa=&amp;#39;paru -Qea&amp;#39; #list packages explicitly installed alias porf=&amp;#39;paru -Qdt&amp;#39; #list orphaned packages alias pcc=&amp;#39;paru -Scd&amp;#39; #interactive cache removal FZF integration I also found that defining an installing and removing function which uses FZF to crawl through the local database is great.</description>
+alias u=&amp;#39;paru -Syu&amp;#39; #sync &amp;amp; upgrade alias usu=&amp;#39;paru -Syu --noconfirm&amp;#39; #sync &amp;amp; upgrade w/o confirmation alias pstats=&amp;#39;paru -Ps&amp;#39; #display stats alias pcmt=&amp;#39;paru -Gc&amp;#39; #display comments alias pnews=&amp;#39;paru -Pw&amp;#39; #display news alias pid=&amp;#39;paru -U&amp;#39; #install from local file(s) alias pir=&amp;#39;paru -S&amp;#39; #install from repositories alias pnd=&amp;#39;paru -Qi&amp;#39; #display info from database alias pnr=&amp;#39;paru -Si&amp;#39; #display info from repositories alias pfd=&amp;#39;paru -Qs&amp;#39; #search in database alias pfr=&amp;#39;paru -Ss&amp;#39; #search in repositories alias pls=&amp;#39;paru -Q&amp;#39; #list packages installed alias pls=&amp;#39;paru -Qea&amp;#39; #list packages explicitly installed alias orf=&amp;#39;paru -Qdt&amp;#39; #list orphaned packages alias pcc=&amp;#39;paru -Scd&amp;#39; #interactive cache removal FZF integration I also found that defining an installing and removing function which uses FZF to crawl through the local database is great.</description>
     </item>
     
     <item>

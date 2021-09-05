@@ -2,10 +2,10 @@
 <html><head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Startup time - Organisation x Knowledge Base</title><link rel="icon" type="image/png" href=https://img.icons8.com/doodle/48/000000/video-card.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Neovim I tried to configure Neovim&rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71ms to load the screen, pretty good considering I have 38 plugins." />
+	<meta name="description" content="Neovim I tried to configure Neovim&rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 41 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71 64 ms to load the screen, pretty good considering I have a lot of plugins." />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="Startup time" />
-<meta property="og:description" content="Neovim I tried to configure Neovim&rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71ms to load the screen, pretty good considering I have 38 plugins." />
+<meta property="og:description" content="Neovim I tried to configure Neovim&rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 41 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71 64 ms to load the screen, pretty good considering I have a lot of plugins." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hhn-pham.github.io/posts/startup-time/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-25T17:26:05+01:00" />
@@ -13,7 +13,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Startup time"/>
-<meta name="twitter:description" content="Neovim I tried to configure Neovim&rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71ms to load the screen, pretty good considering I have 38 plugins."/>
+<meta name="twitter:description" content="Neovim I tried to configure Neovim&rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 41 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71 64 ms to load the screen, pretty good considering I have a lot of plugins."/>
 <script src="https://hhn-pham.github.io/js/feather.min.js"></script>
 	
 	
@@ -47,6 +47,8 @@
 		
 		<a href="/notes">Notes</a>
 		
+		<a href="/cheats">Cheats</a>
+		
 	</nav>
 </header>
 
@@ -60,7 +62,7 @@
 
 		<section class="body">
 			<h2 id="neovim">Neovim</h2>
-<p>I tried to configure Neovim&rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing <code>#!bash nvim --startuptime /path/to/file</code>, it is reported that my Neovim takes 71ms to load the screen, pretty good considering I have 38 plugins.</p>
+<p>I tried to configure Neovim&rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have <del>38</del> 41 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing <code>#!bash nvim --startuptime /path/to/file</code>, it is reported that my Neovim takes <del>71</del> 64 ms to load the screen, pretty good considering I have a lot of plugins.</p>
 <h2 id="zsh">ZSH</h2>
 <p>I removed <code>miniconda</code> and I might try using pyenv instead because whatever conda tried to initialise in my <code>zshrc</code> takes up 60 ms. I removed those lines added by conda and when doing <code>time zsh -i -c exit</code>, I only see a total of 20 ms now. Pretty magical, I&rsquo;m also not using any bloated zsh <em>configuration</em> like oh-my-zsh, because I used to and it added a plethora of aliases I never use and get confused by. I took my time to configure my <code>zshrc</code> properly and now it feels much faster! Instead of using <code>compinit</code>, I&rsquo;m currently using <code>fzf</code> instead, my setup includes fzf fuzzy searching + syntax-highlighting + auto-suggest + zoxide as an autojump replacement. I can tell you that my shell feels pretty and powerful.</p>
 

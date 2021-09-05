@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheats on Organisation x Knowledge Base</title>
+    <link>https://hhn-pham.github.io/cheats/</link>
+    <description>Recent content in Cheats on Organisation x Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© me</copyright>
+    <lastBuildDate>Sat, 04 Sep 2021 21:14:44 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/cheats/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sxhkd</title>
+      <link>https://hhn-pham.github.io/cheats/sxhkd/</link>
+      <pubDate>Sat, 04 Sep 2021 21:14:44 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/cheats/sxhkd/</guid>
+      <description>Launch    Command Mapping     Browser Super + b   Calculator Super + q   Colorpicker Super + c   Emoji picker Super + period   App launcher Super + space   Scratchpad Super + g   Terminal Super + Return   Floating terminal Super + Shift + Return   Sink picker Hyper + v   Powermenu Hyper + p   List of open windows Alt + Tab    Toggle    Command Mapping     Dunst Super + t + d   Picom Super + t + p   Keymap Alt + Space    Screenshot    Command Mapping     Screenshot region Super + p + r   Screenshot fullscreen Super + p + f    Music | Command | Mapping | | :&amp;mdash;&amp;mdash;&amp;ndash; | :&amp;ndash;| Command | Mapping | | :&amp;mdash;&amp;mdash;&amp;ndash; | :&amp;mdash;&amp;mdash;&amp;ndash; |&amp;mdash;&amp;mdash; | | Launch player | Super + s + p | | Play-pause | Super + s + slash | | Next song | Super + s + comma | | Previous song | Super + s + period | | Album cover | Super + s + c | | Visualisation | Super + s + v | | Lyrics | Super + s + l |</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,22 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Wed, 25 Aug 2021 17:43:50 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Sep 2021 21:14:44 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>tech</title>
-      <link>https://hhn-pham.github.io/tags/tech/</link>
-      <pubDate>Wed, 25 Aug 2021 17:43:50 +0100</pubDate>
+      <title>cheatsheet</title>
+      <link>https://hhn-pham.github.io/tags/cheatsheet/</link>
+      <pubDate>Sat, 04 Sep 2021 21:14:44 +0100</pubDate>
       
-      <guid>https://hhn-pham.github.io/tags/tech/</guid>
+      <guid>https://hhn-pham.github.io/tags/cheatsheet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
       <link>https://hhn-pham.github.io/tags/linux/</link>
-      <pubDate>Wed, 25 Aug 2021 17:26:05 +0100</pubDate>
+      <pubDate>Sat, 04 Sep 2021 21:14:44 +0100</pubDate>
       
       <guid>https://hhn-pham.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://hhn-pham.github.io/tags/tech/</link>
+      <pubDate>Wed, 25 Aug 2021 17:43:50 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/tags/tech/</guid>
       <description></description>
     </item>
     

@@ -50,6 +50,8 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 		
 		<a href="/notes">Notes</a>
 		
+		<a href="/cheats">Cheats</a>
+		
 	</nav>
 </header>
 
@@ -66,23 +68,23 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <p>I wanted to make a custom cheatsheet with all my <strong>custom</strong> bindings, (update 24/08: after constantly forcing myself to look up ways to do things without just going jjj or kkkk or whatever repetitive motions you would normally do, I&rsquo;m a much better vim user now)</p>
 <p>I assigned <code>;</code> to <code>:</code> a while ago, but I moved to <code>&lt;space&gt;</code>. While it&rsquo;s been hard to change my muscle memory, it means since my <strong>leader</strong> key is <code>,</code>, I can have the sequence <code>comma+semicolon</code> executing <code>&lt;esc&gt;</code>. This removes the need for my small pinky to travel far to reach the actual escape key.</p>
 <h3 id="update-2508">Update 25/08</h3>
-<p>I used <code>,.</code> as leader for a while but now I am back to <code>,</code>. I am using a plugin called <a href="https://github.com/jdhao/better-escape.vim">Better Escape</a> and while it is not written in Lua, it means I can do <code>jk</code> quickly to escape insert mode.</p>
+<p>I used <code>,.</code> as leader for a while, but now I am back to <code>,</code>. I am using a plugin called <a href="https://github.com/jdhao/better-escape.vim">Better Escape</a> and while it is not written in Lua, it means I can do <code>jk</code> quickly to escape insert mode.</p>
 <h2 id="recently-learned-things">Recently learned things</h2>
 <ul>
-<li><code>f[x]</code>  jumps to next <code>x</code> on the line
+<li><code>f[x]</code> jumps to next <code>x</code> on the line
 <ul>
 <li>there is also <code>t</code> which does the same but jumps to the place preceding the <code>x</code></li>
 </ul>
 </li>
-<li><code>F</code> is like <code>f</code> but it goes backwards instead, same goes for <code>T</code>.
+<li><code>F</code> is like <code>f</code>, but it goes backwards instead, same goes for <code>T</code>.
 <ul>
 <li><code>;</code> repeats the latest jump command, <code>,</code> repeats in the opposite direction</li>
-<li>However, since my leader key is <code>,</code>, I am using a plugin called Lightspeed to navigate and it uses something similar to Clever F.</li>
+<li>However, since my leader key is <code>,</code>, I am using a plugin called Lightspeed to navigate, and it uses something similar to Clever F.</li>
 </ul>
 </li>
 <li><code>&lt;C-A&gt;</code> to increment number under cursor and <code>&lt;C-X&gt;</code> to decrement number under cursor</li>
 <li><code>:123,345s/&lt;from&gt;/&lt;to&gt;/g</code> will do search and replace for those lines</li>
-<li><code>J</code> to append next line to current line, can be dot repeated however many lines with <code>5.</code>.</li>
+<li><code>J</code> to append next line to current line, can be dotted repeated however many lines with <code>5.</code>.</li>
 <li><code>&lt;C-o&gt;</code> to enter normal mode only and re-enter insert mode after one movement.</li>
 </ul>
 <h2 id="plugins-to-try-out">Plugins to try out</h2>
@@ -202,6 +204,7 @@ I assigned ; to : a while ago, but I moved to &lt;space&gt;. While it&rsquo;s be
 <li><strong>Language servers</strong>
 <ul>
 <li>Symbols Outline</li>
+<li>Grammar Guard</li>
 <li>Lspconfig</li>
 </ul>
 </li>

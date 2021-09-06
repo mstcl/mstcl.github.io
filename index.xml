@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Sat, 04 Sep 2021 21:14:44 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Sep 2021 00:48:43 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up TPM2 for a LUKS2-encrypted root partition</title>
+      <link>https://hhn-pham.github.io/posts/tpm-luks/</link>
+      <pubDate>Mon, 06 Sep 2021 00:48:43 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/posts/tpm-luks/</guid>
+      <description>Motivation I was mildly content with entering my LUKS2 password every time I have to reboot my computer. Even though it is quite a complicated password, I got used to it; moreover, I rarely restarted anyway (at most once a day for important updates). However, I am facing a possibility of going without my keyboard for a bit (some days to some weeks). As I planned on using my laptop as a keyboard (not sure how this is going to play out, a post on that in the near future), I knew for sure any setup wouldn&amp;rsquo;t work if I am prompted for a decryption password.</description>
+    </item>
+    
     <item>
       <title>Sxhkd</title>
       <link>https://hhn-pham.github.io/cheats/sxhkd/</link>

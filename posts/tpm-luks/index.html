@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Setting up TPM2 for a LUKS2-encrypted root partition - Knowledge x Base</title><link rel="icon" type="image/png" href=https://img.icons8.com/doodle/48/000000/video-card.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Motivation I was mildly content with entering my LUKS2 password every time I have to reboot my computer. Even though it is quite a complicated password, I got used to it; moreover, I rarely restarted anyway (at most once a day for important updates). However, I am facing a possibility of going without my keyboard for a bit (some days to some weeks). As I planned on using my laptop as a keyboard (not sure how this is going to play out, a post on that in the near future), I knew for sure any setup wouldn&rsquo;t work if I am prompted for a decryption password." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Setting up TPM2 for a LUKS2-encrypted root partition" />
+<meta property="og:description" content="Motivation I was mildly content with entering my LUKS2 password every time I have to reboot my computer. Even though it is quite a complicated password, I got used to it; moreover, I rarely restarted anyway (at most once a day for important updates). However, I am facing a possibility of going without my keyboard for a bit (some days to some weeks). As I planned on using my laptop as a keyboard (not sure how this is going to play out, a post on that in the near future), I knew for sure any setup wouldn&rsquo;t work if I am prompted for a decryption password." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hhn-pham.github.io/posts/tpm-luks/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-06T00:48:43+01:00" />
+<meta property="article:modified_time" content="2021-09-06T00:48:43+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting up TPM2 for a LUKS2-encrypted root partition"/>
+<meta name="twitter:description" content="Motivation I was mildly content with entering my LUKS2 password every time I have to reboot my computer. Even though it is quite a complicated password, I got used to it; moreover, I rarely restarted anyway (at most once a day for important updates). However, I am facing a possibility of going without my keyboard for a bit (some days to some weeks). As I planned on using my laptop as a keyboard (not sure how this is going to play out, a post on that in the near future), I knew for sure any setup wouldn&rsquo;t work if I am prompted for a decryption password."/>
+<script src="https://hhn-pham.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://hhn-pham.github.io/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://hhn-pham.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)" />
+	
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.98736ef2d3e03248fe9aff0d8bf898ce1f590e2f8c929ba3bfbd35bc6e5765c2.css">
+		
+    
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://hhn-pham.github.io/">Knowledge x Base</a>
+	</div>
+	<nav>
+		
+		<a href="/tags">Tags</a>
+		
+		<a href="/posts">Posts</a>
+		
+		<a href="/notes">Notes</a>
+		
+		<a href="/cheats">Cheats</a>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Setting up TPM2 for a LUKS2-encrypted root partition</h1>
+			<div class="meta">Posted on Sep 6, 2021</div>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="motivation">Motivation</h2>
+<p>I was <em>mildly</em> content with entering my LUKS2 password every time I have to reboot my computer. Even though it is quite a complicated password, I got used to it; moreover, I rarely restarted anyway (at most once a day for important updates). However, I am facing a possibility of going without my keyboard for a bit (some days to some weeks). As I planned on using my laptop as a keyboard (not sure how this is going to play out, a post on that in the near future), I knew for sure any setup wouldn&rsquo;t work if I am prompted for a decryption password.</p>
+<h2 id="enabling-autologin">Enabling autologin</h2>
+<p>First, I had to disable <code>lightdm</code> greeter. I only run <code>i3wm</code>, and it is superfluous to login that way. I plan to turn it on once I reunite with a working keyboard for an extra layer of security to prevent cold boot attacks.</p>
+<p>To enable autologin in <code>/etc/lightdm/lightdm.conf</code>, these two lines need to be present under the <code>[Seat]</code> option:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># /etc/lightdm/lightdm.conf
+[Seat:*]
+autologin-user=&lt;username&gt;
+autologin-user-timeout=0
+</code></pre></div><p>After that, the group <code>autologin</code> needs to be created and the autologin user added to it. In the shell:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo gpasswd -a lckdscl autologin
+sudo groupadd -r autologin
+</code></pre></div><p>The default session must also be set in <code>~/.dmrc</code>. Once all of that is done, then autologin should work.</p>
+<h2 id="arch-wiki-comes-to-the-rescue">Arch wiki comes to the rescue</h2>
+<p>I looked through many guides for enabling TPM2 for Linux, and unsurprisingly, nothing beats the information from <a href="https://wiki.archlinux.org/title/Trusted_Platform_Module#systemd-cryptenroll">this</a> Arch wiki page. All the information just works. I needed to install <code>tpm2-tools</code>, <code>tpm2-tss</code>, <code>tpm2-abrmd</code>. Then <code>systemd-cryptenroll</code> recognised my TPM2 device right away.</p>
+<p>The information around adding kernel options so that systemd can mount root after decrypting it is a bit confusing, so I went with making a <code>/etc/crypttab.initramfs</code> file instead. This worked flawlessly.</p>
+<h2 id="secure-boot">Secure boot?</h2>
+<p>I only registered to PCR0, since my kernel and bootloader, and kernel modules are not signed. Enabling secure boot would be a pain with some dkms modules. Maybe one day I will sit down and enable secure boot.</p>
+<h2 id="goodbye-plymouth">Goodbye plymouth</h2>
+<p>With TPM2 unlocking my drive pleasantly, I didn&rsquo;t have the need for <code>plymouth</code> and its themes. I set the kernel on low verbosity and quiet options, so once I hit the boot button, I just have to wait about 30s until I see my familiar riced i3 desktop.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr><a class="soc" href="https://github.com/hhn-pham" title="GitHub"><i data-feather="github"></i></a>|⚡️
+	2021  © me |  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+<script>
+      feather.replace()
+</script></div>
+    </body>
+</html>

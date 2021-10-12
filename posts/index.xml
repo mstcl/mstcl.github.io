@@ -32,7 +32,7 @@
       <pubDate>Wed, 25 Aug 2021 17:26:05 +0100</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/startup-time/</guid>
-      <description>Neovim I tried to configure Neovim&amp;rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 41 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71 64 ms to load the screen, pretty good considering I have a lot of plugins.</description>
+      <description>Neovim At first, I tried to configure Neovim&amp;rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. Right now, I have 38 41 44 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71 64 ms to load the screen, pretty good considering I have a lot of plugins.</description>
     </item>
     
     <item>

@@ -28,7 +28,7 @@
 	
 		
 		
-		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.98736ef2d3e03248fe9aff0d8bf898ce1f590e2f8c929ba3bfbd35bc6e5765c2.css">
+		<link rel="stylesheet" type="text/css" href="https://hhn-pham.github.io/css/override.b21b1bc384f1f2b970d65775762c744cdf6b48261e677a97e5cc50259d63bc14.css">
 		
     
 </head>
@@ -68,10 +68,11 @@
 [Seat:*]
 autologin-user=&lt;username&gt;
 autologin-user-timeout=0
-</code></pre></div><p>After that, the group <code>autologin</code> needs to be created and the autologin user added to it. In the shell:</p>
+</code></pre></div><p>After that, the group <code>autologin</code> needs to be created, and the autologin user added to it. In the shell:</p>
 <div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo gpasswd -a lckdscl autologin
 sudo groupadd -r autologin
-</code></pre></div><p>The default session must also be set in <code>~/.dmrc</code>. Once all of that is done, then autologin should work.</p>
+</code></pre></div><p><del>d</del>
+The default session must also be set in <code>~/.dmrc</code>. Once all of that is done, then autologin should work.</p>
 <h2 id="arch-wiki-comes-to-the-rescue">Arch wiki comes to the rescue</h2>
 <p>I looked through many guides for enabling TPM2 for Linux, and unsurprisingly, nothing beats the information from <a href="https://wiki.archlinux.org/title/Trusted_Platform_Module#systemd-cryptenroll">this</a> Arch wiki page. All the information just works. I needed to install <code>tpm2-tools</code>, <code>tpm2-tss</code>, <code>tpm2-abrmd</code>. Then <code>systemd-cryptenroll</code> recognised my TPM2 device right away.</p>
 <p>The information around adding kernel options so that systemd can mount root after decrypting it is a bit confusing, so I went with making a <code>/etc/crypttab.initramfs</code> file instead. This worked flawlessly.</p>

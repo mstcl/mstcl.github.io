@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Sat, 04 Sep 2021 21:14:44 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Sep 2021 20:17:35 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>notes</title>
+      <link>https://hhn-pham.github.io/tags/notes/</link>
+      <pubDate>Sat, 25 Sep 2021 20:17:35 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>philosophy</title>
+      <link>https://hhn-pham.github.io/tags/philosophy/</link>
+      <pubDate>Sat, 25 Sep 2021 20:17:35 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uni</title>
+      <link>https://hhn-pham.github.io/tags/uni/</link>
+      <pubDate>Sat, 25 Sep 2021 20:17:35 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/tags/uni/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>cheatsheet</title>
       <link>https://hhn-pham.github.io/tags/cheatsheet/</link>
@@ -167,24 +194,6 @@
       <pubDate>Sat, 10 Jul 2021 01:37:00 +0000</pubDate>
       
       <guid>https://hhn-pham.github.io/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>philosophy</title>
-      <link>https://hhn-pham.github.io/tags/philosophy/</link>
-      <pubDate>Thu, 01 Jul 2021 13:52:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/tags/philosophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>uni</title>
-      <link>https://hhn-pham.github.io/tags/uni/</link>
-      <pubDate>Wed, 30 Jun 2021 12:39:00 +0000</pubDate>
-      
-      <guid>https://hhn-pham.github.io/tags/uni/</guid>
       <description></description>
     </item>
     

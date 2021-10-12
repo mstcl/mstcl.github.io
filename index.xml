@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Mon, 06 Sep 2021 00:48:43 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Sep 2021 20:17:35 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Realism and Anti-Realism</title>
+      <link>https://hhn-pham.github.io/notes/realism-antirealism/</link>
+      <pubDate>Sat, 25 Sep 2021 20:17:35 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/realism-antirealism/</guid>
+      <description>1. Introduction Notes 1:2  Aim of this book:  To make clear what is really at stake in the contemporary realism debate Claim: no other book has succeeded in doing that Being more accessible than other books by containing less philosophical jargon    2:1  Definition of realism:  Realism about a particular domain is the conjunction (x and y) of the theses:  (i) the existence thesis: there are facts or entities distinctive of that domain (ii) the independence thesis: their existence and nature is in some important sense objective and mind-independent      2:2  Existence thesis (elaboration):  Caveat: involves quantification over entities and facts  Entities: referents of singular terms Facts: aspects of the world represented by whole declarative sentences Those who distinguished existence and independence thesis only quantified it over individuals Q: why is the involvement of both facts and entities awkward?</description>
+    </item>
+    
     <item>
       <title>Setting up TPM2 for a LUKS2-encrypted root partition</title>
       <link>https://hhn-pham.github.io/posts/tpm-luks/</link>
@@ -41,7 +50,7 @@
       <pubDate>Wed, 25 Aug 2021 17:26:05 +0100</pubDate>
       
       <guid>https://hhn-pham.github.io/posts/startup-time/</guid>
-      <description>Neovim I tried to configure Neovim&amp;rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. I currently have 38 41 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71 64 ms to load the screen, pretty good considering I have a lot of plugins.</description>
+      <description>Neovim At first, I tried to configure Neovim&amp;rsquo;s plugins using Packer as opposed to using Vim-plug. I found out that it is easier to lazy-load plugins, so I tried to lazy-load as many as I can. Right now, I have 38 41 44 plugins, and so far only two of them are not lazy-loaded, as doing so messed things up no matter what I tried. By doing #!bash nvim --startuptime /path/to/file, it is reported that my Neovim takes 71 64 ms to load the screen, pretty good considering I have a lot of plugins.</description>
     </item>
     
     <item>
@@ -308,6 +317,15 @@ Another answer from stackexchange: Q: &amp;ldquo;How do many conservative forces
       
       <guid>https://hhn-pham.github.io/notes/mechanics-core-1/</guid>
       <description>Vectors Notations  the basis is the set of unit vectors from which all others are built perpendicular axes normally have basis vectors $\boldsymbol{\hat{i},\hat{j},\hat{k}}$  helpful to remember: i = 8 o&amp;rsquo;clock, j = 4 o&amp;rsquo;clock, k = 12 o&amp;rsquo;clock (standard) this is right-handed axes (anti-clockwise)   $\boldsymbol{\hat{a}} = \frac{\boldsymbol{a}}{\left|a\right|}$  Components  $\theta$ taken from x-axis  $a_x = a\cos{\theta}$ $a_y = a\sin{\theta}$ $\tan{\theta} = \frac{a_y}{a_x}$ $\left|a\right| = \sqrt{a_x^2+a_y^2}$   3D components  pretty much compliant with 2D and 1D examples, but the concept of an angle might be harder to visualise, we rely on the unit vectors as it&amp;rsquo;s a much easier system.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hhn-pham.github.io/quicknote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hhn-pham.github.io/quicknote/</guid>
+      <description>aikido stage tech music appreciation third culture data science robogals</description>
     </item>
     
   </channel>

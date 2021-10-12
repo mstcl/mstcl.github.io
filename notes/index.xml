@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© me</copyright>
-    <lastBuildDate>Fri, 13 Aug 2021 16:06:00 +0000</lastBuildDate><atom:link href="https://hhn-pham.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Sep 2021 20:17:35 +0100</lastBuildDate><atom:link href="https://hhn-pham.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Realism and Anti-Realism</title>
+      <link>https://hhn-pham.github.io/notes/realism-antirealism/</link>
+      <pubDate>Sat, 25 Sep 2021 20:17:35 +0100</pubDate>
+      
+      <guid>https://hhn-pham.github.io/notes/realism-antirealism/</guid>
+      <description>1. Introduction Notes 1:2  Aim of this book:  To make clear what is really at stake in the contemporary realism debate Claim: no other book has succeeded in doing that Being more accessible than other books by containing less philosophical jargon    2:1  Definition of realism:  Realism about a particular domain is the conjunction (x and y) of the theses:  (i) the existence thesis: there are facts or entities distinctive of that domain (ii) the independence thesis: their existence and nature is in some important sense objective and mind-independent      2:2  Existence thesis (elaboration):  Caveat: involves quantification over entities and facts  Entities: referents of singular terms Facts: aspects of the world represented by whole declarative sentences Those who distinguished existence and independence thesis only quantified it over individuals Q: why is the involvement of both facts and entities awkward?</description>
+    </item>
+    
     <item>
       <title>L-values and R-values</title>
       <link>https://hhn-pham.github.io/notes/l-r-values/</link>

@@ -1,3 +1,3 @@
-# John Doe Jekyll
+# My website
 
-The original <a href="https://john-doe.neocities.org/">John Doe template</a> converted into a Jekyll theme.
+Hosted by GitHub Pages.

@@ -10,7 +10,7 @@ tags:
 
 ## Why I'm changing
 
-I have been using a combination of vimwiki and Mkdocs inside [neovim]({{< relref vim >}}) for a while now, but I'm not really satisified with the outcome. Although Mkdocs with the material theme is extremely feature-packed (python markdown extensions are greatly useful), I feel like rejecting bloat and returning to simplicity is better for blogging/journalling/organising in general. Mkdocs was made with slick documentions in mind so the javascript was annoying me quite a bit.
+I have been using a combination of vimwiki and Mkdocs inside [neovim]({{< relref vim >}}) for a while now, but I'm not really satisfied with the outcome. Although Mkdocs with the material theme is extremely feature-packed (python markdown extensions are greatly useful), I feel like rejecting bloat and returning to simplicity is better for blogging/journalling/organising in general. Mkdocs was made with slick documentions in mind so the javascript was annoying me quite a bit.
 
 ## Hugo
 
@@ -22,10 +22,4 @@ Anyway, this would be my first post created with Hugo's built-in commands.
 
 ### Update 25/08
 
-I found [this](https://github.com/plasticboy/vim-markdown) to be the best vim Markdown plugin. I can edit some of its highlight groups to add `gui=strikethrough` for strikethrough support. While following links don't quite work because I have to declare cross-referenced links like this:
-
-```markdown
-"[]({{_< rel/relref >_}})"
-```
-
-Which the plugin cannot understand, however, if I hover my mouse over text.md, and use `gf`, I follow the link like magic. Mind that in the snippet above, where there is an underscore, it is to escape characters to not break the site rendering.
+I found [this](https://github.com/plasticboy/vim-markdown) to be the best vim Markdown plugin. I can edit some of its highlight groups to add `gui=strikethrough` for strikethrough support. While following links don't quite work because I have to declare cross-referenced links in a weird way, which the plugin cannot understand. But if I hover my mouse over text.md, and use `gf`, I follow the link like magic.

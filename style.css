@@ -457,3 +457,15 @@ article time {
   label + input + small:after { content: "]"; }
     
 }
+
+footer {
+  max-width: 64em;  /* remove this for a full-width layout */
+  margin: auto;
+  height: 40px;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  color: black;
+  font-size: 13px;
+  text-align: center;
+}

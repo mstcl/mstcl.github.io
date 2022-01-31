@@ -10,58 +10,80 @@ layout: default
     <br />
     <br />
     Well, if you believe you're supposed to be here, then feel free to roam
-    around. I hope it's comfy enough, anon. No need to disable any JS, it's pure
-    HTML & CSS, the Jekyll template is
+    around. I hope it's comfy enough, anon. There is no JS, it's pure HTML &
+    CSS, the Jekyll template is
     <a href="https://github.com/bradleytaunt/john-doe-jekyll">here</a>.
     <br />
     <br />
     This is my personal site. Here, I post things of all kinds. I document what
-    I learn in the big world of tech, and I'm not too personal so it won't get
-    disturbing, I promise you. Maybe I'll make a project cool enough that I can
-    throw it on here and use part of it as my portfolio.
+    I learn in the big world of tech, and other things too.
     <br />
     <br />
-    As a great legend,
-    <a href="https://invidious.fdn.fr/watch?v=Zpth8x4pCdE">BugsWriter</a>, once
-    said: "You should have your own goddamn website! Go make one now!"
-    (Paraphrased from memory). Their video inspired me to change my website,
-    which was once messy and incoherent, into something that is nice and simple.
+    My <a href="https://lckdscl.xyz/notes">notes</a> and
+    <a href="https://lckdscl.xyz/startpage">startpage</a> live under the same
+    domain.
   </p>
+
+  {% include footer.html %}
 </section>
 
 <section id="about">
   <!-- ABOUT -->
+  <h1>Me</h1>
   <p>
+    Online handle: lckdscl <br />
+    Real name: You can figure that out <br />
+    Age: 19 <br />
+    <br />
     Q: How does one pronounce "lckdscl"? <br />
     A: Lackadaisical (so much so that I dropped the vowels).<br />
+  </p>
+  <br />
+  <h1>Occupation</h1>
+  <p>
+    None. I'm currently a Physics and Philosophy joint honours undergraduate.
     <br />
-    Physics and Philosophy joint honours undergraduate. I code on the side, play
-    vidya, and do other geeky stuff. I touch grass on average once per week.
-    Sometimes I listen to music too.<br />
+  </p>
+  <br />
+  <h1>Interests</h1>
+  <p>
+    I'm a prograymmer in the day, and pro-gaymer at night, alongside various
+    other geeky stuff. I touch grass on average once per week. Sometimes I
+    listen to music and watch films (and anime) too.<br />
     <br />
     Supporter of open sauce and muh freedom. Richard Stallman is my daddy,
     <a href="https://boards.4channel.org/g/catalog">/g/</a> is my homepage,
     everything just werks on my machine, Vim is better than Emacs, tiling wms
-    are superior, and I use arch btw. Those are all sarcastic, but
-    they have a touch of truth in them.<br />
-    <br />
-    She/her and no I'm not a femboy.<br />
-    <br />
+    are superior, and I use arch btw. Those are all sarcastic, but they have a
+    touch of truth in them.<br />
   </p>
+  <br />
+  <h1>Pronouns</h1>
+  <p>She/her and no I'm not a femboy.<br /></p>
+  <br />
+  <h1>Location</h1>
+  <p>One can find me at:<br /></p>
+  <ul>
+    <li><a href="https://codeberg.org/lckdscl">Codeberg</a><br /></li>
+    <li><a href="https://github.com/mstcl">Github</a></li>
+    <li>lckdscl on <a href="http://libera.chat">Libera.Chat</a></li>
+  </ul>
   <figure>
     <a href="#img-about">
       <img
         loading="lazy"
         alt=""
         src="./media/catbebe.png"
-        width="600"
-        height="600"
+        width="400"
+        height="400"
     /></a>
     <figcaption>
       Here's a lil cutey I drew. It wishes you a good day! Click on it for full
       res.
     </figcaption>
   </figure>
+
+  {% include footer.html %}
 </section>
 
 <section id="posts">
@@ -76,6 +98,8 @@ layout: default
     </h2>
     {% endfor %}
   </article>
+
+  {% include footer.html %}
 </section>
 
 <section id="photos">
@@ -129,6 +153,8 @@ layout: default
       ><img loading="lazy" alt="" src="//via.placeholder.com/300x400/ddd/ccc"
     /></a>
   </div>
+
+  {% include footer.html %}
 </section>
 
 <section id="portfolio">
@@ -194,12 +220,15 @@ layout: default
       />
     </figure>
   </div>
+
+  {% include footer.html %}
 </section>
 
 <section id="another-page">
   <!-- ANOTHER PAGE -->
   <p>This page is not referenced in the menu, yet it exists.</p>
   <p><a href="#about">← back</a></p>
+  {% include footer.html %}
 </section>
 
 <!-- ----------

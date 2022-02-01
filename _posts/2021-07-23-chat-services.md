@@ -13,7 +13,7 @@ Here's a fact; There are simply too many chat services, it's splitting my brain.
 
 Just as any other zoomer out there, I use Discord as primary communication with my friends, and most of popular public servers. It stores your chat logs in plain text and probably sells your data. I don't know, it sucks but it's popular. I sometimes have to use mumble while gaming for VC because it's literally a browser taking up almost a gigabyte of RAM. Inb4 "download more ram".
 
-Update (Jan 06 2022)
+### Update: Jan 06 2022
 
 What I do instead. I use an e2ee plugin through BetterDiscord called Apote. There's also SimpleDiscordCrypt but it's unmaintained and pretty dead. On my Android phone I just use Insular to create a work profile and use Discord in that profile instead.
 

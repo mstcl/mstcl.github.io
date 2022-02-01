@@ -20,6 +20,6 @@ In terms of neovim, I will replace vimwiki with a good Markdown syntax plugin be
 
 Anyway, this would be my first post created with Hugo's built-in commands.
 
-### Update 25/08
+### Update: Aug 25 2021
 
 I found [this](https://github.com/plasticboy/vim-markdown) to be the best vim Markdown plugin. I can edit some of its highlight groups to add `gui=strikethrough` for strikethrough support. While following links don't quite work because I have to declare cross-referenced links in a weird way, which the plugin cannot understand. But if I hover my mouse over text.md, and use `gf`, I follow the link like magic.

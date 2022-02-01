@@ -3,3 +3,6 @@
 
 - title: Posts
   url: /#posts
+
+- title: RSS
+  url: /feed.xml

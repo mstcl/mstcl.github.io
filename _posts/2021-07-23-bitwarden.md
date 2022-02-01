@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bitwarden - I tried self-hosting, then pussied out"
+title: "Bitwarden—I tried self-hosting, then pussied out"
 date: 2021-07-23 03:56:00
 tags: tech
 ---

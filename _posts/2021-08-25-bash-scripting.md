@@ -53,3 +53,15 @@ I'm not that good with bash and its syntax since I just moved to using linux ful
 - It cannot *yet* create the required directories for the symlink if they don't exist. This is probably an easy addition but I'm lazy, and this works well enough, once I have to set up another box, I will try to implement some sort of `mkdir -p` command so I don't have to create a billion folders
 - It can detect if a file of the same name as the symlink already exists, and if so, rename it to `*.old` and then perform the symlinking, however, if the conflicted file is another symlink, this does not work.
     - The workaround might be to detect if it is a symlink, and then simply removing the symlink instead.
+
+## Update: Feb 01 2022
+
+I have for a long time moved on from this shell script and file structure, my
+  folder remains, but now it has the same file structure as my home directory,
+  imagine it as a tiny home directory. The main files I want to push to git
+  remain in `dotfiles/` and I symlink the folders I want manually. I think this
+  is faster, and plus, I am not deploying this particular setup on anything
+  else other than my desktop, so I don't see the point of doing this a second
+  time. Yes, that means I might have vouched not to reinstall my OS for at
+  least another 5 years.
+

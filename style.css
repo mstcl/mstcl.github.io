@@ -191,7 +191,11 @@ pre, textarea { /* for code samples */
   position: relative;
   display: block;
   width: 100%;
-  white-space: pre;
+  white-space: pre-wrap;
+  white-space: moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
   border:0;
   border-radius: 4px;
   background:rgba(255,255,100,.075);
@@ -465,7 +469,8 @@ footer {
   padding-top: 10px;
   position: absolute;
   bottom: 0;
-  color: black;
-  font-size: 13px;
+  color: var(--text-color);
+  background: var(--bgcolor);
+  font-size: 0.85em;
   text-align: center;
 }

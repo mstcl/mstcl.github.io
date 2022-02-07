@@ -1,8 +1,11 @@
-- title: About
+- title: about
   url: /#about
 
-- title: Posts
+- title: posts
   url: /#posts
 
-- title: RSS
+- title: webring
+  url: /#webring
+
+- title: rss
   url: /feed.xml

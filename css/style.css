@@ -1,0 +1,875 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Color scheme */
+
+  --textcolor: #282828;
+  --bgcolor: #f9f5d7;
+  --codecolor: #f9f5d7;
+  --codetext: #3c3836;
+  --highlight: #cc241d;
+  --codecolor: #fbf1c7;
+}
+
+@font-face {
+  font-family: "Cartograph CF Extra";
+  src: url("fonts/CartographCF-ExtraLightItalic.eot");
+  src: local("Cartograph CF Extra Light Italic"),
+    local("CartographCF-ExtraLightItalic"),
+    url("fonts/CartographCF-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/CartographCF-ExtraLightItalic.woff2") format("woff2"),
+    url("fonts/CartographCF-ExtraLightItalic.woff") format("woff"),
+    url("fonts/CartographCF-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cartograph CF Demi";
+  src: url("fonts/CartographCF-DemiBoldItalic.eot");
+  src: local("Cartograph CF Demi Bold Italic"),
+    local("CartographCF-DemiBoldItalic"),
+    url("fonts/CartographCF-DemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/CartographCF-DemiBoldItalic.woff2") format("woff2"),
+    url("fonts/CartographCF-DemiBoldItalic.woff") format("woff"),
+    url("fonts/CartographCF-DemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-BoldItalic.eot");
+  src: local("Cartograph CF Bold Italic"), local("CartographCF-BoldItalic"),
+    url("fonts/CartographCF-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-BoldItalic.woff2") format("woff2"),
+    url("fonts/CartographCF-BoldItalic.woff") format("woff"),
+    url("fonts/CartographCF-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-Thin.eot");
+  src: local("Cartograph CF Thin"), local("CartographCF-Thin"),
+    url("fonts/CartographCF-Thin.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-Thin.woff2") format("woff2"),
+    url("fonts/CartographCF-Thin.woff") format("woff"),
+    url("fonts/CartographCF-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-Bold.eot");
+  src: local("Cartograph CF Bold"), local("CartographCF-Bold"),
+    url("fonts/CartographCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-Bold.woff2") format("woff2"),
+    url("fonts/CartographCF-Bold.woff") format("woff"),
+    url("fonts/CartographCF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-LightItalic.eot");
+  src: local("Cartograph CF Light Italic"), local("CartographCF-LightItalic"),
+    url("fonts/CartographCF-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-LightItalic.woff2") format("woff2"),
+    url("fonts/CartographCF-LightItalic.woff") format("woff"),
+    url("fonts/CartographCF-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cartograph CF Extra";
+  src: url("fonts/CartographCF-ExtraBoldItalic.eot");
+  src: local("Cartograph CF Extra Bold Italic"),
+    local("CartographCF-ExtraBoldItalic"),
+    url("fonts/CartographCF-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/CartographCF-ExtraBoldItalic.woff2") format("woff2"),
+    url("fonts/CartographCF-ExtraBoldItalic.woff") format("woff"),
+    url("fonts/CartographCF-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cartograph CF Extra";
+  src: url("fonts/CartographCF-ExtraLight.eot");
+  src: local("Cartograph CF Extra Light"), local("CartographCF-ExtraLight"),
+    url("fonts/CartographCF-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-ExtraLight.woff2") format("woff2"),
+    url("fonts/CartographCF-ExtraLight.woff") format("woff"),
+    url("fonts/CartographCF-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-Light.eot");
+  src: local("Cartograph CF Light"), local("CartographCF-Light"),
+    url("fonts/CartographCF-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-Light.woff2") format("woff2"),
+    url("fonts/CartographCF-Light.woff") format("woff"),
+    url("fonts/CartographCF-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-Heavy.eot");
+  src: local("Cartograph CF Heavy"), local("CartographCF-Heavy"),
+    url("fonts/CartographCF-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-Heavy.woff2") format("woff2"),
+    url("fonts/CartographCF-Heavy.woff") format("woff"),
+    url("fonts/CartographCF-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-RegularItalic.eot");
+  src: local("Cartograph CF Italic"), local("CartographCF-RegularItalic"),
+    url("fonts/CartographCF-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/CartographCF-RegularItalic.woff2") format("woff2"),
+    url("fonts/CartographCF-RegularItalic.woff") format("woff"),
+    url("fonts/CartographCF-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-ThinItalic.eot");
+  src: local("Cartograph CF Thin Italic"), local("CartographCF-ThinItalic"),
+    url("fonts/CartographCF-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-ThinItalic.woff2") format("woff2"),
+    url("fonts/CartographCF-ThinItalic.woff") format("woff"),
+    url("fonts/CartographCF-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cartograph CF Extra";
+  src: url("fonts/CartographCF-ExtraBold.eot");
+  src: local("Cartograph CF Extra Bold"), local("CartographCF-ExtraBold"),
+    url("fonts/CartographCF-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-ExtraBold.woff2") format("woff2"),
+    url("fonts/CartographCF-ExtraBold.woff") format("woff"),
+    url("fonts/CartographCF-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-HeavyItalic.eot");
+  src: local("Cartograph CF Heavy Italic"), local("CartographCF-HeavyItalic"),
+    url("fonts/CartographCF-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-HeavyItalic.woff2") format("woff2"),
+    url("fonts/CartographCF-HeavyItalic.woff") format("woff"),
+    url("fonts/CartographCF-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("fonts/CartographCF-Regular.eot");
+  src: local("Cartograph CF"), local("CartographCF-Regular"),
+    url("fonts/CartographCF-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-Regular.woff2") format("woff2"),
+    url("fonts/CartographCF-Regular.woff") format("woff"),
+    url("fonts/CartographCF-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cartograph CF Demi";
+  src: url("fonts/CartographCF-DemiBold.eot");
+  src: local("Cartograph CF Demi Bold"), local("CartographCF-DemiBold"),
+    url("fonts/CartographCF-DemiBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CartographCF-DemiBold.woff2") format("woff2"),
+    url("fonts/CartographCF-DemiBold.woff") format("woff"),
+    url("fonts/CartographCF-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    --textcolor: #fbf1c7;
+    --bgcolor: #282828;
+    --highlight: #d79921;
+    --codetext: #ebdbb2;
+    --codecolor: #3c3836;
+  }
+
+  .highlight table td {
+    padding: 5px;
+  }
+  .highlight table pre {
+    margin: 0;
+  }
+  .highlight,
+  .highlight .w {
+    color: #fbf1c7;
+    background-color: #282828;
+  }
+  .highlight .err {
+    color: #fb4934;
+    background-color: #282828;
+    font-weight: bold;
+  }
+  .highlight .c,
+  .highlight .ch,
+  .highlight .cd,
+  .highlight .cm,
+  .highlight .cpf,
+  .highlight .c1,
+  .highlight .cs {
+    color: #928374;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #8ec07c;
+  }
+  .highlight .nt {
+    color: #fb4934;
+  }
+  .highlight .o,
+  .highlight .ow {
+    color: #fbf1c7;
+  }
+  .highlight .p,
+  .highlight .pi {
+    color: #fbf1c7;
+  }
+  .highlight .gi {
+    color: #b8bb26;
+    background-color: #282828;
+  }
+  .highlight .gd {
+    color: #fb4934;
+    background-color: #282828;
+  }
+  .highlight .gh {
+    color: #b8bb26;
+    font-weight: bold;
+  }
+  .highlight .k,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kv {
+    color: #fb4934;
+  }
+  .highlight .kc {
+    color: #d3869b;
+  }
+  .highlight .kt {
+    color: #fabd2f;
+  }
+  .highlight .kd {
+    color: #fe8019;
+  }
+  .highlight .s,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .sd,
+  .highlight .s2,
+  .highlight .sh,
+  .highlight .sx,
+  .highlight .s1 {
+    color: #b8bb26;
+    font-style: italic;
+  }
+  .highlight .si {
+    color: #b8bb26;
+    font-style: italic;
+  }
+  .highlight .sr {
+    color: #b8bb26;
+    font-style: italic;
+  }
+  .highlight .sa {
+    color: #fb4934;
+  }
+  .highlight .se {
+    color: #fe8019;
+  }
+  .highlight .nn {
+    color: #8ec07c;
+  }
+  .highlight .nc {
+    color: #8ec07c;
+  }
+  .highlight .no {
+    color: #d3869b;
+  }
+  .highlight .na {
+    color: #b8bb26;
+  }
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .il,
+  .highlight .mo,
+  .highlight .mx {
+    color: #d3869b;
+  }
+  .highlight .ss {
+    color: #83a598;
+  }
+}
+
+body {
+  font-size: 18px;
+  font-family: "Cartograph CF";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.45;
+  color: var(--textcolor);
+  background: var(--bgcolor);
+  position: relative;
+  max-width: 64em; /* remove this for a full-width layout */
+  margin: 0 auto; /* centers the layout */
+}
+
+@media only screen and (max-width: 680px) {
+  /* smaller screens */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* ------- Sections ------- */
+
+section,
+div.post {
+  padding: calc(6em + 5vw) 5vw 8vw 5vw;
+  /* !! Everything below is needed !! */
+  display: none;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bgcolor);
+}
+
+section:target {
+  /* Show section */
+  display: block;
+}
+
+section#home {
+  /* Show #home by default */
+  display: block;
+}
+
+div.post {
+  /* Show post content by default since it loads a separate page */
+  display: block;
+}
+
+/* ------- Header ------- */
+
+header {
+  padding: 5vw 5vw 0 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 1em;
+  flex: 1;
+  white-space: nowrap;
+  padding: 0 20vw 0.5em 0;
+}
+
+nav a:not(:last-of-type) {
+  margin-right: 1.5vw;
+}
+
+/* ------- General ------- */
+
+a {
+  text-decoration: none;
+  color: var(--highlight);
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+section h1 {
+  font-size: 1em;
+  margin: 0 0 1em 0;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 1.6em 0 0.6em 0;
+}
+
+h2:before {
+   content: "➤ "; 
+   opacity: 0.5;
+}
+
+p,
+ul,
+ol,
+article {
+  max-width: 60ch; /* Limit line-length to 60 characters */
+  margin-bottom: 0.6em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li::marker {
+  content: "\2022  ";
+}
+
+li {
+  margin-bottom: 0.2em;
+}
+
+ul,
+ol {
+  padding-left: 2ch;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+small {
+  font-size: 0.85em;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background: currentColor;
+  opacity: 0.1;
+  margin: 1.2em 0;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+abbr[title]:hover {
+  opacity: 0.7;
+  cursor: help;
+}
+
+blockquote {
+  padding-left: 2ch;
+  opacity: 0.7;
+  margin-bottom: 0.6em;
+  position: relative;
+}
+
+blockquote:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  bottom: 0.3em;
+  background: currentColor;
+  width: 1px;
+  opacity: 0.2;
+}
+
+img,
+svg,
+video,
+audio {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  fill: currentColor;
+}
+
+code,
+textarea {
+  font-family: ui-monospace, SF Mono, Menlo, Monaco, Andale Mono, monospace;
+  opacity: 0.9;
+}
+
+a code {
+  opacity: 1;
+}
+
+pre,
+textarea {
+  /* for code samples */
+  /* color: var(--codetext); */
+  line-height: inherit;
+  padding: 0.6em 0.9em;
+  margin: 0.8em 0 1em 0;
+  position: relative;
+  display: block;
+  width: 80%;
+  white-space: pre-wrap;
+  white-space: moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  border: 0;
+  border-radius: 4px;
+  background: var(--codecolor) !important;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* Inline footnotes */
+
+label {
+  cursor: pointer;
+  vertical-align: super;
+  line-height: 1;
+  font-size: 0.75em;
+  padding-left: 0.1em;
+}
+
+label:hover {
+  color: var(--highlight);
+}
+
+label:before {
+  content: "[";
+}
+label:after {
+  content: "]";
+}
+
+label + input,
+label + input + small {
+  display: none;
+}
+
+input:checked + small {
+  display: block;
+  padding: 0.8em 0 1em 2.5vw;
+}
+
+/* Figures */
+
+figure {
+  margin: 2em 0 1.5em 0;
+}
+
+figure figcaption {
+  margin: 0.8em 0 0 0;
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+/* Responsive video embeds */
+
+figure.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+figure.video iframe,
+figure.video object,
+figure.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  visibility: hidden; /* so loading="lazy" should work? */
+}
+
+section:target iframe {
+  visibility: visible;
+}
+
+/* External links */
+
+a[href*="//"]:after
+{
+  font-weight: 300;
+  content: "\2197"; /* top right arrow: ↗ */
+  color: var(--textcolor);
+  opacity: 0.25;
+}
+
+a[href*="//"]:hover:after
+{
+  color: var(--highlight);
+  opacity: 1;
+}
+
+/* File links */
+
+a:before {
+  font-size: 0.7em;
+  margin-right: 0.4em;
+}
+
+/* Add more filetypes here if you want */
+
+a[href$=".pdf"]:before {
+  content: "PDF";
+}
+a[href$=".txt"]:before {
+  content: "TXT";
+}
+a[href$=".mp3"]:before {
+  content: "MP3";
+}
+a[href$=".jpeg"]:before,
+a[href$=".jpg"]:before,
+a[href$=".gif"]:before,
+a[href$=".png"]:before {
+  content: "IMG";
+}
+
+/* ------- News ------- */
+
+article + article {
+  margin-top: 5em;
+}
+
+article h2 {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
+article time {
+  margin-left: 0.6em;
+  font-size: 0.8em;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+/* ------- Images Grid ------- */
+
+.grid {
+  margin: auto;
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-gap: 1vmin;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 0fr));
+  grid-auto-flow: row dense;
+  padding: 0 0;
+}
+
+.bannerimg {
+  border: unset;
+  filter: unset;
+  width: 240px;
+  height: 60px;
+}
+
+.grid a {
+  position: relative;
+  border: 0;
+  padding-top: 0px;
+}
+
+.grid a:before {
+  content: "";
+  display: block;
+  padding-top: 0px;
+}
+
+.grid a img {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0px;
+}
+
+.grid a:hover {
+  transform: scale(0.975);
+}
+
+.grid a[href*="//"]:after
+{
+  font-weight: 300;
+  content: "" !important;
+  color: var(--textcolor);
+}
+
+/* ------- Slideshow ------- */
+
+.slides {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.slides figure {
+  height: 100vh;
+  padding: 0 5vw;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  scroll-snap-align: center;
+  background-size: cover; /* Full bleed background images */
+  background-position: center center;
+}
+
+.slides figure img {
+  max-height: 88vh;
+}
+
+.slides figure.cover {
+  padding: 0;
+}
+
+.slides figure.cover img {
+  max-height: none;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ------- Lightbox ------- */
+
+.lightbox {
+  display: none;
+  color: var(--textcolor);
+}
+
+.lightbox:target {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  background: var(--bgcolor);
+  border: 0;
+  z-index: 3;
+}
+
+.lightbox img {
+  max-height: 100vh;
+  z-index: 4;
+}
+
+.lightbox:target:before {
+  /* Loading spinner */
+  content: "";
+  height: 2em;
+  width: 2em;
+  animation: spin 0.8s infinite linear;
+  border: 1px solid;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lightbox:target:after {
+  /* × to close */
+  content: "\00D7";
+  position: fixed;
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 0;
+  top: 0.75em;
+  right: 0.5em;
+  z-index: 4;
+}
+
+/* ------- Print ------- */
+
+@media print {
+  nav,
+  .lightbox:target:after {
+    display: none;
+  }
+
+  article,
+  figure,
+  img {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Inline footnotes */
+  label + input + small {
+    display: inline;
+  }
+  label + input + small:before {
+    content: "[";
+  }
+  label + input + small:after {
+    content: "]";
+  }
+}
+
+footer {
+  max-width: 64em; /* remove this for a full-width layout */
+  margin: auto;
+  height: 40px;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  color: var(--text-color);
+  background: var(--bgcolor);
+  font-size: 0.85em;
+  text-align: center;
+}

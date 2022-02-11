@@ -15,6 +15,9 @@ Of course, being a great wiki, it also contains the information from the gist I 
 
 ### A visualisation of my partitioning scheme
 
+This little ascii table looks very messed up on mobiles. I apologise.
+
+
 ```
 +---------+-------------+-------------+-------------+
 |   EFI   |   lv root   |   lv swap   |   lv home   |

@@ -6,7 +6,7 @@ draft: false
 tags:
   - linux
 ---
-_Updated Jan 06 2022_
+_Updated 06/01/2022_
 
 ## Neovim
 

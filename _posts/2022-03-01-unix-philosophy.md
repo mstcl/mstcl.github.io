@@ -16,11 +16,12 @@ concerns the term _UNIX philosophy_, I recommend the Wikipedia entry. From
 there, you can probably find books and articles that will explain what it is
 better than I will be able to.
 
-From here onwards, I will focus on one of /g/'s most frequently quoted
-component of UNIX philosophy: "Do One Thing and Do It Well". This principle
-suggests that software designers and developers must do everything to avoid
-adding "bloat" to their software, a term all [suckless](https://suckless.org/)
-users abhor. To quote Mcllroy (1978):
+From here onwards, I will focus on one of
+[/g/](https://boards.4channel.org/g/)'s most quoted component of UNIX
+philosophy: "Do One Thing and Do It Well". This principle suggests that
+software designers and developers must strive to avoid adding "bloat" to their
+software, a term all [suckless](https://suckless.org/) users abhor. To quote
+Doug Mcllroy (1978):
 
     Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new "features".
 
@@ -59,8 +60,7 @@ dynamic, graphical ones to be GUI for maximum usability. Our music player could
 be a mixture of both. Things like the control the currently playing track is
 dynamic as long as you're changing songs and displaying timestamps, or even
 when browsing a library or playlist. Despite all that, these things could
-_technically_ be done on a CLI. You can design it so that `$ music_player
-/path/to/track.ext` will simply play the track. It can display the playing
+_technically_ be done on a CLI. You can design it so that `$ music_player /path/to/track.ext` will simply play the track. It can display the playing
 track or progress or list playable tracks with built-in commands. You would
 call this a music player, would you? I would, and a TUI or GUI which does the
 same thing would also have the same level of features. So please, don't go

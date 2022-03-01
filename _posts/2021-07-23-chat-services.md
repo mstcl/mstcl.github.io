@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chat services [rant]"
+title: "A tired zoomer's perspective on chat services"
 date: 2021-07-23 17:46:00
 draft: false
 tags:

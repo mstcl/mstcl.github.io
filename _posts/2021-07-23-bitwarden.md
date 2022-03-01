@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bitwarden—I tried self-hosting, but pussied out"
+title: "Bitwarden—Why I decided against self-hosting"
 date: 2021-07-23 03:56:00
 tags: tech
 ---
@@ -36,9 +36,9 @@ password manager, I conclude that doing so is bad opsec. Yes, you have control
 over your data, but I'm dumber than a bric. If you compare my sysadmin
 abilities to a Bitwarden employee, I think I know who's going back to passwords
 on a post-it note first. One day, maybe one day, I will have the resource and
-knowledge to self-host many many things. Maybe not the bloated IoT projects I
+knowledge to self-host many, many things. Maybe not the bloated IoT projects I
 see floating around (look, they're cool, but go and touch some grass please)
-though.
+though. At the moment, I'm just too poor.
 
 ## Resources
 

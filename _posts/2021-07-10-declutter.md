@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Declutter [mental health]"
+title: "Decluttering"
 date: 2021-07-10 12:30:00
 draft: false
 tags:

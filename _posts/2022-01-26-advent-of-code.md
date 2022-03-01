@@ -295,3 +295,8 @@ for i in range(0, len(board_parser), 5):
 
 print(top_score[0])
 ```
+
+### Part 2
+
+In this part, instead of finding the first board that wins, we have to find the score of the last board to win.
+

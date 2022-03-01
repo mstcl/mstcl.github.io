@@ -351,8 +351,8 @@ body {
   color: var(--textcolor);
   background: var(--bgcolor);
   position: relative;
-  max-width: 64em; /* remove this for a full-width layout */
-  margin: 0 auto; /* centers the layout */
+  max-width: 64em;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 680px) {
@@ -437,15 +437,15 @@ h4 {
 }
 
 h2:before {
-   content: "➤ "; 
-   opacity: 0.5;
+  content: "➤ ";
+  opacity: 0.5;
 }
 
 p,
 ul,
 ol,
 article {
-  max-width: 60ch; /* Limit line-length to 60 characters */
+  max-width: 70ch; /* Limit line-length to 60 characters */
   margin-bottom: 0.6em;
 }
 
@@ -539,7 +539,7 @@ textarea {
   margin: 0.8em 0 1em 0;
   position: relative;
   display: block;
-  width: 80%;
+  width: 70%;
   white-space: pre-wrap;
   white-space: moz-pre-wrap;
   white-space: -pre-wrap;
@@ -674,10 +674,10 @@ article h2 {
 }
 
 article time {
-  margin-left: 0.6em;
+  margin-left: 0.3em;
   font-size: 0.8em;
   font-weight: 400;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 /* ------- Images Grid ------- */

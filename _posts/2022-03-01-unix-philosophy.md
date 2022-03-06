@@ -11,10 +11,11 @@ tag:
 
 ## Do One Thing and Do It Well
 
-If you want a thorough summary of all the different "schools of thought" that
-concerns the term _UNIX philosophy_, I recommend the Wikipedia entry. From
-there, you can probably find books and articles that will explain what it is
-better than I will be able to.
+Today, I want to talk about a small part of UNIX philosophy. If you want a
+thorough summary of all the different "schools of thought" that concerns the
+term UNIX philosophy, I recommend the Wikipedia entry. From there, you can
+probably find books and articles that will explain what it is better than I
+will be able to.
 
 From here onwards, I will focus on one of
 [/g/](https://boards.4channel.org/g/)'s most quoted component of UNIX
@@ -25,113 +26,133 @@ Doug Mcllroy (1978):
 
     Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new "features".
 
-But what makes a software "bloated", exactly? Here, "bloat" here does _not_
-mean an operating system or userspace that comes with many different software
-installed, this definition of "bloat" applies on a software-design level. Of
+What makes a software "bloated", exactly? Here, "bloat" does _not_ mean an
+operating system or user-space that comes with many different software
+installed; today's definition of "bloat" applies on a software-design level. Of
 course, there are definitely overlaps, but the nuance is here to refrain
 elitists from saying something along the line of "Ubuntu is bloat, install
-Gentoo".
+Gentoo". It's not about Candy Crush being installed as a default program on
+your grandma's computer, it's about a self-contained software on its own.
 
 Like many other subjective qualities, you can often find the term "bloated"
 predicated to any software which comes pre-packaged with too many built-in
 functionalities, often times derailing from its main job (even worse, it might
 be lacking in any true singular functionality). This symptom of a software
 developing bloat is appropriately termed "feature-creep". This leads onto my
-first point: software bloat is synonymous to exhibiting "feature-creep",
-anything else boils down to subjective user-preference.
+first contention: software bloat is synonymous to "feature-creep", and any
+other definition eventually reduces to user-preference, which is subjective.
 
-Take the example of a music player. Let's say you want to make a music player,
-and you decide to make it a graphical user interface (GUI). We reach our first
-junction, is this the right decision according to the principle? First of all,
-an interface is a necessary feature, thus, whatever the choice may be, it is
-not bloat. Otherwise, your software might as well be delivered in the form of
-assembly carved onto the walls of a cave in Morse code, ready to be interpreted
-by aliens.
+### GUI vs CLI
 
-However, one might wonder whether a GUI is more bloated than a command line
-interface (CLI) or terminal user interface (TUI). My answer: while it depends
-on the software, ultimately, it is _your_ preference (our first appearance of
-subjectivity in UNIX philosophy). I'm sure if you're reading this, you're doing
-so from hardware with a graphics processing unit and an operating system which
-natively comes installed with drivers that can display graphical components
-effortlessly. Therefore, there are no limiting factors in which interface you
-choose. You may prefer to have text-based, static software remain CLI only, and
-dynamic, graphical ones to be GUI for maximum usability. Our music player could
-be a mixture of both. Things like the control the currently playing track is
-dynamic as long as you're changing songs and displaying timestamps, or even
-when browsing a library or playlist. Despite all that, these things could
-_technically_ be done on a CLI. You can design it so that `$ music_player /path/to/track.ext` will simply play the track. It can display the playing
-track or progress or list playable tracks with built-in commands. You would
-call this a music player, would you? I would, and a TUI or GUI which does the
-same thing would also have the same level of features. So please, don't go
-calling GUIs bloat, just because you like to do everything through your
-terminal. Again, it is _preference_. A GUI music player can definitely "do
-one thing and do it well".
+The way a software is interactively displayed is one of its primary properties.
+It affects the way functionalities are carried out, such as input, output,
+configuration, integration with other software, along with its user
+friendliness. But often, the _functions_ themselves are not gravely modified
+through the choice of the interactive system. But since it is part of any
+software, is causally related, if any, to a software's bloat?
+
+The straightforward answer is: such a feature is a necessary feature, therefore
+whatever the choice may be, it cannot be inherently bloated. 
+
+However, one might contend through _observation_ that often times, software
+that comes packaged with a GUI is more bloated than a command line interface
+(CLI) or terminal user interface (TUI). Take Redshift, which is a utility that
+allows you to make your monitor warmer. Whether or not it is scientifically
+proven to help your eyes is another matter, some like me just find such a
+screen more comfortable to look at. Now, Redshift can be configured through a
+text file, and run via the command line or as a daemon, a systemd unit for
+example. But there also exists GUI wrappers and similar options that come with
+a GUI. Are they inherently more bloated because I can now drag sliders to
+adjust the temperature of the screen? No. What it harms ever so slightly is
+software harmony (I will get onto this), since I can use a text editor to edit
+configuration files of _any_ software, unifying my user experience. I don't
+want 3 different software with 3 different GUI libraries that obfuscate the
+concept of tweaking options, which on its own does not need a GUI. However,
+displaying a representation of the colours, one could say, is more easily done
+with a GUI. Effectively, you want to stick to the best option for your software
+(so that it does its one thing well). Otherwise, it is purely a matter of
+preference. A rough guideline is that text-based and static software for CLI,
+and dynamic, pictorial ones for GUI).
+
+Let's take the concept of a music player. Its job is to perform tasks like
+playing and changing track, display metadata, list your library or a playlist.
+With a CLI, one can design it so that `$ music_player /path/to/track.ext` will
+play a track, and through built-in commands, one can see what is being played
+plus other things, even though it will not be dynamic. This is still a music
+player, despite it being worlds different from foobar2000 or Winamp or iTunes.
+If we go with a TUI or GUI, and the music player does the same thing (same =
+functionally, and a function is conceptual, not visual), it would also have the
+same level of features, and hence the same level of bloat. So if you're one of
+those people, please don't call GUIs bloat because you like to do everything
+through your terminal. Again, it is _preference_. A GUI music player can
+definitely "do one thing and do it well".
 
     TL;DR: Choosing how you want your software interface to be delivered does not, and should not affect its inherent level of bloat, as long as the functions are carried out in the same way.
 
-This same argument applies to the choice of programming language. While
+This same argument applies to the choice of programming language as well. While
 choosing a low level and highly optimised language might introduce less
 latency, this does not have anything to do with software bloat. The language
 itself might be bloated, but this does not _transfer_ onto the software it
-compiles to simply because it is a tool, not the final product.
+compiles. The language is a tool, not the feature.
 
-Thus, the only way to introduce bloat to your music player would be through a
-spaghettifying your codebase and adding a Jenga tower chock full of features
-that deviate from things functionalities I listed above. Here's an example, I'm
-using `ncmpcpp` right now, which is a TUI `mpd` client, do I ever use its tag
-editor? No. Musicbrainz Picard can do that. How about the clock? Absolutely
-not, I have a watch. The visualiser? Not something I look at while working or
-studying. Is `ncmpcpp` bloated then? Yes. Despite that, I like its TUI, and
-it's a trade-off I'm willing to make insofar as time is concerned (more on this
-below). It is one of the most popular clients, and if I can reduce the
-installed size of about 2.6 MiB to something smaller to avoid the features I
-don't need, I am obliged to do it in adherence to the principle.
+The only way to introduce bloat to a music player would be add a Jenga tower
+chock full of features. Features which deviate from tasks listed above. Here's
+an example, I'm using `ncmpcpp` right now, which is a TUI `mpd` client, do I
+ever use its tag editor? No. Musicbrainz Picard can do that. How about the
+clock? Absolutely not, I have a watch. The visualiser? Not something I look at
+while working or studying. Is `ncmpcpp` bloated then? Yes. Despite that, I like
+its TUI, and it's a trade-off I'm willing to make insofar as time is concerned
+(more on this below). It is one of the most popular clients and that's how I
+found it. If I can reduce the installed size of about 2.6 MiB by switching to
+something smaller to avoid the features I don't need, I am obliged to in
+adherence to the principle.
 
 ## Plugins and scripts
 
 _"My music player is too basic! How do make it more attractive?! Or even better,
 how do I get others to contribute to it without it getting bloated?"_
 
-The solution is to add a singular functionality to your software—a plugins
+The solution is to add a very special feature to your software, a plug-in
 framework. Now, you can add to your software in the form of scripts or patches.
-These introduce _modularity_, and with a nicely written application programming
-interface (API) or interprocess communication (IPC), no one really needs to
-read the entire source code in order to expand the functionality.
+Doing so will introduce _modularity_, which is the ability to separate a
+system's component in order to recombine and add variety and uniqueness to how
+a user might choose to use it. One can add modularity easily by adding an
+application programming interface (API) or a interprocess communication (IPC)
+system. This way, no one really needs to read the entire source code in order
+to expand the functionality.
 
-Now, one might ask: how would you apply this principle when it comes to
-extensions and plugins? Plugins, extensions, add-ons, add-ins, however you wish
-to call them, inherently follow UNIX philosophy. The modular nature of software
-is what the principle "Do One Thing and Do It Well" alludes to. Good examples
-include `vim`, `mpv`, and any suckless software. `i3` is very feature-packed
-(but I use almost all features of it), and my only complain about bloat is
-`i3bar`, which could be its own package like `i3status`. Despite that, `i3` has
-a IPC framework in Python that allows scripts like `autotiling` to work.
+Plug-ins, extensions, add-ons, add-ins, however you wish to call them,
+inherently follow UNIX philosophy. The modular nature of software is what the
+principle "Do One Thing and Do It Well" alludes to. Not only does it help the
+developer focus on individual parts of a software to ensure it is optimised and
+bug-free, it is also user-friendly because this results in a highly
+customisable experience. Good examples include `vim`, `mpv`, and any suckless
+software. I want to particularly highlight `i3`, which is a feature-packed
+window manager. Even though it does quite few things, they all do what window
+managers do. The only exception, i.e. my only complain is arguably `i3bar` (a
+status bar), which could be its own package like `i3status` (allows
+communication with the system to display the status). Despite that, `i3` has a
+IPC framework in Python that allows scripts to extend its power.
 
 The simplest expansion of functionality is interface customisation. Making a
-framework for changing the theme of your software, for example. Instead of
-hard-coding a Light and Dark theme with your own predefined colours, allow your
-users to pick from a set of themes, or add in their own custom themes in form
-of a file that is formatted properly and which your software can parse. On
-Linux, this applies to only TUI and CLI, GUI program normally are written in
-GTK or QT, which means they follow the theme you set your system to display
-globally, or by changing a environmental variable when launching. Nevertheless,
-the option is technically still there in form of the GTK and QT frameworks.
+framework to allow changing the theme of your software is one example. Instead
+of hard-coding a light and dark theme with your own predefined colours, it
+would be better to allow users to pick from a set of themes and ultimately edit
+and add in their own custom themes. On Linux, this applies to only TUI and CLI,
+GUI program normally are written in GTK or QT, which means they follow the
+theme you set your system to display globally. Nevertheless, the option is
+technically still there in form of tweaking GTK and QT.
 
-Presumably, you have now added a plugin framework with an easy-to-implement API
-to the music player. Users can change their system theme and expect the
-software to follow suit. If you went with a TUI instead, they can modify the
-configuration or add in a theme file to change the colours of certain elements
-and format how lists are displayed, for example.
+To advance higher, one could introduce a plug-in framework which allows scripts
+to be written in any popular languages such as Lua, Python, Perl, etc. For a
+music player, this might be a tag editor, a visualiser, a clock, etc.
+`Weechat`, an IRC chat client, is a good example of how plug-ins are
+implemented. Although most of them are visual enhancements, some of them add in
+new functionalities that improve on quality of life.
 
-The next step would be to allow scripts to be written in _[any language(s) of your
-choice]_ which might allow you to edit tags, display a visualiser, a clock, etc.
-At this point, you are so knee-deep in UNIX philosophy you can't stop accepting
-pull requests for new scripts and patches.
+    TL;DR: Plug-ins are friends, not foes, when it comes to UNIX philosophy. Instead of force-feeding users to install 100% of the features you plan, they can pick and choose their own suite of functionalities. This is modularity and it is a good thing in software design. Thus, it is always better to make a framework that allow external scripts to expand a software's functionalities, than to include every feature.
 
-    TL;DR: Plugins are not bloat and adhere to UNIX philosophy. Instead of force-feeding users to install 100% of the features you plan, they can pick and choose their own suite of functionalities. This is modularity and it is a good thing in software design. Thus, it is always better to make a framework that allow external scripts to expand a software's functionalities, than to include every feature.
-
-## Software utopia and why harmony is so difficult to achieve
+## Software utopia and why harmony is so difficult to achieve (a more personal passage)
 
 _"I follow UNIX philosophy to write my software, now what? I have to make sure it works with other software and utilities too. This is too much work."_
 
@@ -139,41 +160,44 @@ Well, don't take advice from me, I'm no expert. But as a power user, I have
 spent more than half my life on the computer, and I share some sentiment when
 it comes to integration with other tools people wrote. It is a lot easier to
 write cohesive and perhaps harmonious software with a group of people with
-strict guidelines, but this is not the case with non-Big-Tech, 'non-pozzed'
+strict guidelines, but this is not the case with non-Big-Tech, ''non-pozzed''
 software; small developers often work alone or with a small list of
-contributors. It is a lot more work to open source and modularise your software
-than to hard code everything, and maybe even close source it so others don't
-laugh at your spaghetti code.
+contributors. It is a lot more work to keep a clean code base for open
+sourcing, write guidelines for contributing, while at the same time adding
+modularity to your software.
 
-But here's a secret: most users won't care about bloat. I've been to both
-parties. I used to make sure almost every I use is terminal-based. I love
-curses programs and CLI alternatives. But I slowly notice the downside of it;
-when something is a bit bloated, you have the tendency to try and purge it,
-since it doesn't belong with the rest. This is tiring. I want a solution that
-"just works".
+Here's a secret: most users won't care about bloat. I've been to both parties.
+I used to make sure almost every I use is terminal-based. I love curses
+programs and CLI alternatives. But I slowly notice the downside of it; when
+something seems bloated, there is the tendency to purge it and look for a
+replacement. This is tiring. I want a solution that "just works".
 
-After all the configuration and exploration, I still find overlaps in
-functionalities; I can't fully compartmentalise and isolate everything, it's
-not possible. Communication apps and game launchers are a nightmare. To this
-day, I still can't get PDF thumbnailers to work in PCmanFM without having to
-install the whole Evince package even though I use Zathura. If you've gone
-through something similar to this, you might've entertained that it's actually
-better to have maybe less software, yet bigger ones that contain more bloat,
-but there will be less overlap and therefore less headache. Well, that's how
-the majority defaults to, besides just using what comes installed on their
-system. The fact is, because most users won't care about bloat, they will
-almost always pick the bloated option.
+On my path to reduce bloat, I realise it's not easy to fully compartmentalise
+and isolate everything. Communication apps and game launchers are a nightmare.
+To this day, I still can't get PDF thumbnailers to work in PCmanFM without
+having to install the whole Evince package even though I use Zathura. If you've
+gone through something similar to this, you might've entertained the thought
+that it's actually easier to go with bigger software that, you know it,
+contains a high dosage of bloat, for the sake of less headache. That's what the
+majority defaults to, besides just using what comes installed on their system.
+The fact is, because most users won't care about bloat, they will almost always
+pick it, out of convenience and lack of interest for good software. Companies
+will pay money for old, propriety software that are badly written and not
+well-maintained because they think paying for software will result in better
+products. Depends on how you define "better" when it comes to software, this is
+often not the case.
 
-But this option often comes with severe side effects that might not be causally
-related, but definitely correlated. Things like more overhead and lack of
-optimisation due to bigger codebase, a big backlog of bugs to fix, data
+The downsides of bloated software that might not be causally related, but
+definitely correlated are what you might expect. Things like more overhead and
+lack of optimisation due to bigger codebase, a big backlog of bugs to fix, data
 collection and telemetry, lack of user customisation and companies that don't
-listen to their users but participate in feature-creeping and constant UI
-overhaul to attract more and more users in order to either monetise more of
-their collected telemetry. What's more, software that do follow UNIX philosophy
-often come open source and free (as in beer AND speech). Many software that
-don't do this are closed source, absolutely propriety, free (as in beer AND not
-speech). The truth is, most people will not care and they will buy into this.
+listen to their users but only their investors, feature-creeping, constant UI
+overhaul to attract more and more users in order to make a profit in monetising
+collected telemetry. On the other hand, software that do follow UNIX philosophy
+and stay this way often come open source and free (as in beer AND speech). Many
+software that don't do this are closed source, absolutely propriety, free (as
+in beer AND not speech). Again, most people will not care and they will buy
+into this.
 
 In other news, if you share my practices and beliefs, don't let the slight
 overlapping functionalities of your suite of applications get to you. If it's
@@ -181,15 +205,19 @@ the difference of about 2 MiB, it's still a world of difference compared to a
 monolithic software that does everything and do them poorly, consumes > 1 GB of
 RAM and is probably written in Electron.
 
-Back to your music player. This means you shouldn't add a scrobbling feature.
-You will now have to deal with Last.fm or Listenbrainz or whatever service's
-API, handle authentication and token storing, run a daemon to upload it to the
-internet, etc.. This is a red flag, you are _not_ writing a scrobbling
-software, you are outputting music files.
+We end by returning to the music player, now in the context of harmony. A
+scrobbling (logging tracks and storing it in a third-party service) feature
+should not be included in a music player. Because one will now have to deal
+with third-party service's API, then handle authentication and token
+storing, and also upload it to the internet, etc.. Within UNIX philosophy, this
+is a red flag, you are _not_ writing a scrobbling software, you are outputting
+music files.
 
-Instead, learn to harmonise. Allow your program to be detected by something
-like MPRIS, and let someone's scrobbling software pick the metadata up. You
-will lose most of your users when they don't see a scrobbling feature. But let
-them go if they don't want to run something like rescrobbled in the background
-instead. If you feel generous, maybe you can recommend a scrobbling service
-which works with your player in the manual or documentation.
+It's not lazy to let the music player be detected by something like MPRIS, and
+let someone else's software pick the metadata up and scrobble the tracks (like
+`rescrobbled`). Because their software focuses on this function alone, they
+will do a better job than the music player's. Instead of excluding the part of
+the user base that obsessively scrobbles, the developer can instead recommend a
+software which works well and is tested with their music player. This will help
+increase exposure of the FOSS community, and pass on the legacy of decades-old
+philosophy.
